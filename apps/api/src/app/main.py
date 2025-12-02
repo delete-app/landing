@@ -6,9 +6,9 @@ from app.core.config import settings
 
 app = FastAPI(
     title=settings.app_name,
-    openapi_url="/api/v1/openapi.json",
-    docs_url="/api/docs",
-    redoc_url="/api/redoc",
+    openapi_url="/v1/openapi.json",
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
 
 app.add_middleware(
