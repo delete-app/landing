@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { api } from '../lib/api'
 
 export default function Login() {
   const navigate = useNavigate()
@@ -14,12 +15,7 @@ export default function Login() {
     setLoading(true)
 
     try {
-      const res = await fetch('/api/v1/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
-      })
-
+      const res = await api.auth.login(email, password)
       const data = await res.json()
 
       if (!res.ok) {
