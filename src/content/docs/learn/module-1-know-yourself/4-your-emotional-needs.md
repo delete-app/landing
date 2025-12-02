@@ -9,7 +9,9 @@ sidebar:
 
 ## Beyond Love Languages
 
-Gary Chapman's Five Love Languages (words of affirmation, acts of service, gifts, quality time, physical touch) are a decent starting point. But they're surface-level.
+Gary Chapman's Five Love Languages (words of affirmation, acts of service, gifts, quality time, physical touch) are a popular starting point. But they're surface-level.
+
+*Note: The Love Languages framework comes from Chapman's clinical observations and book sales, not peer-reviewed research. While many people find the categories intuitively useful, there's limited empirical evidence that "speaking someone's love language" actually improves relationship outcomes. Use it as a conversation starter, not a scientific model.*
 
 **Love languages** tell you *how* you prefer to receive love.
 **Emotional needs** tell you *what* you require to feel secure.

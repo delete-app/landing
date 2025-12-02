@@ -11,6 +11,8 @@ sidebar:
 
 When conflict arises, your nervous system picks a survival strategy. These patterns, sometimes called the "4 Fs," were adaptive once. In adult relationships, they often cause more problems than they solve.
 
+*Note: Fight, flight, and freeze are well-established stress responses in psychology. "Fawn" is a newer addition popularized by therapist Pete Walker in the context of complex trauma. While clinically useful, fawn is not yet a formally recognized stress response in academic literature — consider it an emerging clinical concept.*
+
 ### Fight
 - Voice rises, body tenses
 - Need to "win" the argument

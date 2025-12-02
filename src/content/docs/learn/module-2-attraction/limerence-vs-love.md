@@ -36,7 +36,9 @@ Sound familiar? Most people have experienced this. Most people also call it "fal
 
 Here's the key insight: **limerence fades when you become secure.**
 
-That's why people say "the spark is gone" after 3-6 months of a stable relationship. The limerence ended. They think they fell *out* of love. They didn't — they just exited a chemical state.
+That's why people say "the spark is gone" after the initial phase of a stable relationship. The limerence ended. They think they fell *out* of love. They didn't — they just exited a chemical state.
+
+*Note: Tennov's research suggested limerence typically lasts anywhere from a few months to several years, with significant individual variation. The "3-6 months" figure is a rough approximation — your experience may differ considerably.*
 
 ## The Brain Chemistry
 
