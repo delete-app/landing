@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete — A dating app designed to be deleted</title>
+    <meta name="description" content="Dating apps profit when you stay single. We don't.">
+    <meta property="og:title" content="Delete — A dating app designed to be deleted">
+    <meta property="og:description" content="Dating apps profit when you stay single. We don't.">
+    <meta property="og:url" content="https://trydelete.app">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>×</text></svg>">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        html{font-size:16px}
+        body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#fafafa;line-height:1.5;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+        main{flex:1}
+        .c{max-width:640px;margin:0 auto;padding:0 1.5rem}
+        .hero{min-height:75vh;display:flex;align-items:center;padding:3rem 0}
+        h1{font-size:clamp(1.75rem,5vw,2.5rem);font-weight:600;line-height:1.15;letter-spacing:-.02em;margin-bottom:.75rem}
+        .sub{font-size:clamp(1.1rem,2.5vw,1.25rem);color:#888;margin-bottom:2.5rem}
+        form{display:flex;flex-direction:column;gap:.75rem}
+        input{width:100%;padding:1rem;font-size:1rem;font-family:inherit;background:#141414;border:1px solid #222;border-radius:6px;color:#fafafa}
+        input::placeholder{color:#666}
+        input:focus{outline:none;border-color:#e67e22}
+        button{padding:1rem 1.5rem;font-size:1rem;font-weight:500;font-family:inherit;background:#e67e22;color:#0a0a0a;border:none;border-radius:6px;cursor:pointer}
+        button:hover{background:#d35400}
+        .note{font-size:.875rem;color:#555;margin-top:.75rem}
+        .ok{display:none;color:#e67e22;margin-top:1.5rem}
+        .ok.show{display:block}
+        .pts{padding:2rem 0 4rem}
+        .pts p{color:#666;margin-bottom:.75rem;padding-left:1.25rem;position:relative}
+        .pts p::before{content:'';position:absolute;left:0;top:.55rem;width:5px;height:5px;background:#e67e22;border-radius:50%}
+        footer{padding:1.5rem 0;border-top:1px solid #1a1a1a}
+        footer .c{display:flex;justify-content:space-between;align-items:center}
+        .cp{font-size:.875rem;color:#555}
+        .sl{display:flex;gap:1rem}
+        .sl a{color:#555;text-decoration:none}
+        .sl a:hover{color:#888}
+        @media(min-width:600px){form{flex-direction:row}input{flex:1}button{width:auto}}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="c">
+                <h1>Dating apps profit when you stay single. We don't.</h1>
+                <p class="sub">A dating app designed to be deleted.</p>
+                <form id="f">
+                    <input type="email" id="e" placeholder="Enter your email" required autocomplete="email">
+                    <button type="submit">Join the waitlist</button>
+                </form>
+                <p class="note">Launching 2026</p>
+                <p class="ok" id="ok">You're in. We'll be in touch.</p>
+            </div>
+        </section>
+        <section class="pts">
+            <div class="c">
+                <p>We match on how you actually live, not just how you look.</p>
+                <p>Built for relationships that outlast the honeymoon phase.</p>
+                <p>No hidden algorithms. No engagement tricks. Just honesty.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="c">
+            <span class="cp">Delete © 2025</span>
+            <div class="sl">
+                <a href="https://instagram.com/trydeleteapp" target="_blank" rel="noopener">IG</a>
+                <a href="https://twitter.com/trydeleteapp" target="_blank" rel="noopener">X</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('f').onsubmit=e=>{e.preventDefault();document.getElementById('f').style.display='none';document.querySelector('.note').style.display='none';document.getElementById('ok').classList.add('show')}
+    </script>
+</body>
+</html>
