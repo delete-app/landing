@@ -95,9 +95,10 @@ header.header {
 	color: #fafafa;
 }
 
-/* Page title */
-h1.title {
-	color: #fafafa;
+/* Page title - Starlight uses #_top id for main page heading */
+h1#_top,
+main h1 {
+	color: #fafafa !important;
 }
 
 /* Blockquotes for hooks */
