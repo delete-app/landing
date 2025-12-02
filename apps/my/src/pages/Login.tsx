@@ -1,35 +1,31 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { api } from '../lib/api'
+import { $api } from '../lib/api/hooks'
 
 export default function Login() {
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
-  const [loading, setLoading] = useState(false)
+
+  const loginMutation = $api.useMutation('post', '/v1/auth/login', {
+    onSuccess: (data) => {
+      localStorage.setItem('access_token', data.access_token)
+      localStorage.setItem('refresh_token', data.refresh_token)
+      navigate('/')
+    },
+    onError: (err) => {
+      const detail = err.detail?.[0]?.msg
+      setError(detail || 'Login failed')
+    },
+  })
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError('')
-    setLoading(true)
-
-    try {
-      const res = await api.auth.login(email, password)
-      const data = await res.json()
-
-      if (!res.ok) {
-        throw new Error(data.detail || 'Login failed')
-      }
-
-      localStorage.setItem('access_token', data.access_token)
-      localStorage.setItem('refresh_token', data.refresh_token)
-      navigate('/')
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Login failed')
-    } finally {
-      setLoading(false)
-    }
+    loginMutation.mutate({
+      body: { email, password },
+    })
   }
 
   return (
@@ -57,8 +53,8 @@ export default function Login() {
             required
           />
 
-          <button type="submit" disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign in'}
+          <button type="submit" disabled={loginMutation.isPending}>
+            {loginMutation.isPending ? 'Signing in...' : 'Sign in'}
           </button>
         </form>
 
