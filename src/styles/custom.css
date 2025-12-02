@@ -40,10 +40,25 @@
 /* Link styling */
 a {
 	color: var(--sl-color-accent);
+	transition: color 0.15s ease;
 }
 
 a:hover {
 	color: var(--sl-color-accent-high);
+	text-decoration: none;
+}
+
+/* Content area links */
+.sl-markdown-content a {
+	color: var(--sl-color-accent);
+	text-decoration: underline;
+	text-decoration-color: rgba(230, 126, 34, 0.4);
+	text-underline-offset: 2px;
+}
+
+.sl-markdown-content a:hover {
+	color: var(--sl-color-accent-high);
+	text-decoration-color: var(--sl-color-accent-high);
 }
 
 /* Content area */
