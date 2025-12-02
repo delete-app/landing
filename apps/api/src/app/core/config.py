@@ -15,6 +15,9 @@ class Settings(BaseSettings):
     # Database
     database_url: str = "postgresql+asyncpg://delete:delete@localhost:5432/delete"
 
+    # CORS
+    cors_origins: str = "http://localhost:3000,http://localhost:5173,http://localhost:5174"
+
     # Auth
     secret_key: str = "change-me-in-production"
     algorithm: str = "HS256"
