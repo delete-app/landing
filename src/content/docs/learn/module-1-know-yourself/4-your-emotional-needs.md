@@ -18,7 +18,7 @@ Someone can speak your love language fluently and still not meet your core needs
 
 ## The Deeper Needs
 
-Research on close relationships ([Reis & Shaver, 1988](https://doi.org/10.1016/S0065-2601(08)60227-6)) and self-determination theory ([Deci & Ryan, 2000](https://doi.org/10.1037/0003-066X.55.1.68)) points to core emotional needs:
+Research on close relationships<sup>[[1]](https://doi.org/10.1016/S0065-2601(08)60227-6)</sup> and self-determination theory<sup>[[2]](https://doi.org/10.1037/0003-066X.55.1.68)</sup> points to core emotional needs:
 
 ### Security
 - Knowing they're committed, not going anywhere
@@ -96,6 +96,14 @@ Write down your top 3 emotional needs. Not "someone funny" — that's a preferen
 3. I need to feel **___________**
 
 Know these *before* your next relationship. Communicate them *early*. If they can't be met, you'll know before you're in too deep.
+
+---
+
+## References
+
+1. Reis, H. T., & Shaver, P. (1988). Intimacy as an interpersonal process. In S. Duck (Ed.), *Handbook of personal relationships* (pp. 367-389). Wiley. [doi:10.1016/S0065-2601(08)60227-6](https://doi.org/10.1016/S0065-2601(08)60227-6)
+
+2. Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry, 11*(4), 227-268. [doi:10.1037/0003-066X.55.1.68](https://doi.org/10.1037/0003-066X.55.1.68)
 
 ---
 

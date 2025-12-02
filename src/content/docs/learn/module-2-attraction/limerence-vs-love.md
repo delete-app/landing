@@ -9,7 +9,7 @@ sidebar:
 
 ## What Is Limerence?
 
-Limerence is a state of involuntary obsession with another person. The term was coined by psychologist [Dorothy Tennov in 1979](https://www.goodreads.com/book/show/266263.Love_and_Limerence) after interviewing hundreds of people about their romantic experiences.
+Limerence is a state of involuntary obsession with another person. The term was coined by psychologist Dorothy Tennov in 1979 after interviewing hundreds of people about their romantic experiences.<sup>[[1]](https://www.goodreads.com/book/show/266263.Love_and_Limerence)</sup>
 
 It's characterized by:
 - **Intrusive thinking** — They're on your mind constantly, even when you're trying to focus on work
@@ -40,7 +40,7 @@ That's why people say "the spark is gone" after 3-6 months of a stable relations
 
 ## The Brain Chemistry
 
-[Helen Fisher's brain scan studies](https://doi.org/10.1098/rstb.2006.1938) showed that early romantic love activates similar neural pathways to addiction — particularly the dopamine-rich reward system. Her research found heightened activity in the ventral tegmental area (VTA) and caudate nucleus when people viewed photos of their romantic interests.
+Helen Fisher's brain scan studies showed that early romantic love activates similar neural pathways to addiction — particularly the dopamine-rich reward system.<sup>[[2]](https://doi.org/10.1098/rstb.2006.1938)</sup> Her research found heightened activity in the ventral tegmental area (VTA) and caudate nucleus when people viewed photos of their romantic interests.
 
 The chemicals involved:
 
@@ -104,7 +104,7 @@ She never felt limerence for him. At first, she wondered if that was a problem. 
 
 We've been conditioned to believe that "the spark" indicates compatibility. Movies, songs, and friends all reinforce: *if it's right, you'll just know.*
 
-But research suggests caution. [Eastwick & Finkel (2008)](https://doi.org/10.1037/0022-3514.94.2.245) found that people's stated preferences before meeting someone (wanting someone "exciting" or having "chemistry") didn't actually predict who they were attracted to in real interactions. Initial intensity can be misleading.
+But research suggests caution. Studies found that people's stated preferences before meeting someone (wanting someone "exciting" or having "chemistry") didn't actually predict who they were attracted to in real interactions.<sup>[[3]](https://doi.org/10.1037/0022-3514.94.2.245)</sup> Initial intensity can be misleading.
 
 High initial "chemistry" can be associated with:
 - Anxious-avoidant dynamics
@@ -138,6 +138,16 @@ And ask yourself the real question:
 > *Would I still want this person if I knew for certain they wanted me back?*
 
 If the appeal is partly in the chase, that's not love. That's a chemical state that will end — and you'll be left with whoever's actually there.
+
+---
+
+## References
+
+1. Tennov, D. (1979). *Love and Limerence: The Experience of Being in Love*. Stein and Day. [Book info](https://www.goodreads.com/book/show/266263.Love_and_Limerence)
+
+2. Fisher, H. E., Aron, A., & Brown, L. L. (2006). Romantic love: A mammalian brain system for mate choice. *Philosophical Transactions of the Royal Society B, 361*(1476), 2173-2186. [doi:10.1098/rstb.2006.1938](https://doi.org/10.1098/rstb.2006.1938)
+
+3. Eastwick, P. W., & Finkel, E. J. (2008). Sex differences in mate preferences revisited: Do people know what they initially desire in a romantic partner? *Journal of Personality and Social Psychology, 94*(2), 245-264. [doi:10.1037/0022-3514.94.2.245](https://doi.org/10.1037/0022-3514.94.2.245)
 
 ---
 

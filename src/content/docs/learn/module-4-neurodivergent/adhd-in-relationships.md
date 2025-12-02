@@ -132,14 +132,22 @@ If you're dating someone with ADHD:
 ## The Research
 
 Research on ADHD and relationships shows:
-- Higher rates of relationship dissatisfaction and divorce ([Wymbs et al., 2008](https://doi.org/10.1007/s10802-007-9177-y))
+- Higher rates of relationship dissatisfaction and divorce<sup>[[1]](https://doi.org/10.1007/s10802-007-9177-y)</sup>
 - BUT: couples where ADHD is understood and managed show similar satisfaction to non-ADHD couples
 - The difference isn't having ADHD — it's whether both partners understand it
 
-[Dr. Russell Barkley's work on ADHD](https://www.russellbarkley.org/factsheets.html) emphasizes that relationship problems aren't inherent to ADHD. They come from:
+Dr. Russell Barkley's work on ADHD emphasizes that relationship problems aren't inherent to ADHD.<sup>[[2]](https://www.russellbarkley.org/factsheets.html)</sup> They come from:
 - Unawareness of how ADHD affects the relationship
 - Misinterpretation of symptoms as character flaws
 - Lack of accommodations and communication
+
+---
+
+## References
+
+1. Wymbs, B. T., Pelham, W. E., Molina, B. S., Gnagy, E. M., Wilson, T. K., & Greenhouse, J. B. (2008). Rate and predictors of divorce among parents of youth with ADHD. *Journal of Consulting and Clinical Psychology, 76*(5), 735-744. [doi:10.1007/s10802-007-9177-y](https://doi.org/10.1007/s10802-007-9177-y)
+
+2. Barkley, R. A. ADHD Fact Sheets. [russellbarkley.org](https://www.russellbarkley.org/factsheets.html)
 
 ---
 

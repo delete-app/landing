@@ -34,7 +34,7 @@ The inner critic isn't telling you the truth. It's telling you what it learned l
 
 ## The Research
 
-Studies on self-esteem and relationship quality ([Murray et al., 2000](https://doi.org/10.1037/0022-3514.79.6.995)) consistently show:
+Studies on self-esteem and relationship quality consistently show:<sup>[[1]](https://doi.org/10.1037/0022-3514.79.6.995)</sup>
 
 - People with low self-worth stay in unsatisfying relationships longer
 - They're more likely to interpret neutral partner behavior as rejection
@@ -101,6 +101,12 @@ You've finished **Know Yourself First**. You now understand:
 5. Your relationship with yourself
 
 This is the foundation. Everything else builds on this.
+
+---
+
+## References
+
+1. Murray, S. L., Holmes, J. G., & Griffin, D. W. (2000). Self-esteem and the quest for felt security: How perceived regard regulates attachment processes. *Journal of Personality and Social Psychology, 78*(3), 478-498. [doi:10.1037/0022-3514.79.6.995](https://doi.org/10.1037/0022-3514.79.6.995)
 
 ---
 
