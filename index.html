@@ -47,17 +47,24 @@
             <div class="c">
                 <h1>Dating apps profit when you stay single. We don't.</h1>
                 <p class="sub">A dating app designed to be deleted.</p>
-                <form id="f" action="https://tally.so/r/rjD9ZL" method="GET">
+                <form id="f">
                     <input type="email" name="email" placeholder="Enter your email" required autocomplete="email">
                     <select name="city" required>
                         <option value="" disabled selected>Where are you?</option>
-                        <option value="hyderabad">Hyderabad</option>
-                        <option value="other">Somewhere else</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Somewhere else">Somewhere else</option>
                     </select>
                     <button type="submit">Join the waitlist</button>
                 </form>
                 <p class="note">Launching 2026</p>
-                <p class="ok" id="ok">You're in. We'll be in touch.</p>
+    <script>
+        document.getElementById('f').onsubmit=e=>{
+            e.preventDefault();
+            const email=encodeURIComponent(document.querySelector('[name=email]').value);
+            const city=encodeURIComponent(document.querySelector('[name=city]').value);
+            window.location.href='https://tally.so/r/rjD9ZL?prefill_email='+email+'&prefill_city='+city;
+        }
+    </script>
             </div>
         </section>
         <section class="pts">
