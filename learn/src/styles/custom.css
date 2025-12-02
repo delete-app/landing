@@ -1,0 +1,102 @@
+/* Delete Learn - Custom Theme
+   Matches landing page: dark mode, amber accent, system fonts */
+
+:root {
+	/* Colors matching landing page */
+	--sl-color-accent-low: #2a1a0a;
+	--sl-color-accent: #e67e22;
+	--sl-color-accent-high: #f39c12;
+
+	/* Dark background matching landing page #0a0a0a */
+	--sl-color-black: #0a0a0a;
+	--sl-color-gray-1: #fafafa;
+	--sl-color-gray-2: #c9c9c9;
+	--sl-color-gray-3: #888888;
+	--sl-color-gray-4: #555555;
+	--sl-color-gray-5: #333333;
+	--sl-color-gray-6: #1a1a1a;
+	--sl-color-gray-7: #141414;
+	--sl-color-white: #0a0a0a;
+
+	/* System fonts like landing page */
+	--sl-font: system-ui, -apple-system, sans-serif;
+	--sl-font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+
+	/* Typography */
+	--sl-text-h1: clamp(1.75rem, 5vw, 2.5rem);
+	--sl-text-h2: clamp(1.4rem, 3vw, 1.75rem);
+}
+
+/* Force dark mode */
+:root,
+[data-theme='light'] {
+	--sl-color-bg: #0a0a0a;
+	--sl-color-bg-nav: #0a0a0a;
+	--sl-color-bg-sidebar: #0a0a0a;
+	--sl-color-hairline-shade: #1a1a1a;
+	--sl-color-hairline-light: #222222;
+}
+
+/* Link styling */
+a {
+	color: var(--sl-color-accent);
+}
+
+a:hover {
+	color: var(--sl-color-accent-high);
+}
+
+/* Content area */
+.content-panel {
+	border-color: #1a1a1a;
+}
+
+/* Sidebar styling */
+.sidebar-content {
+	border-color: #1a1a1a;
+}
+
+/* Header styling */
+header.header {
+	border-bottom-color: #1a1a1a;
+}
+
+/* Better reading experience */
+.sl-markdown-content {
+	line-height: 1.7;
+}
+
+.sl-markdown-content p {
+	margin-bottom: 1.25rem;
+}
+
+/* Blockquotes for hooks */
+.sl-markdown-content blockquote {
+	border-left: 3px solid var(--sl-color-accent);
+	background: rgba(230, 126, 34, 0.05);
+	padding: 1rem 1.25rem;
+	margin: 1.5rem 0;
+	font-style: italic;
+}
+
+/* Code blocks */
+.sl-markdown-content pre {
+	background: #141414;
+	border: 1px solid #222;
+}
+
+/* Tables */
+.sl-markdown-content table {
+	border-color: #222;
+}
+
+.sl-markdown-content th {
+	background: #141414;
+}
+
+/* Mobile improvements */
+@media (max-width: 50rem) {
+	.sl-markdown-content {
+		font-size: 1rem;
+	}
+}
