@@ -1,0 +1,32 @@
+{
+  "name": "delete-landing",
+  "version": "1.0.0",
+  "description": "Delete - A dating app designed to be deleted",
+  "private": true,
+  "scripts": {
+    "serve": "npx serve .",
+    "lint": "npx htmlhint index.html",
+    "test": "npm run lint",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delete-app/landing.git"
+  },
+  "author": "Delete App <vyshnav@trydelete.app>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/delete-app/landing/issues"
+  },
+  "homepage": "https://trydelete.app",
+  "lint-staged": {
+    "*.html": [
+      "htmlhint"
+    ]
+  },
+  "devDependencies": {
+    "htmlhint": "^1.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  }
+}
