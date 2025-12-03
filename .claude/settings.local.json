@@ -5,7 +5,8 @@
       "mcp__tally__configure_blocks",
       "mcp__tally__save_form",
       "mcp__playwright__browser_handle_dialog",
-      "mcp__playwright__browser_snapshot"
+      "mcp__playwright__browser_snapshot",
+      "Bash(pnpm --filter @delete/my typecheck:*)"
     ],
     "deny": [],
     "ask": []

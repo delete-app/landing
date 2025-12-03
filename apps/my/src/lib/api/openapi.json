@@ -1,6 +1,9 @@
 {
   "openapi": "3.1.0",
-  "info": { "title": "Delete API", "version": "0.1.0" },
+  "info": {
+    "title": "Delete API",
+    "version": "0.1.0"
+  },
   "paths": {
     "/v1/health": {
       "get": {
@@ -11,7 +14,11 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": { "schema": { "$ref": "#/components/schemas/HealthResponse" } }
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
             }
           }
         }
@@ -24,7 +31,11 @@
         "operationId": "signup_v1_auth_signup_post",
         "requestBody": {
           "content": {
-            "application/json": { "schema": { "$ref": "#/components/schemas/UserCreate" } }
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreate"
+              }
+            }
           },
           "required": true
         },
@@ -32,14 +43,20 @@
           "201": {
             "description": "Successful Response",
             "content": {
-              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -53,7 +70,11 @@
         "operationId": "login_v1_auth_login_post",
         "requestBody": {
           "content": {
-            "application/json": { "schema": { "$ref": "#/components/schemas/LoginRequest" } }
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
           },
           "required": true
         },
@@ -61,14 +82,20 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": { "schema": { "$ref": "#/components/schemas/Token" } }
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Token"
+                }
+              }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -86,7 +113,14 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
               "title": "Refresh Token"
             }
           }
@@ -95,7 +129,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "anyOf": [{ "$ref": "#/components/schemas/TokenRefresh" }, { "type": "null" }],
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/TokenRefresh"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
                 "title": "Token Data"
               }
             }
@@ -105,14 +146,20 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": { "schema": { "$ref": "#/components/schemas/Token" } }
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Token"
+                }
+              }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -131,7 +178,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": { "type": "string" },
+                  "additionalProperties": {
+                    "type": "string"
+                  },
                   "type": "object",
                   "title": "Response Logout V1 Auth Logout Post"
                 }
@@ -153,7 +202,14 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
               "title": "Authorization"
             }
           },
@@ -162,7 +218,14 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
               "title": "Access Token"
             }
           }
@@ -171,14 +234,20 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -195,7 +264,14 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
               "title": "Authorization"
             }
           },
@@ -204,7 +280,14 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
               "title": "Access Token"
             }
           }
@@ -212,21 +295,901 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": { "schema": { "$ref": "#/components/schemas/ProfileUpdate" } }
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfileUpdate"
+              }
+            }
           }
         },
         "responses": {
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/photos": {
+      "get": {
+        "tags": ["profile"],
+        "summary": "List Photos",
+        "description": "Get all photos for the current user.",
+        "operationId": "list_photos_v1_profile_photos_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PhotoResponse"
+                  },
+                  "title": "Response List Photos V1 Profile Photos Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["profile"],
+        "summary": "Add Photo",
+        "description": "Add a new photo to the user's profile.",
+        "operationId": "add_photo_v1_profile_photos_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhotoCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhotoResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/photos/{photo_id}": {
+      "delete": {
+        "tags": ["profile"],
+        "summary": "Remove Photo",
+        "description": "Delete a photo from the user's profile.",
+        "operationId": "remove_photo_v1_profile_photos__photo_id__delete",
+        "parameters": [
+          {
+            "name": "photo_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Photo Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/photos/reorder": {
+      "put": {
+        "tags": ["profile"],
+        "summary": "Reorder User Photos",
+        "description": "Reorder photos by providing photo IDs in desired order.",
+        "operationId": "reorder_user_photos_v1_profile_photos_reorder_put",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhotoReorder"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PhotoResponse"
+                  },
+                  "title": "Response Reorder User Photos V1 Profile Photos Reorder Put"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/prompts/available": {
+      "get": {
+        "tags": ["profile"],
+        "summary": "List Available Prompts",
+        "description": "Get list of available prompt questions.",
+        "operationId": "list_available_prompts_v1_profile_prompts_available_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AvailablePromptsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/prompts": {
+      "get": {
+        "tags": ["profile"],
+        "summary": "List Prompts",
+        "description": "Get all prompts for the current user.",
+        "operationId": "list_prompts_v1_profile_prompts_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PromptResponse"
+                  },
+                  "title": "Response List Prompts V1 Profile Prompts Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["profile"],
+        "summary": "Add Prompt",
+        "description": "Add a new prompt answer to the user's profile.",
+        "operationId": "add_prompt_v1_profile_prompts_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PromptCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PromptResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/prompts/{prompt_id}": {
+      "patch": {
+        "tags": ["profile"],
+        "summary": "Edit Prompt",
+        "description": "Update an existing prompt answer.",
+        "operationId": "edit_prompt_v1_profile_prompts__prompt_id__patch",
+        "parameters": [
+          {
+            "name": "prompt_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Prompt Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PromptUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PromptResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": ["profile"],
+        "summary": "Remove Prompt",
+        "description": "Delete a prompt from the user's profile.",
+        "operationId": "remove_prompt_v1_profile_prompts__prompt_id__delete",
+        "parameters": [
+          {
+            "name": "prompt_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Prompt Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/quiz": {
+      "post": {
+        "tags": ["profile"],
+        "summary": "Submit Quiz Answers",
+        "description": "Submit quiz answers and receive generated badges.",
+        "operationId": "submit_quiz_answers_v1_profile_quiz_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuizSubmit"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BadgeResponse"
+                  },
+                  "title": "Response Submit Quiz Answers V1 Profile Quiz Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": ["profile"],
+        "summary": "Get Quiz Responses",
+        "description": "Get the current user's quiz responses.",
+        "operationId": "get_quiz_responses_v1_profile_quiz_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/QuizResponseOut"
+                  },
+                  "title": "Response Get Quiz Responses V1 Profile Quiz Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/badges": {
+      "get": {
+        "tags": ["profile"],
+        "summary": "List Badges",
+        "description": "Get all badges for the current user.",
+        "operationId": "list_badges_v1_profile_badges_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BadgeResponse"
+                  },
+                  "title": "Response List Badges V1 Profile Badges Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profile/completion": {
+      "get": {
+        "tags": ["profile"],
+        "summary": "Get Profile Completion",
+        "description": "Get profile completion status and percentage.",
+        "operationId": "get_profile_completion_v1_profile_completion_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProfileCompletion"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -236,10 +1199,55 @@
   },
   "components": {
     "schemas": {
+      "AvailablePromptsResponse": {
+        "properties": {
+          "prompts": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Prompts"
+          }
+        },
+        "type": "object",
+        "required": ["prompts"],
+        "title": "AvailablePromptsResponse"
+      },
+      "BadgeResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "badge_type": {
+            "type": "string",
+            "title": "Badge Type"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": ["id", "badge_type", "label", "description", "created_at"],
+        "title": "BadgeResponse"
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
-            "items": { "$ref": "#/components/schemas/ValidationError" },
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
             "type": "array",
             "title": "Detail"
           }
@@ -249,8 +1257,14 @@
       },
       "HealthResponse": {
         "properties": {
-          "status": { "type": "string", "title": "Status" },
-          "version": { "type": "string", "title": "Version" }
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          }
         },
         "type": "object",
         "required": ["status", "version"],
@@ -258,49 +1272,218 @@
       },
       "LoginRequest": {
         "properties": {
-          "email": { "type": "string", "format": "email", "title": "Email" },
-          "password": { "type": "string", "title": "Password" }
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
+          "password": {
+            "type": "string",
+            "title": "Password"
+          }
         },
         "type": "object",
         "required": ["email", "password"],
         "title": "LoginRequest"
       },
+      "PhotoCreate": {
+        "properties": {
+          "url": {
+            "type": "string",
+            "maxLength": 500,
+            "title": "Url"
+          },
+          "order": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 0.0,
+            "title": "Order",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": ["url"],
+        "title": "PhotoCreate"
+      },
+      "PhotoReorder": {
+        "properties": {
+          "photo_ids": {
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "type": "array",
+            "maxItems": 6,
+            "minItems": 1,
+            "title": "Photo Ids"
+          }
+        },
+        "type": "object",
+        "required": ["photo_ids"],
+        "title": "PhotoReorder"
+      },
+      "PhotoResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "order": {
+            "type": "integer",
+            "title": "Order"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": ["id", "url", "order", "created_at"],
+        "title": "PhotoResponse"
+      },
+      "ProfileCompletion": {
+        "properties": {
+          "percentage": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Percentage"
+          },
+          "has_photos": {
+            "type": "boolean",
+            "title": "Has Photos"
+          },
+          "photo_count": {
+            "type": "integer",
+            "title": "Photo Count"
+          },
+          "has_prompts": {
+            "type": "boolean",
+            "title": "Has Prompts"
+          },
+          "prompt_count": {
+            "type": "integer",
+            "title": "Prompt Count"
+          },
+          "has_quiz": {
+            "type": "boolean",
+            "title": "Has Quiz"
+          },
+          "has_basic_info": {
+            "type": "boolean",
+            "title": "Has Basic Info"
+          },
+          "missing": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing"
+          }
+        },
+        "type": "object",
+        "required": [
+          "percentage",
+          "has_photos",
+          "photo_count",
+          "has_prompts",
+          "prompt_count",
+          "has_quiz",
+          "has_basic_info",
+          "missing"
+        ],
+        "title": "ProfileCompletion"
+      },
       "ProfileUpdate": {
         "properties": {
           "name": {
-            "anyOf": [{ "type": "string", "maxLength": 100 }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Name"
           },
           "birth_date": {
-            "anyOf": [{ "type": "string", "format": "date" }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Birth Date"
           },
           "gender": {
             "anyOf": [
-              { "type": "string", "pattern": "^(male|female|non-binary|other)$" },
-              { "type": "null" }
+              {
+                "type": "string",
+                "pattern": "^(male|female|non-binary|other)$"
+              },
+              {
+                "type": "null"
+              }
             ],
             "title": "Gender"
           },
           "bio": {
-            "anyOf": [{ "type": "string", "maxLength": 500 }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 500
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Bio"
           },
           "location": {
-            "anyOf": [{ "type": "string", "maxLength": 100 }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Location"
           },
           "looking_for": {
             "anyOf": [
-              { "type": "string", "pattern": "^(male|female|everyone)$" },
-              { "type": "null" }
+              {
+                "type": "string",
+                "pattern": "^(male|female|everyone)$"
+              },
+              {
+                "type": "null"
+              }
             ],
             "title": "Looking For"
           },
           "height_cm": {
             "anyOf": [
-              { "type": "integer", "maximum": 250.0, "minimum": 100.0 },
-              { "type": "null" }
+              {
+                "type": "integer",
+                "maximum": 250.0,
+                "minimum": 100.0
+              },
+              {
+                "type": "null"
+              }
             ],
             "title": "Height Cm"
           }
@@ -308,27 +1491,168 @@
         "type": "object",
         "title": "ProfileUpdate"
       },
+      "PromptCreate": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "maxLength": 200,
+            "title": "Question"
+          },
+          "answer": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Answer"
+          }
+        },
+        "type": "object",
+        "required": ["question", "answer"],
+        "title": "PromptCreate"
+      },
+      "PromptResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          },
+          "order": {
+            "type": "integer",
+            "title": "Order"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": ["id", "question", "answer", "order", "created_at"],
+        "title": "PromptResponse"
+      },
+      "PromptUpdate": {
+        "properties": {
+          "answer": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Answer"
+          }
+        },
+        "type": "object",
+        "required": ["answer"],
+        "title": "PromptUpdate"
+      },
+      "QuizAnswer": {
+        "properties": {
+          "question_key": {
+            "type": "string",
+            "maxLength": 50,
+            "title": "Question Key"
+          },
+          "answer_value": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Answer Value"
+          }
+        },
+        "type": "object",
+        "required": ["question_key", "answer_value"],
+        "title": "QuizAnswer"
+      },
+      "QuizResponseOut": {
+        "properties": {
+          "question_key": {
+            "type": "string",
+            "title": "Question Key"
+          },
+          "answer_value": {
+            "type": "integer",
+            "title": "Answer Value"
+          }
+        },
+        "type": "object",
+        "required": ["question_key", "answer_value"],
+        "title": "QuizResponseOut"
+      },
+      "QuizSubmit": {
+        "properties": {
+          "answers": {
+            "items": {
+              "$ref": "#/components/schemas/QuizAnswer"
+            },
+            "type": "array",
+            "maxItems": 6,
+            "minItems": 6,
+            "title": "Answers"
+          }
+        },
+        "type": "object",
+        "required": ["answers"],
+        "title": "QuizSubmit"
+      },
       "Token": {
         "properties": {
-          "access_token": { "type": "string", "title": "Access Token" },
-          "refresh_token": { "type": "string", "title": "Refresh Token" },
-          "token_type": { "type": "string", "title": "Token Type", "default": "bearer" }
+          "access_token": {
+            "type": "string",
+            "title": "Access Token"
+          },
+          "refresh_token": {
+            "type": "string",
+            "title": "Refresh Token"
+          },
+          "token_type": {
+            "type": "string",
+            "title": "Token Type",
+            "default": "bearer"
+          }
         },
         "type": "object",
         "required": ["access_token", "refresh_token"],
         "title": "Token"
       },
       "TokenRefresh": {
-        "properties": { "refresh_token": { "type": "string", "title": "Refresh Token" } },
+        "properties": {
+          "refresh_token": {
+            "type": "string",
+            "title": "Refresh Token"
+          }
+        },
         "type": "object",
         "required": ["refresh_token"],
         "title": "TokenRefresh"
       },
       "UserCreate": {
         "properties": {
-          "email": { "type": "string", "format": "email", "title": "Email" },
-          "password": { "type": "string", "title": "Password" },
-          "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" }
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
+          "password": {
+            "type": "string",
+            "title": "Password"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          }
         },
         "type": "object",
         "required": ["email", "password"],
@@ -336,27 +1660,107 @@
       },
       "UserResponse": {
         "properties": {
-          "id": { "type": "string", "format": "uuid", "title": "Id" },
-          "email": { "type": "string", "format": "email", "title": "Email" },
-          "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" },
-          "is_active": { "type": "boolean", "title": "Is Active" },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "is_active": {
+            "type": "boolean",
+            "title": "Is Active"
+          },
           "birth_date": {
-            "anyOf": [{ "type": "string", "format": "date" }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Birth Date"
           },
-          "gender": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Gender" },
-          "bio": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Bio" },
-          "location": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Location" },
+          "gender": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gender"
+          },
+          "bio": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bio"
+          },
+          "location": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Location"
+          },
           "looking_for": {
-            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Looking For"
           },
           "height_cm": {
-            "anyOf": [{ "type": "integer" }, { "type": "null" }],
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Height Cm"
           },
-          "profile_complete": { "type": "boolean", "title": "Profile Complete" },
-          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
+          "profile_complete": {
+            "type": "boolean",
+            "title": "Profile Complete"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
         },
         "type": "object",
         "required": [
@@ -378,12 +1782,27 @@
       "ValidationError": {
         "properties": {
           "loc": {
-            "items": { "anyOf": [{ "type": "string" }, { "type": "integer" }] },
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
             "type": "array",
             "title": "Location"
           },
-          "msg": { "type": "string", "title": "Message" },
-          "type": { "type": "string", "title": "Error Type" }
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
         },
         "type": "object",
         "required": ["loc", "msg", "type"],
