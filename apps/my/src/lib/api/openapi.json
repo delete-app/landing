@@ -183,6 +183,54 @@
             }
           }
         }
+      },
+      "patch": {
+        "tags": ["users"],
+        "summary": "Update Profile",
+        "description": "Update the current user's profile.",
+        "operationId": "update_profile_v1_users_me_patch",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/ProfileUpdate" } }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -217,6 +265,49 @@
         "required": ["email", "password"],
         "title": "LoginRequest"
       },
+      "ProfileUpdate": {
+        "properties": {
+          "name": {
+            "anyOf": [{ "type": "string", "maxLength": 100 }, { "type": "null" }],
+            "title": "Name"
+          },
+          "birth_date": {
+            "anyOf": [{ "type": "string", "format": "date" }, { "type": "null" }],
+            "title": "Birth Date"
+          },
+          "gender": {
+            "anyOf": [
+              { "type": "string", "pattern": "^(male|female|non-binary|other)$" },
+              { "type": "null" }
+            ],
+            "title": "Gender"
+          },
+          "bio": {
+            "anyOf": [{ "type": "string", "maxLength": 500 }, { "type": "null" }],
+            "title": "Bio"
+          },
+          "location": {
+            "anyOf": [{ "type": "string", "maxLength": 100 }, { "type": "null" }],
+            "title": "Location"
+          },
+          "looking_for": {
+            "anyOf": [
+              { "type": "string", "pattern": "^(male|female|everyone)$" },
+              { "type": "null" }
+            ],
+            "title": "Looking For"
+          },
+          "height_cm": {
+            "anyOf": [
+              { "type": "integer", "maximum": 250.0, "minimum": 100.0 },
+              { "type": "null" }
+            ],
+            "title": "Height Cm"
+          }
+        },
+        "type": "object",
+        "title": "ProfileUpdate"
+      },
       "Token": {
         "properties": {
           "access_token": { "type": "string", "title": "Access Token" },
@@ -249,10 +340,39 @@
           "email": { "type": "string", "format": "email", "title": "Email" },
           "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" },
           "is_active": { "type": "boolean", "title": "Is Active" },
+          "birth_date": {
+            "anyOf": [{ "type": "string", "format": "date" }, { "type": "null" }],
+            "title": "Birth Date"
+          },
+          "gender": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Gender" },
+          "bio": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Bio" },
+          "location": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Location" },
+          "looking_for": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Looking For"
+          },
+          "height_cm": {
+            "anyOf": [{ "type": "integer" }, { "type": "null" }],
+            "title": "Height Cm"
+          },
+          "profile_complete": { "type": "boolean", "title": "Profile Complete" },
           "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
         },
         "type": "object",
-        "required": ["id", "email", "name", "is_active", "created_at"],
+        "required": [
+          "id",
+          "email",
+          "name",
+          "is_active",
+          "birth_date",
+          "gender",
+          "bio",
+          "location",
+          "looking_for",
+          "height_cm",
+          "profile_complete",
+          "created_at"
+        ],
         "title": "UserResponse"
       },
       "ValidationError": {

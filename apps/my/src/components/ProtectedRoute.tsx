@@ -3,10 +3,11 @@ import { useAuth } from '../lib/auth/context'
 
 interface ProtectedRouteProps {
   children: React.ReactNode
+  requireProfileComplete?: boolean
 }
 
-export function ProtectedRoute({ children }: ProtectedRouteProps) {
-  const { isAuthenticated, isLoading } = useAuth()
+export function ProtectedRoute({ children, requireProfileComplete = true }: ProtectedRouteProps) {
+  const { isAuthenticated, isLoading, user } = useAuth()
   const location = useLocation()
 
   if (isLoading) {
@@ -19,6 +20,16 @@ export function ProtectedRoute({ children }: ProtectedRouteProps) {
 
   if (!isAuthenticated) {
     return <Navigate to="/login" state={{ from: location }} replace />
+  }
+
+  // Redirect to onboarding if profile is incomplete (unless we're already there)
+  if (
+    requireProfileComplete &&
+    user &&
+    !user.profile_complete &&
+    location.pathname !== '/onboarding'
+  ) {
+    return <Navigate to="/onboarding" replace />
   }
 
   return <>{children}</>

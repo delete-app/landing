@@ -109,7 +109,11 @@ export interface paths {
         delete?: never;
         options?: never;
         head?: never;
-        patch?: never;
+        /**
+         * Update Profile
+         * @description Update the current user's profile.
+         */
+        patch: operations["update_profile_v1_users_me_patch"];
         trace?: never;
     };
 }
@@ -137,6 +141,23 @@ export interface components {
             email: string;
             /** Password */
             password: string;
+        };
+        /** ProfileUpdate */
+        ProfileUpdate: {
+            /** Name */
+            name?: string | null;
+            /** Birth Date */
+            birth_date?: string | null;
+            /** Gender */
+            gender?: string | null;
+            /** Bio */
+            bio?: string | null;
+            /** Location */
+            location?: string | null;
+            /** Looking For */
+            looking_for?: string | null;
+            /** Height Cm */
+            height_cm?: number | null;
         };
         /** Token */
         Token: {
@@ -183,6 +204,20 @@ export interface components {
             name: string | null;
             /** Is Active */
             is_active: boolean;
+            /** Birth Date */
+            birth_date: string | null;
+            /** Gender */
+            gender: string | null;
+            /** Bio */
+            bio: string | null;
+            /** Location */
+            location: string | null;
+            /** Looking For */
+            looking_for: string | null;
+            /** Height Cm */
+            height_cm: number | null;
+            /** Profile Complete */
+            profile_complete: boolean;
             /**
              * Created At
              * Format: date-time
@@ -362,6 +397,43 @@ export interface operations {
             };
         };
         requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["UserResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    update_profile_v1_users_me_patch: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ProfileUpdate"];
+            };
+        };
         responses: {
             /** @description Successful Response */
             200: {

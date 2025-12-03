@@ -1,3 +1,3 @@
-from app.schemas.user import LoginRequest, Token, TokenRefresh, UserCreate, UserResponse
+from app.schemas.user import LoginRequest, ProfileUpdate, Token, TokenRefresh, UserCreate, UserResponse
 
-__all__ = ["UserCreate", "UserResponse", "Token", "TokenRefresh", "LoginRequest"]
+__all__ = ["UserCreate", "UserResponse", "ProfileUpdate", "Token", "TokenRefresh", "LoginRequest"]
