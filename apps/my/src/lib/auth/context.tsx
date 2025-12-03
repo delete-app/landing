@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react'
-import { fetchClient } from '../api/client'
+import { fetchClient, setLogoutHandler } from '../api/client'
 import type { components } from '../api/schema'
 
 type User = components['schemas']['UserResponse']
@@ -61,6 +61,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       isAuthenticated: false,
       isLoading: false,
       user: null,
+    })
+  }, [])
+
+  // Register logout handler for API client middleware (401 responses)
+  useEffect(() => {
+    setLogoutHandler(() => {
+      setState({
+        isAuthenticated: false,
+        isLoading: false,
+        user: null,
+      })
     })
   }, [])
 
