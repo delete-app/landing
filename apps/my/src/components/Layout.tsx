@@ -16,26 +16,39 @@ export function Layout({ children }: LayoutProps) {
   }
 
   return (
-    <div className="app-layout">
-      <header className="app-header">
-        <Link to="/" className="logo">
+    <div className="min-h-screen flex flex-col bg-bg text-text">
+      <header className="flex items-center justify-between px-6 py-4 border-b border-border-light">
+        <Link to="/" className="text-3xl font-extralight text-text no-underline">
           ×
         </Link>
         {isAuthenticated && (
-          <nav className="nav">
-            <Link to="/dashboard" className={location.pathname === '/dashboard' ? 'active' : ''}>
+          <nav className="flex items-center gap-6">
+            <Link
+              to="/dashboard"
+              className={`text-sm no-underline transition-colors ${
+                location.pathname === '/dashboard' ? 'text-text' : 'text-text-dim hover:text-text'
+              }`}
+            >
               Home
             </Link>
-            <Link to="/settings" className={location.pathname === '/settings' ? 'active' : ''}>
+            <Link
+              to="/settings"
+              className={`text-sm no-underline transition-colors ${
+                location.pathname === '/settings' ? 'text-text' : 'text-text-dim hover:text-text'
+              }`}
+            >
               Settings
             </Link>
-            <button onClick={logout} className="nav-logout">
+            <button
+              onClick={logout}
+              className="bg-transparent border-none text-text-dim text-sm cursor-pointer p-0 transition-colors hover:text-text"
+            >
               Sign out
             </button>
           </nav>
         )}
       </header>
-      <main className="app-main">{children}</main>
+      <main className="flex-1 p-8 max-w-3xl mx-auto w-full">{children}</main>
     </div>
   )
 }

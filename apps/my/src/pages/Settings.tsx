@@ -7,37 +7,41 @@ export default function Settings() {
 
   if (isLoading) {
     return (
-      <div className="settings">
-        <div className="settings-loading">Loading...</div>
+      <div className="max-w-xl">
+        <div className="text-text-dim">Loading...</div>
       </div>
     )
   }
 
   if (error) {
     return (
-      <div className="settings">
-        <div className="error">Failed to load profile</div>
+      <div className="max-w-xl">
+        <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg">
+          Failed to load profile
+        </div>
       </div>
     )
   }
 
   return (
-    <div className="settings">
-      <h2>Settings</h2>
+    <div className="max-w-xl">
+      <h2 className="text-2xl font-medium mb-8">Settings</h2>
 
-      <section className="settings-section">
-        <h3>Account</h3>
-        <div className="settings-item">
-          <label>Email</label>
-          <span>{user?.email}</span>
+      <section className="mb-10">
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-text-dim mb-4">
+          Account
+        </h3>
+        <div className="flex justify-between items-center py-3 border-b border-border-light">
+          <label className="text-text-muted text-sm">Email</label>
+          <span className="text-text text-sm">{user?.email}</span>
         </div>
-        <div className="settings-item">
-          <label>Name</label>
-          <span>{user?.name || 'Not set'}</span>
+        <div className="flex justify-between items-center py-3 border-b border-border-light">
+          <label className="text-text-muted text-sm">Name</label>
+          <span className="text-text text-sm">{user?.name || 'Not set'}</span>
         </div>
-        <div className="settings-item">
-          <label>Member since</label>
-          <span>
+        <div className="flex justify-between items-center py-3 border-b border-border-light">
+          <label className="text-text-muted text-sm">Member since</label>
+          <span className="text-text text-sm">
             {user?.created_at
               ? new Date(user.created_at).toLocaleDateString('en-US', {
                   year: 'numeric',
@@ -49,9 +53,14 @@ export default function Settings() {
         </div>
       </section>
 
-      <section className="settings-section">
-        <h3>Danger Zone</h3>
-        <button className="btn-danger" onClick={logout}>
+      <section className="mb-10">
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-text-dim mb-4">
+          Danger Zone
+        </h3>
+        <button
+          className="py-3 px-6 text-sm border border-danger rounded-lg bg-transparent text-danger cursor-pointer transition-colors hover:bg-danger hover:text-bg"
+          onClick={logout}
+        >
           Sign out
         </button>
       </section>
