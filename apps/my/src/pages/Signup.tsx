@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { $api } from '../lib/api/client'
+import { Button, Input } from '../components/ui'
 
 export default function Signup() {
   const navigate = useNavigate()
@@ -41,41 +42,37 @@ export default function Signup() {
             </div>
           )}
 
-          <input
+          <Input
             type="text"
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="py-3.5 px-4 text-base border border-border rounded-lg bg-bg-secondary text-text outline-none transition-colors focus:border-text-dim placeholder:text-text-dimmer"
+            autoComplete="name"
           />
 
-          <input
+          <Input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="py-3.5 px-4 text-base border border-border rounded-lg bg-bg-secondary text-text outline-none transition-colors focus:border-text-dim placeholder:text-text-dimmer"
+            autoComplete="email"
           />
 
-          <input
+          <Input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
             minLength={8}
-            className="py-3.5 px-4 text-base border border-border rounded-lg bg-bg-secondary text-text outline-none transition-colors focus:border-text-dim placeholder:text-text-dimmer"
+            autoComplete="new-password"
           />
 
-          <button
-            type="submit"
-            disabled={signupMutation.isPending}
-            className="py-3.5 px-4 text-base font-medium border-none rounded-lg bg-text text-bg cursor-pointer transition-opacity hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
+          <Button type="submit" disabled={signupMutation.isPending} className="w-full">
             {signupMutation.isPending ? 'Creating account...' : 'Sign up'}
-          </button>
+          </Button>
         </form>
 
         <p className="mt-6 text-sm text-text-dim">
