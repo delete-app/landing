@@ -1,5 +1,14 @@
 import { $api } from '../lib/api/client'
 import { useAuth } from '../lib/auth/context'
+import {
+  Button,
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+  DialogCloseTrigger,
+} from '../components/ui'
 
 export default function Settings() {
   const { logout } = useAuth()
@@ -57,12 +66,29 @@ export default function Settings() {
         <h3 className="text-xs font-semibold uppercase tracking-wide text-text-dim mb-4">
           Danger Zone
         </h3>
-        <button
-          className="py-3 px-6 text-sm border border-danger rounded-lg bg-transparent text-danger cursor-pointer transition-colors hover:bg-danger hover:text-bg"
-          onClick={logout}
-        >
-          Sign out
-        </button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="danger" size="sm">
+              Sign out
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogTitle>Sign out?</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to sign out of your account?
+            </DialogDescription>
+            <div className="flex gap-3 justify-end">
+              <DialogCloseTrigger asChild>
+                <Button variant="secondary" size="sm">
+                  Cancel
+                </Button>
+              </DialogCloseTrigger>
+              <Button variant="danger" size="sm" onClick={logout}>
+                Sign out
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
       </section>
     </div>
   )
