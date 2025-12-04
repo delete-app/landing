@@ -1,5 +1,5 @@
 ---
-title: "Limerence vs Love"
+title: "2.1 Limerence vs Love"
 description: "That obsessive 'can't stop thinking about them' feeling isn't love — it's limerence. Understanding the difference changes everything."
 sidebar:
   order: 1
@@ -215,6 +215,6 @@ The goal isn't to never feel limerence. It's to recognize it for what it is: a t
 
 ---
 
-*Module 2 continues with: The Chemistry of Love (coming soon)*
+*Next: [The Chemistry of Love](/learn/module-2-attraction/2-the-chemistry-of-love/) — dopamine, oxytocin, and why love feels like addiction.*
 
-*Or skip to: [ADHD in Relationships](/learn/module-4-neurodivergent/adhd-in-relationships/) — for when your brain works differently.*
+*Or skip to: [ADHD in Relationships](/learn/module-4-neurodivergent/1-adhd-in-relationships/) — for when your brain works differently.*
