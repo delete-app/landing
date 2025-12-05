@@ -229,11 +229,11 @@ You didn't choose your early experiences. You can choose what you do with them n
 
 4. Leary, M. R. (2005). Sociometer theory and the pursuit of relational value: Getting to the root of self-esteem. *European Review of Social Psychology, 16*(1), 75-111. <a href="https://doi.org/10.1080/10463280540000007" target="_blank" rel="noopener noreferrer">doi:10.1080/10463280540000007</a>
 
-5. Leary, M. R., Tambor, E. S., Terdal, S. K., & Downs, D. L. (1995). Self-esteem as an interpersonal monitor: The sociometer hypothesis. *Journal of Personality and Social Psychology, 68*(3), 518-530.
+5. Leary, M. R., Tambor, E. S., Terdal, S. K., & Downs, D. L. (1995). Self-esteem as an interpersonal monitor: The sociometer hypothesis. *Journal of Personality and Social Psychology, 68*(3), 518-530. <a href="https://doi.org/10.1037/0022-3514.68.3.518" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.68.3.518</a>
 
 6. Murray, S. L., Rose, P., Bellavia, G., Holmes, J. G., & Kusche, A. (2002). When rejection stings: How self-esteem constrains relationship-enhancement processes. *Journal of Personality and Social Psychology, 83*(3), 556-573. <a href="https://doi.org/10.1037/0022-3514.83.3.556" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.83.3.556</a>
 
-7. Murray, S. L., Holmes, J. G., MacDonald, G., & Ellsworth, P. C. (1998). Through the looking glass darkly? When self-doubts turn into relationship insecurities. *Journal of Personality and Social Psychology, 75*(6), 1459-1480.
+7. Murray, S. L., Holmes, J. G., MacDonald, G., & Ellsworth, P. C. (1998). Through the looking glass darkly? When self-doubts turn into relationship insecurities. *Journal of Personality and Social Psychology, 75*(6), 1459-1480. <a href="https://doi.org/10.1037/0022-3514.75.6.1459" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.75.6.1459</a>
 
 8. Gilbert, P., & Procter, S. (2006). Compassionate mind training for people with high shame and self-criticism: Overview and pilot study of a group therapy approach. *Clinical Psychology & Psychotherapy, 13*(6), 353-379. <a href="https://self-compassion.org/wp-content/uploads/publications/Gilbert.Procter.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
 
@@ -241,7 +241,7 @@ You didn't choose your early experiences. You can choose what you do with them n
 
 10. Neff, K. D., & Beretvas, S. N. (2013). The role of self-compassion in romantic relationships. *Self and Identity, 12*(1), 78-98. <a href="https://doi.org/10.1080/15298868.2011.639548" target="_blank" rel="noopener noreferrer">doi:10.1080/15298868.2011.639548</a>
 
-11. Yarnell, L. M., & Neff, K. D. (2013). Self-compassion, interpersonal conflict resolutions, and well-being. *Self and Identity, 12*(2), 146-159.
+11. Yarnell, L. M., & Neff, K. D. (2013). Self-compassion, interpersonal conflict resolutions, and well-being. *Self and Identity, 12*(2), 146-159. <a href="https://doi.org/10.1080/15298868.2011.649545" target="_blank" rel="noopener noreferrer">doi:10.1080/15298868.2011.649545</a>
 
 ---
 

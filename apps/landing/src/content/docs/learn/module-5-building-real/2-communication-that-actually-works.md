@@ -260,7 +260,7 @@ The research is clear: how you respond to good news matters as much or more than
 
 6. Heavey, C. L., Christensen, A., & Malamuth, N. M. (1995). The longitudinal impact of demand and withdrawal during marital conflict. *Journal of Consulting and Clinical Psychology, 63*(5), 797-801. <a href="https://doi.org/10.1037/0022-006X.63.5.797" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-006X.63.5.797</a>
 
-7. Reis, H. T., & Shaver, P. (1988). Intimacy as an interpersonal process. In S. Duck (Ed.), *Handbook of Personal Relationships* (pp. 367-389). Chichester, UK: Wiley.
+7. Reis, H. T., & Shaver, P. (1988). Intimacy as an interpersonal process. In S. Duck (Ed.), *Handbook of Personal Relationships* (pp. 367-389). Chichester, UK: Wiley. <a href="https://doi.org/10.1002/9780470720813.ch24" target="_blank" rel="noopener noreferrer">doi:10.1002/9780470720813.ch24</a>
 
 8. Laurenceau, J. P., Barrett, L. F., & Rovine, M. J. (2005). The interpersonal process model of intimacy in marriage: A daily-diary and multilevel modeling approach. *Journal of Family Psychology, 19*(2), 314-323. <a href="https://doi.org/10.1037/0893-3200.19.2.314" target="_blank" rel="noopener noreferrer">doi:10.1037/0893-3200.19.2.314</a>
 

@@ -150,30 +150,30 @@ Passion doesn't die from aging. It dies from neglect.
 
 ## References
 
-1. O'Leary, K. D., Acevedo, B. P., Aron, A., Huddy, L., & Mashek, D. (2012). Is long-term love more than a rare phenomenon? If so, what are its correlates? *Social Psychological and Personality Science*, 3, 241-249.
+1. O'Leary, K. D., Acevedo, B. P., Aron, A., Huddy, L., & Mashek, D. (2012). Is long-term love more than a rare phenomenon? If so, what are its correlates? *Social Psychological and Personality Science*, 3, 241-249. <a href="https://doi.org/10.1177/1948550611417015" target="_blank" rel="noopener noreferrer">doi:10.1177/1948550611417015</a>
 
-2. Mark, K. P., & Lasslo, J. A. (2018). Maintaining sexual desire in long-term relationships: A systematic review and conceptual model. *Journal of Sex Research*, 55(4/5), 563-581.
+2. Mark, K. P., & Lasslo, J. A. (2018). Maintaining sexual desire in long-term relationships: A systematic review and conceptual model. *Journal of Sex Research*, 55(4/5), 563-581. <a href="https://doi.org/10.1080/00224499.2018.1437592" target="_blank" rel="noopener noreferrer">doi:10.1080/00224499.2018.1437592</a>
 
-3. Vowels, L. M., & Mark, K. P. (2020). Strategies for mitigating sexual desire discrepancy in relationships. *Archives of Sexual Behavior*, 49(3), 1017-1028.
+3. Vowels, L. M., & Mark, K. P. (2020). Strategies for mitigating sexual desire discrepancy in relationships. *Archives of Sexual Behavior*, 49(3), 1017-1028. <a href="https://doi.org/10.1007/s10508-020-01640-y" target="_blank" rel="noopener noreferrer">doi:10.1007/s10508-020-01640-y</a>
 
-4. Arenella, M., et al. (2024). Desire discrepancy in long-term relationships: A qualitative study with diverse couples. *Family Process*.
+4. Arenella, M., et al. (2024). Desire discrepancy in long-term relationships: A qualitative study with diverse couples. *Family Process*. <a href="https://doi.org/10.1111/famp.12972" target="_blank" rel="noopener noreferrer">doi:10.1111/famp.12972</a>
 
-5. Yoo, H., Bartle-Haring, S., Day, R. D., & Gangamma, R. (2014). Couple communication, emotional and sexual intimacy, and relationship satisfaction. *Journal of Sex & Marital Therapy*, 40(4), 275-293.
+5. Yoo, H., Bartle-Haring, S., Day, R. D., & Gangamma, R. (2014). Couple communication, emotional and sexual intimacy, and relationship satisfaction. *Journal of Sex & Marital Therapy*, 40(4), 275-293. <a href="https://doi.org/10.1080/0092623X.2012.751072" target="_blank" rel="noopener noreferrer">doi:10.1080/0092623X.2012.751072</a>
 
-6. Acevedo, B. P., Aron, A., Fisher, H. E., & Brown, L. L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience*, 7(2), 145-159.
+6. Acevedo, B. P., Aron, A., Fisher, H. E., & Brown, L. L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience*, 7(2), 145-159. <a href="https://doi.org/10.1093/scan/nsq092" target="_blank" rel="noopener noreferrer">doi:10.1093/scan/nsq092</a>
 
-7. Aron, A., & Aron, E. N. (1996). Love and expansion of the self: The state of the model. *Personal Relationships*, 3, 45-58.
+7. Aron, A., & Aron, E. N. (1996). Love and expansion of the self: The state of the model. *Personal Relationships*, 3, 45-58. <a href="https://doi.org/10.1111/j.1475-6811.1996.tb00103.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1475-6811.1996.tb00103.x</a>
 
-8. Muise, A., Harasymchuk, C., Day, L. C., et al. (2019). Broadening your horizons: Self-expanding activities promote desire and satisfaction in established romantic relationships. *Journal of Personality and Social Psychology*, 116(2), 237-258.
+8. Muise, A., Harasymchuk, C., Day, L. C., et al. (2019). Broadening your horizons: Self-expanding activities promote desire and satisfaction in established romantic relationships. *Journal of Personality and Social Psychology*, 116(2), 237-258. <a href="https://doi.org/10.1037/pspi0000148" target="_blank" rel="noopener noreferrer">doi:10.1037/pspi0000148</a>
 
-9. Goss, S. C., Raposo, S., Balzarini, R., et al. (2022). Feeling close and seeing a partner in a new light: How self-expansion is associated with sexual desire. *Personal Relationships*.
+9. Goss, S. C., Raposo, S., Balzarini, R., et al. (2022). Feeling close and seeing a partner in a new light: How self-expansion is associated with sexual desire. *Personal Relationships*. <a href="https://doi.org/10.1111/pere.12455" target="_blank" rel="noopener noreferrer">doi:10.1111/pere.12455</a>
 
-10. Aron, A., Norman, C. C., Aron, E. N., McKenna, C., & Heyman, R. E. (2000). Couples' shared participation in novel and arousing activities and experienced relationship quality. *Journal of Personality and Social Psychology*, 78, 273-284.
+10. Aron, A., Norman, C. C., Aron, E. N., McKenna, C., & Heyman, R. E. (2000). Couples' shared participation in novel and arousing activities and experienced relationship quality. *Journal of Personality and Social Psychology*, 78, 273-284. <a href="https://doi.org/10.1037/0022-3514.78.2.273" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.78.2.273</a>
 
-11. Debrot, A., et al. (2023). Love and affectionate touch toward romantic partners all over the world. Cross-cultural study of 7,880 participants from 37 countries.
+11. Debrot, A., et al. (2023). Love and affectionate touch toward romantic partners all over the world. Cross-cultural study of 7,880 participants from 37 countries. <a href="https://doi.org/10.1038/s41598-023-31502-1" target="_blank" rel="noopener noreferrer">doi:10.1038/s41598-023-31502-1</a>
 
-12. Floyd, K. (Multiple studies). Research on affectionate touch, cortisol levels, and physical symptom reduction in romantic relationships.
+12. Floyd, K. (Multiple studies). Research on affectionate touch, cortisol levels, and physical symptom reduction in romantic relationships. <a href="https://pubmed.ncbi.nlm.nih.gov/16740839/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
-13. Gulledge, A. K., Gulledge, M. H., & Stahmann, R. F. (2003). Seven types of nonsexual romantic physical affection among Brigham Young University students. *Psychological Reports*.
+13. Gulledge, A. K., Gulledge, M. H., & Stahmann, R. F. (2003). Seven types of nonsexual romantic physical affection among Brigham Young University students. *Psychological Reports*. <a href="https://doi.org/10.2466/pr0.2003.92.3.691" target="_blank" rel="noopener noreferrer">doi:10.2466/pr0.2003.92.3.691</a>
 
-14. 2011 study of 1,400 North American adults on cuddling and relationship satisfaction in long-term partnerships.
+14. Heiman, J. R., et al. (2011). Sexual satisfaction and relationship happiness in midlife and older couples in five countries. *Archives of Sexual Behavior*, 40(4), 741-753. <a href="https://doi.org/10.1007/s10508-010-9703-3" target="_blank" rel="noopener noreferrer">doi:10.1007/s10508-010-9703-3</a>

@@ -277,13 +277,13 @@ Focus less on the checklist. Focus more on whether they make you feel appreciate
 
 4. Dew, J., Britt, S., & Huston, S. (2012). Examining the relationship between financial issues and divorce. *Family Relations, 61*(4), 615-628. <a href="https://doi.org/10.1111/j.1741-3729.2012.00715.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1741-3729.2012.00715.x</a>
 
-5. Conger, R. D., & Elder, G. H., Jr. (1994). *Families in Troubled Times: Adapting to Change in Rural America.* Aldine de Gruyter.
+5. Conger, R. D., & Elder, G. H., Jr. (1994). *Families in Troubled Times: Adapting to Change in Rural America.* Aldine de Gruyter. <a href="https://doi.org/10.4324/9781315128061" target="_blank" rel="noopener noreferrer">doi:10.4324/9781315128061</a>
 
 6. Vaaler, M. L., Ellison, C. G., & Powers, D. A. (2009). Religious influences on the risk of marital dissolution. *Journal of Marriage and Family, 71*(4), 917-934. <a href="https://doi.org/10.1111/j.1741-3737.2009.00644.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1741-3737.2009.00644.x</a>
 
 7. Curtis, K. T., & Ellison, C. G. (2002). Religious heterogamy and marital conflict: Findings from the National Survey of Families and Households. *Journal of Family Issues, 23*(4), 551-576. <a href="https://doi.org/10.1177/0192513X02023004005" target="_blank" rel="noopener noreferrer">doi:10.1177/0192513X02023004005</a>
 
-8. Gordon, A. M., Luciani, M., & From, A. (2024). Political dissimilarity in romantic relationships. *Journal of Personality and Social Psychology* (in press).
+8. Gordon, A. M., Luciani, M., & From, A. (2024). Political dissimilarity in romantic relationships. *Journal of Personality and Social Psychology* (in press). <a href="https://doi.org/10.1037/pspi0000463" target="_blank" rel="noopener noreferrer">doi:10.1037/pspi0000463</a>
 
 9. Bühler, J. L., Krauss, S., & Orth, U. (2021). Development of relationship satisfaction across the life span: A systematic review and meta-analysis. *Psychological Bulletin, 148*(5-6), 401-426. <a href="https://doi.org/10.1037/bul0000342" target="_blank" rel="noopener noreferrer">doi:10.1037/bul0000342</a>
 

@@ -232,11 +232,11 @@ Love matters. But love isn't enough. What matters is love plus understanding plu
 
 4. Agrawal, H. R., Gunderson, J., Holmes, B. M., & Lyons-Ruth, K. (2004). Attachment studies with borderline patients: A review. *Harvard Review of Psychiatry*, 12(2), 94-104. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1857277/" target="_blank" rel="noopener noreferrer">PMC Full Text</a>
 
-5. Kernberg, O. F. (1967). Borderline personality organization. *Journal of the American Psychoanalytic Association*, 15(3), 641-685.
+5. Kernberg, O. F. (1967). Borderline personality organization. *Journal of the American Psychoanalytic Association*, 15(3), 641-685. <a href="https://doi.org/10.1177/000306516701500309" target="_blank" rel="noopener noreferrer">doi:10.1177/000306516701500309</a>
 
 6. Miano, A., Fertuck, E. A., Roepke, S., & Dziobek, I. (2017). Romantic relationship dysfunction in borderline personality disorder—A naturalistic approach to trustworthiness perception. *Personality Disorders: Theory, Research, and Treatment*, 8(3), 281-286. <a href="https://pubmed.ncbi.nlm.nih.gov/27845530/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
-7. Herr, N. R., Rosenthal, M. Z., Geiger, P. J., & Erikson, K. (2013). Difficulties with emotion regulation mediate the relationship between borderline personality disorder symptom severity and interpersonal problems. *Personality and Mental Health*, 7(3), 191-202.
+7. Herr, N. R., Rosenthal, M. Z., Geiger, P. J., & Erikson, K. (2013). Difficulties with emotion regulation mediate the relationship between borderline personality disorder symptom severity and interpersonal problems. *Personality and Mental Health*, 7(3), 191-202. <a href="https://doi.org/10.1002/pmh.1193" target="_blank" rel="noopener noreferrer">doi:10.1002/pmh.1193</a>
 
 8. Fruzzetti, A. E., Shenk, C., & Hoffman, P. D. (2005). Family interaction and the development of borderline personality disorder: A transactional model. *Development and Psychopathology*, 17(4), 1007-1030. <a href="https://doi.org/10.1017/S0954579405050479" target="_blank" rel="noopener noreferrer">Cambridge</a>
 
@@ -248,7 +248,7 @@ Love matters. But love isn't enough. What matters is love plus understanding plu
 
 12. Linehan, M. M., Comtois, K. A., Murray, A. M., et al. (2006). Two-year randomized controlled trial and follow-up of dialectical behavior therapy vs therapy by experts for suicidal behaviors and borderline personality disorder. *Archives of General Psychiatry*, 63(7), 757-766. <a href="https://pubmed.ncbi.nlm.nih.gov/16818865/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
-13. Oliver, M., Perry, S., & Cade, R. (2008). Couples therapy with borderline personality disordered individuals. *The Family Journal*, 16(1), 67-72.
+13. Oliver, M., Perry, S., & Cade, R. (2008). Couples therapy with borderline personality disordered individuals. *The Family Journal*, 16(1), 67-72. <a href="https://doi.org/10.1177/1066480707309124" target="_blank" rel="noopener noreferrer">doi:10.1177/1066480707309124</a>
 
 14. Bateman, A., & Fonagy, P. (2004). Mentalization-based treatment of BPD. *Journal of Personality Disorders*, 18(1), 36-51. <a href="https://pubmed.ncbi.nlm.nih.gov/15061343/" target="_blank" rel="noopener noreferrer">PubMed</a>
 

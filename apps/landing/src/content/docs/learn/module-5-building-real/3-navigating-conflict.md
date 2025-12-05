@@ -262,7 +262,7 @@ Conflict is inevitable. Destruction is optional. The skills can be learned.
 
 3. Levenson, R. W., & Gottman, J. M. (1985). Physiological and affective predictors of change in relationship satisfaction. *Journal of Personality and Social Psychology, 49*(1), 85-94. <a href="https://doi.org/10.1037/0022-3514.49.1.85" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.49.1.85</a>
 
-4. Gottman, J. M. (1999). *The Marriage Clinic: A Scientifically-Based Marital Therapy.* W.W. Norton.
+4. Gottman, J. M. (1999). *The Marriage Clinic: A Scientifically-Based Marital Therapy.* W.W. Norton. <a href="https://wwnorton.com/books/9780393702828" target="_blank" rel="noopener noreferrer">W.W. Norton</a>
 
 5. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. <a href="https://doi.org/10.2307/353438" target="_blank" rel="noopener noreferrer">doi:10.2307/353438</a>
 

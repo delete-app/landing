@@ -224,20 +224,20 @@ Sometimes walking away is the bravest thing you can do—for both of you.
 
 ## References
 
-1. Goodfriend, W., & Agnew, C. R. (2008). Sunken costs and desired plans: Examining different types of investments in close relationships. *Personality and Social Psychology Bulletin*, 34(12), 1639-1652.
+1. Goodfriend, W., & Agnew, C. R. (2008). Sunken costs and desired plans: Examining different types of investments in close relationships. *Personality and Social Psychology Bulletin*, 34(12), 1639-1652. <a href="https://doi.org/10.1177/0146167208323743" target="_blank" rel="noopener noreferrer">doi:10.1177/0146167208323743</a>
 
-2. Current Psychology (2016). Is there a sunk cost effect in committed relationships? Study on money, effort, and time investments.
+2. Rego, S., Arantes, J., & Magalhães, P. (2016). Is there a sunk cost effect in committed relationships? *Current Psychology*, 37, 508-519. <a href="https://doi.org/10.1007/s12144-016-9529-9" target="_blank" rel="noopener noreferrer">doi:10.1007/s12144-016-9529-9</a>
 
-3. Rusbult, C. E., & Agnew, C. R. The Investment Model of Commitment Processes. Meta-analysis of 52 studies with 11,000 participants.
+3. Le, B., & Agnew, C. R. (2003). Commitment and its theorized determinants: A meta-analysis of the Investment Model. *Personal Relationships*, 10(1), 37-57. <a href="https://doi.org/10.1111/1475-6811.00035" target="_blank" rel="noopener noreferrer">doi:10.1111/1475-6811.00035</a>
 
-4. Gottman, J. M. (1994). What predicts divorce? The relationship between marital processes and marital outcomes. *Journal of Marriage and Family*.
+4. Gottman, J. M. (1994). *What Predicts Divorce? The Relationship Between Marital Processes and Marital Outcomes.* Lawrence Erlbaum Associates. <a href="https://doi.org/10.4324/9781315806808" target="_blank" rel="noopener noreferrer">doi:10.4324/9781315806808</a>
 
-5. Jonason, P. K., Garcia, J. R., Webster, G. D., Li, N. P., & Fisher, H. E. (2015). Relationship dealbreakers: Traits people avoid in potential mates. *Personality and Social Psychology Bulletin*, 41, 1697-1711.
+5. Jonason, P. K., Garcia, J. R., Webster, G. D., Li, N. P., & Fisher, H. E. (2015). Relationship dealbreakers: Traits people avoid in potential mates. *Personality and Social Psychology Bulletin*, 41, 1697-1711. <a href="https://doi.org/10.1177/0146167215609064" target="_blank" rel="noopener noreferrer">doi:10.1177/0146167215609064</a>
 
-6. Machia, L. V., & Ogolsky, B. G. (2021). The reasons people think about staying and leaving their romantic relationships: A mixed-method analysis. *Personality and Social Psychology Bulletin*, 41.
+6. Machia, L. V., & Ogolsky, B. G. (2021). The reasons people think about staying and leaving their romantic relationships: A mixed-method analysis. *Personality and Social Psychology Bulletin*, 47(8), 1279-1293. <a href="https://doi.org/10.1177/0146167220966903" target="_blank" rel="noopener noreferrer">doi:10.1177/0146167220966903</a>
 
-7. Le, B., Dove, N. L., Agnew, C. R., Korn, M. S., & Mutso, A. A. (2010). Predicting nonmarital romantic relationship dissolution: A meta-analytic synthesis. *Personal Relationships*, 17, 377-390.
+7. Le, B., Dove, N. L., Agnew, C. R., Korn, M. S., & Mutso, A. A. (2010). Predicting nonmarital romantic relationship dissolution: A meta-analytic synthesis. *Personal Relationships*, 17, 377-390. <a href="https://doi.org/10.1111/j.1475-6811.2010.01285.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1475-6811.2010.01285.x</a>
 
-8. Karney, B. R., & Bradbury, T. N. (1995). The longitudinal course of marital quality and stability: A review of theory, methods, and research. *Psychological Bulletin*, 118, 3-34.
+8. Karney, B. R., & Bradbury, T. N. (1995). The longitudinal course of marital quality and stability: A review of theory, methods, and research. *Psychological Bulletin*, 118, 3-34. <a href="https://doi.org/10.1037/0033-2909.118.1.3" target="_blank" rel="noopener noreferrer">doi:10.1037/0033-2909.118.1.3</a>
 
-9. Tashiro, T., & Frazier, P. (2003). "I'll never be in a relationship like that again": Personal growth following romantic relationship breakups. *Personal Relationships*, 10(1), 113-128.
+9. Tashiro, T., & Frazier, P. (2003). "I'll never be in a relationship like that again": Personal growth following romantic relationship breakups. *Personal Relationships*, 10(1), 113-128. <a href="https://doi.org/10.1111/1475-6811.00039" target="_blank" rel="noopener noreferrer">doi:10.1111/1475-6811.00039</a>

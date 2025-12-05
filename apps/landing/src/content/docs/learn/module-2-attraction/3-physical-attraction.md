@@ -218,7 +218,7 @@ Don't ignore physical attraction. But don't mistake it for compatibility.
 
 6. Eagly, A. H., Ashmore, R. D., Makhijani, M. G., & Longo, L. C. (1991). What is beautiful is good, but...: A meta-analytic review of research on the physical attractiveness stereotype. *Psychological Bulletin*, 110(1), 109-128. <a href="https://doi.org/10.1037/0033-2909.110.1.109" target="_blank" rel="noopener noreferrer">APA</a>
 
-7. Hamermesh, D. S. (2011). *Beauty Pays: Why Attractive People Are More Successful*. Princeton University Press.
+7. Hamermesh, D. S. (2011). *Beauty Pays: Why Attractive People Are More Successful*. Princeton University Press. <a href="https://press.princeton.edu/books/paperback/9780691158174/beauty-pays" target="_blank" rel="noopener noreferrer">Princeton</a>
 
 8. Feingold, A. (1988). Matching for attractiveness in romantic partners and same-sex friends: A meta-analysis and theoretical critique. *Psychological Bulletin*, 104(2), 226-235. <a href="https://doi.org/10.1037/0033-2909.104.2.226" target="_blank" rel="noopener noreferrer">APA</a>
 

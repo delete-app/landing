@@ -242,7 +242,7 @@ Know these *before* your next relationship. Communicate them *early*. If they ca
 
 7. Gable, S. L., Reis, H. T., Impett, E. A., & Asher, E. R. (2004). What do you do when things go right? The intrapersonal and interpersonal benefits of sharing positive events. *Journal of Personality and Social Psychology, 87*(2), 228-245. <a href="https://doi.org/10.1037/0022-3514.87.2.228" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.87.2.228</a>
 
-8. Mikulincer, M., & Shaver, P. R. (2007). *Attachment in adulthood: Structure, dynamics, and change*. Guilford Press.
+8. Mikulincer, M., & Shaver, P. R. (2007). *Attachment in adulthood: Structure, dynamics, and change*. Guilford Press. <a href="https://www.guilford.com/books/Attachment-in-Adulthood/Mikulincer-Shaver/9781462525546" target="_blank" rel="noopener noreferrer">Guilford Press</a>
 
 9. La Guardia, J. G., Ryan, R. M., Couchman, C. E., & Deci, E. L. (2000). Within-person variation in security of attachment: A self-determination theory perspective on attachment, need fulfillment, and well-being. *Journal of Personality and Social Psychology, 79*(3), 367-384. <a href="https://doi.org/10.1037/0022-3514.79.3.367" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.79.3.367</a>
 

@@ -185,13 +185,13 @@ You didn't choose your attachment style. You can choose what you do with it.
 
 ## References
 
-1. Bowlby, J. (1969). *Attachment and Loss: Vol. 1. Attachment*. New York: Basic Books.
+1. Bowlby, J. (1969). *Attachment and Loss: Vol. 1. Attachment*. New York: Basic Books. <a href="https://www.abebooks.com/servlet/BookDetailsPL?bi=31584097098" target="_blank" rel="noopener noreferrer">AbeBooks</a>
 
-2. Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). *Patterns of Attachment: A Psychological Study of the Strange Situation*. Hillsdale, NJ: Erlbaum.
+2. Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). *Patterns of Attachment: A Psychological Study of the Strange Situation*. Hillsdale, NJ: Erlbaum. <a href="https://doi.org/10.4324/9780203758045" target="_blank" rel="noopener noreferrer">doi:10.4324/9780203758045</a>
 
 3. Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. *Journal of Personality and Social Psychology, 52*(3), 511-524. <a href="https://doi.org/10.1037/0022-3514.52.3.511" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.52.3.511</a>
 
-4. Mikulincer, M., & Shaver, P. R. (2003). The attachment behavioral system in adulthood: Activation, psychodynamics, and interpersonal processes. *Advances in Experimental Social Psychology, 35*, 53-152.
+4. Mikulincer, M., & Shaver, P. R. (2003). The attachment behavioral system in adulthood: Activation, psychodynamics, and interpersonal processes. *Advances in Experimental Social Psychology, 35*, 53-152. <a href="https://doi.org/10.1016/S0065-2601(03)01002-5" target="_blank" rel="noopener noreferrer">doi:10.1016/S0065-2601(03)01002-5</a>
 
 5. Neurobiology of Disorganized Attachment: A Review. (2023). *Neuroscience Insights*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9947683/" target="_blank" rel="noopener noreferrer">PMC9947683</a>
 

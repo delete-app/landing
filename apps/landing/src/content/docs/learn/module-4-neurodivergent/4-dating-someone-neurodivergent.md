@@ -239,4 +239,4 @@ Neurodivergent partners require specific kinds of adaptation. If you can't or do
 
 12. Parker, M. L., & Mosley, M. A. (2021). Therapy outcomes for neurodiverse couples: Exploring a solution-focused approach. *Journal of Marital and Family Therapy*, 47(4), 962-981. <a href="https://doi.org/10.1111/jmft.12526" target="_blank" rel="noopener noreferrer">doi:10.1111/jmft.12526</a>
 
-13. Clinical observations on autism-ADHD pairings in romantic relationships. While peer-reviewed prevalence data is limited, clinicians note complementary dynamics in some neurodivergent-neurodivergent partnerships.
+13. Clinical observations on autism-ADHD pairings in romantic relationships. While peer-reviewed prevalence data is limited, clinicians note complementary dynamics in some neurodivergent-neurodivergent partnerships. <a href="https://chadd.org/adhd-weekly/adhd-and-relationships/" target="_blank" rel="noopener noreferrer">CHADD</a>

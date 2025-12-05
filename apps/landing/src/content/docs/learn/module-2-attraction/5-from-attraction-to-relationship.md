@@ -275,7 +275,7 @@ Initial attraction gets you in the door. What you build together determines whet
 
 ## References
 
-1. Knapp, M. L., & Vangelisti, A. L. (2005). *Interpersonal Communication and Human Relationships* (5th ed.). Allyn & Bacon.
+1. Knapp, M. L., & Vangelisti, A. L. (2005). *Interpersonal Communication and Human Relationships* (5th ed.). Allyn & Bacon. <a href="https://www.pearson.com/en-us/subject-catalog/p/interpersonal-communication-and-human-relationships/P200000005911" target="_blank" rel="noopener noreferrer">Pearson</a>
 
 2. Collins, N. L., & Miller, L. C. (1994). Self-disclosure and liking: A meta-analytic review. *Psychological Bulletin*, 116(3), 457-475. <a href="https://pubmed.ncbi.nlm.nih.gov/7809308/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
@@ -287,7 +287,7 @@ Initial attraction gets you in the door. What you build together determines whet
 
 6. Montoya, R. M., & Insko, C. A. (2008). Toward a more complete understanding of the reciprocity of liking effect. *European Journal of Social Psychology*, 38(3), 477-498. <a href="https://doi.org/10.1002/ejsp.431" target="_blank" rel="noopener noreferrer">Wiley</a>
 
-7. Reis, H. T., Clark, M. S., & Holmes, J. G. (2004). Perceived partner responsiveness as an organizing construct in the study of intimacy and closeness. In D. J. Mashek & A. P. Aron (Eds.), *Handbook of Closeness and Intimacy* (pp. 201-225). Lawrence Erlbaum Associates.
+7. Reis, H. T., Clark, M. S., & Holmes, J. G. (2004). Perceived partner responsiveness as an organizing construct in the study of intimacy and closeness. In D. J. Mashek & A. P. Aron (Eds.), *Handbook of Closeness and Intimacy* (pp. 201-225). Lawrence Erlbaum Associates. <a href="https://doi.org/10.4324/9781410610010" target="_blank" rel="noopener noreferrer">doi:10.4324/9781410610010</a>
 
 8. Huston, T. L., Caughlin, J. P., Houts, R. M., Smith, S. E., & George, L. J. (2001). The connubial crucible: Newlywed years as predictors of marital delight, distress, and divorce. *Journal of Personality and Social Psychology*, 80(2), 237-252. <a href="https://pubmed.ncbi.nlm.nih.gov/11220443/" target="_blank" rel="noopener noreferrer">PubMed</a>
 

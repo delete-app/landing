@@ -27,7 +27,8 @@ const REFERENCE_NUMBER_PATTERN = /^(\d+)\.\s+/gm;
 
 interface Reference {
   number: number;
-  doi: string | null;
+  link: string | null;
+  linkType: "doi" | "pubmed" | "pmc" | "other" | null;
   displayText: string;
   line: number;
 }
@@ -46,7 +47,7 @@ interface ValidationResult {
 }
 
 interface LinkCheckResult {
-  doi: string;
+  url: string;
   status: "ok" | "error" | "redirect";
   statusCode?: number;
   error?: string;
@@ -72,6 +73,14 @@ function getMarkdownFiles(dir: string): string[] {
 
   walk(dir);
   return files;
+}
+
+// Determine link type from URL
+function getLinkType(url: string): "doi" | "pubmed" | "pmc" | "other" {
+  if (url.includes("doi.org/")) return "doi";
+  if (url.includes("pubmed.ncbi.nlm.nih.gov")) return "pubmed";
+  if (url.includes("pmc.ncbi.nlm.nih.gov")) return "pmc";
+  return "other";
 }
 
 // Parse references from markdown content
@@ -101,18 +110,18 @@ function parseReferences(content: string, filePath: string): Reference[] {
       if (refMatch) {
         const refNumber = parseInt(refMatch[1], 10);
 
-        // Find DOI link in the line
-        const doiRegex =
-          /<a\s+href="(https:\/\/doi\.org\/[^"]+)"[^>]*>([^<]+)<\/a>/;
-        const doiMatch = doiRegex.exec(line);
+        // Find any link in the line (DOI, PubMed, PMC, or other)
+        const linkRegex = /<a\s+href="(https?:\/\/[^"]+)"[^>]*>([^<]+)<\/a>/;
+        const linkMatch = linkRegex.exec(line);
 
         // Extract a snippet of the reference text for display
         const refText = line.replace(/^(\d+)\.\s+/, "").substring(0, 60);
 
         references.push({
           number: refNumber,
-          doi: doiMatch ? doiMatch[1] : null,
-          displayText: doiMatch ? doiMatch[2] : refText + "...",
+          link: linkMatch ? linkMatch[1] : null,
+          linkType: linkMatch ? getLinkType(linkMatch[1]) : null,
+          displayText: linkMatch ? linkMatch[2] : refText + "...",
           line: i + 1,
         });
       }
@@ -142,13 +151,13 @@ function parseCitations(content: string): Citation[] {
   return citations;
 }
 
-// Check if a DOI link is valid (with rate limiting)
-async function checkDoiLink(doi: string): Promise<LinkCheckResult> {
+// Check if a link is valid (with rate limiting)
+async function checkLink(url: string): Promise<LinkCheckResult> {
   try {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-    const response = await fetch(doi, {
+    const response = await fetch(url, {
       method: "HEAD",
       redirect: "manual",
       signal: controller.signal,
@@ -160,19 +169,19 @@ async function checkDoiLink(doi: string): Promise<LinkCheckResult> {
     clearTimeout(timeoutId);
 
     if (response.status >= 200 && response.status < 400) {
-      return { doi, status: "ok", statusCode: response.status };
+      return { url, status: "ok", statusCode: response.status };
     } else if (response.status >= 300 && response.status < 400) {
       // Redirects are expected for DOI links
       const redirectUrl = response.headers.get("location");
       return {
-        doi,
+        url,
         status: "redirect",
         statusCode: response.status,
         redirectUrl: redirectUrl || undefined,
       };
     } else {
       return {
-        doi,
+        url,
         status: "error",
         statusCode: response.status,
         error: `HTTP ${response.status}`,
@@ -180,7 +189,7 @@ async function checkDoiLink(doi: string): Promise<LinkCheckResult> {
     }
   } catch (error) {
     return {
-      doi,
+      url,
       status: "error",
       error: error instanceof Error ? error.message : String(error),
     };
@@ -237,15 +246,15 @@ function validateFile(filePath: string): ValidationResult {
     }
   }
 
-  // Check for missing DOI links
+  // Check for missing links
   for (const ref of references) {
-    if (!ref.doi) {
+    if (!ref.link) {
       errors.push(
-        `Reference ${ref.number} has no DOI link: "${ref.displayText}"`
+        `Reference ${ref.number} has no link: "${ref.displayText}"`
       );
-    } else if (!ref.doi.startsWith("https://doi.org/10.")) {
+    } else if (ref.linkType === "doi" && !ref.link.startsWith("https://doi.org/10.")) {
       warnings.push(
-        `Reference ${ref.number}: DOI format may be invalid: ${ref.doi}`
+        `Reference ${ref.number}: DOI format may be invalid: ${ref.link}`
       );
     }
   }
@@ -316,11 +325,11 @@ async function main() {
       console.log("");
     }
 
-    // Collect DOIs for link checking
+    // Collect links for checking
     if (checkLinks) {
       for (const ref of result.references) {
-        if (ref.doi && !allLinkResults.has(ref.doi)) {
-          allLinkResults.set(ref.doi, { doi: ref.doi, status: "ok" });
+        if (ref.link && !allLinkResults.has(ref.link)) {
+          allLinkResults.set(ref.link, { url: ref.link, status: "ok" });
         }
       }
     }
@@ -328,39 +337,39 @@ async function main() {
 
   // Check links if requested
   if (checkLinks && allLinkResults.size > 0) {
-    console.log(`\n🌐 Checking ${allLinkResults.size} unique DOI links...\n`);
+    console.log(`\n🌐 Checking ${allLinkResults.size} unique links...\n`);
 
-    const dois = [...allLinkResults.keys()];
+    const urls = [...allLinkResults.keys()];
     let checked = 0;
     let linkErrors = 0;
 
-    for (const doi of dois) {
+    for (const url of urls) {
       // Rate limit: 1 request per 500ms
       await new Promise((resolve) => setTimeout(resolve, 500));
 
-      const result = await checkDoiLink(doi);
-      allLinkResults.set(doi, result);
+      const result = await checkLink(url);
+      allLinkResults.set(url, result);
       checked++;
 
       if (result.status === "error") {
         linkErrors++;
-        console.log(`   ❌ ${doi}`);
+        console.log(`   ❌ ${url}`);
         console.log(`      Error: ${result.error}`);
       } else if (verbose) {
-        console.log(`   ✅ ${doi}`);
+        console.log(`   ✅ ${url}`);
       }
 
       // Progress indicator
       if (checked % 10 === 0) {
-        console.log(`   Progress: ${checked}/${dois.length}`);
+        console.log(`   Progress: ${checked}/${urls.length}`);
       }
     }
 
     if (linkErrors > 0) {
       totalErrors += linkErrors;
-      console.log(`\n❌ ${linkErrors} DOI links failed validation`);
+      console.log(`\n❌ ${linkErrors} links failed validation`);
     } else {
-      console.log(`\n✅ All ${dois.length} DOI links are valid`);
+      console.log(`\n✅ All ${urls.length} links are valid`);
     }
   }
 
