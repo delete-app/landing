@@ -15,7 +15,7 @@ In economics, the sunk cost fallacy is when people continue investing in somethi
 
 Relationships are not immune.
 
-Research on investment and commitment found that the sunk cost effect absolutely applies to relationships—but not in the ways you might expect.¹
+Research on investment and commitment found that the sunk cost effect absolutely applies to relationships—but not in the ways you might expect.<sup>[[1]](#references)</sup>
 
 **Money doesn't drive sunk cost in relationships.** Unlike business decisions, people don't tie relationship happiness to financial investment. If you've spent a lot on shared vacations, that doesn't make you more likely to stay in a bad relationship.
 
@@ -25,13 +25,13 @@ What does create sunk cost effects:
 - **Self-concept investment** — When your identity becomes intertwined with the relationship
 - **Future plans** — The life you've envisioned together, even if you're not currently happy
 
-Partners may stay in relationships not because of what they've invested, but to see **planned futures realized**—even when current investment has stopped.¹
+Partners may stay in relationships not because of what they've invested, but to see **planned futures realized**—even when current investment has stopped.<sup>[[1]](#references)</sup>
 
-A 2016 study confirmed that people are more likely to stay when **money and effort** (not time) have been invested.² Three years together doesn't create the same commitment as three years of active building together.
+A 2016 study confirmed that people are more likely to stay when **money and effort** (not time) have been invested.<sup>[[2]](#references)</sup> Three years together doesn't create the same commitment as three years of active building together.
 
 ### The Investment Model
 
-The most robust framework for understanding why people stay comes from Caryl Rusbult's Investment Model, validated across 52 studies with 11,000 participants.³
+The most robust framework for understanding why people stay comes from Caryl Rusbult's Investment Model, validated across 52 studies with 11,000 participants.<sup>[[3]](#references)</sup>
 
 Three factors determine commitment:
 
@@ -45,7 +45,7 @@ The model suggests a diagnostic question: Are you committed because you want to 
 
 ## The Four Horsemen: 93% Accuracy
 
-John Gottman's research on marital stability is famous for a reason: he can predict divorce with **93% accuracy** based on how couples argue.⁴
+John Gottman's research on marital stability is famous for a reason: he can predict divorce with **93% accuracy** based on how couples argue.<sup>[[4]](#references)</sup>
 
 The Four Horsemen of relationship apocalypse:
 
@@ -63,7 +63,7 @@ Defensiveness says: the problem is you, not me.
 
 ### 3. Contempt
 
-**The single strongest predictor of divorce.**⁴ Contempt is criticism from a position of superiority: eye-rolling, mockery, sneering, hostile humor.
+**The single strongest predictor of divorce.**<sup>[[4]](#references)</sup> Contempt is criticism from a position of superiority: eye-rolling, mockery, sneering, hostile humor.
 
 Contempt says: I am better than you.
 
@@ -81,7 +81,7 @@ When all four are present, the relationship is in crisis. But the presence of an
 
 Every long-term relationship has difficult periods. The question is: which difficulties are normal, and which signal something fundamentally broken?
 
-Research on dealbreakers across 6,500+ participants identified patterns:⁵
+Research on dealbreakers across 6,500+ participants identified patterns:<sup>[[5]](#references)</sup>
 
 ### Universal Dealbreakers (Long-Term)
 
@@ -109,7 +109,7 @@ A red flag is:
 
 ### The Asymmetry of Dealbreakers
 
-Research found that **people weigh dealbreakers more negatively than they weigh dealmakers positively**—and this effect is stronger for women.⁵
+Research found that **people weigh dealbreakers more negatively than they weigh dealmakers positively**—and this effect is stronger for women.<sup>[[5]](#references)</sup>
 
 This asymmetry makes evolutionary sense. The cost of staying with a harmful partner is potentially greater than the cost of leaving a good one. Our brains are calibrated for harm avoidance.
 
@@ -117,7 +117,7 @@ If something feels like a dealbreaker to you, trust that instinct. You're wired 
 
 ## The Decision-Making Process
 
-A 2021 study of nearly 1,000 people examined how people actually think about staying versus leaving.⁶
+A 2021 study of nearly 1,000 people examined how people actually think about staying versus leaving.<sup>[[6]](#references)</sup>
 
 Key finding: **The strongest reasons to stay are the mirror of the strongest reasons to leave.**
 
@@ -139,7 +139,7 @@ What this means: Don't wait for your reasons to leave to equal your reasons to s
 
 ## Predictors of Dissolution
 
-A meta-analysis of 137 studies covering 37,761 participants over 33 years identified the strongest predictors of breakup:⁷
+A meta-analysis of 137 studies covering 37,761 participants over 33 years identified the strongest predictors of breakup:<sup>[[7]](#references)</sup>
 
 The most protective factors (d = .57 to .85):
 - **Commitment** — Not just love, but decision to maintain
@@ -156,13 +156,13 @@ Weak predictors:
 - Attachment styles
 - Personality measures
 
-The surprise: **Satisfaction is only a modest predictor of whether couples stay together.**⁷ Many unhappy couples persist; some happy couples split.
+The surprise: **Satisfaction is only a modest predictor of whether couples stay together.**<sup>[[7]](#references)</sup> Many unhappy couples persist; some happy couples split.
 
 Why? Because satisfaction fluctuates. Commitment is a decision. Couples who survive rough patches have commitment that transcends temporary unhappiness.
 
 ## When It's Already Over
 
-A longitudinal review of 115 studies representing over 45,000 marriages found an uncomfortable truth:⁸
+A longitudinal review of 115 studies representing over 45,000 marriages found an uncomfortable truth:<sup>[[8]](#references)</sup>
 
 When spouses disagree about how happy the marriage is, **only marriages where the husband is unhappier than the wife show increased divorce risk**.
 
@@ -178,7 +178,7 @@ Other signals from research:
 
 ## The Other Side
 
-Here's something reassuring from research on post-breakup growth:⁹
+Here's something reassuring from research on post-breakup growth:<sup>[[9]](#references)</sup>
 
 People who ended significant relationships reported, on average, **five types of personal growth** they believed would improve future relationships.
 

@@ -5,13 +5,13 @@ description: "Understanding the unique challenges of dating with or loving someo
 
 Bipolar disorder affects approximately 2.8% of adults. If you're dating someone with bipolar disorder—or have it yourself—you're navigating territory that most relationship advice doesn't cover.
 
-The statistics can be alarming: studies suggest divorce rates two to three times higher than the general population for marriages involving bipolar disorder.<sup>1</sup> But statistics don't tell the whole story. With understanding, treatment, and the right strategies, these relationships can thrive.
+The statistics can be alarming: studies suggest divorce rates two to three times higher than the general population for marriages involving bipolar disorder.<sup>[[1]](#references)</sup> But statistics don't tell the whole story. With understanding, treatment, and the right strategies, these relationships can thrive.
 
 Here's what the research actually says.
 
 ## How Bipolar Affects Relationships
 
-A systematic review of 27 studies found that bipolar disorder has an "unusually high" divorce rate and significant impact on romantic relationships.<sup>1</sup>
+A systematic review of 27 studies found that bipolar disorder has an "unusually high" divorce rate and significant impact on romantic relationships.<sup>[[1]](#references)</sup>
 
 The challenges are real:
 - **Communication difficulties** during episodes
@@ -20,11 +20,11 @@ The challenges are real:
 - **Sexual disruption** in both directions
 - **Trust damage** from episode-related behavior
 
-But the research also shows something important: **with proper treatment and communication, relationship satisfaction can significantly improve.**<sup>1</sup>
+But the research also shows something important: **with proper treatment and communication, relationship satisfaction can significantly improve.**<sup>[[1]](#references)</sup>
 
 ## Manic Episodes: What Partners Experience
 
-During manic episodes, partners often face:<sup>1</sup>
+During manic episodes, partners often face:<sup>[[1]](#references)</sup>
 
 - **Hypersexuality** — Increased sexual drive, sometimes including risky behavior or infidelity
 - **Impulsivity** — Excessive spending, gambling, substance use
@@ -32,13 +32,13 @@ During manic episodes, partners often face:<sup>1</sup>
 - **Reduced sleep** — Which affects the whole household
 - **Irritability** — Anger at attempts to intervene
 
-Research comparing episode types found that **manic phases of bipolar I are more burdensome to partners** than depressive episodes or the hypomania of bipolar II.<sup>2</sup>
+Research comparing episode types found that **manic phases of bipolar I are more burdensome to partners** than depressive episodes or the hypomania of bipolar II.<sup>[[2]](#references)</sup>
 
 Partners report that the hardest part isn't the behavior itself—it's that their loved one often doesn't recognize they're in an episode, and may reject help or become angry at suggestions that something is wrong.
 
 ## Depressive Episodes: The Other Side
 
-Depressive episodes bring different challenges:<sup>1</sup>
+Depressive episodes bring different challenges:<sup>[[1]](#references)</sup>
 
 - **Withdrawal** — Extended time alone, reduced communication
 - **Anhedonia** — Inability to enjoy previously pleasurable activities, including intimacy
@@ -47,16 +47,16 @@ Depressive episodes bring different challenges:<sup>1</sup>
 
 Partners often feel isolated and helpless. The person they love seems unreachable. Importantly, **this withdrawal reflects the illness, not the relationship**—but it doesn't feel that way in the moment.
 
-Research shows that sexual dissatisfaction occurs during both manic and depressive episodes, with no significant difference between episode types.<sup>3</sup> These effects often persist even into stable periods.
+Research shows that sexual dissatisfaction occurs during both manic and depressive episodes, with no significant difference between episode types.<sup>[[3]](#references)</sup> These effects often persist even into stable periods.
 
 ## The Partner Burden Is Real
 
 Studies consistently show significant caregiver burden:
 
-- **More than 90% of caregivers** report moderate or greater distress<sup>4</sup>
-- **74% of primary caregivers** report moderate to severe burden<sup>5</sup>
-- **Up to 46% of caregivers** experience depression themselves<sup>5</sup>
-- **Spouses report higher burden** than parents or siblings<sup>5</sup>
+- **More than 90% of caregivers** report moderate or greater distress<sup>[[4]](#references)</sup>
+- **74% of primary caregivers** report moderate to severe burden<sup>[[5]](#references)</sup>
+- **Up to 46% of caregivers** experience depression themselves<sup>[[5]](#references)</sup>
+- **Spouses report higher burden** than parents or siblings<sup>[[5]](#references)</sup>
 
 The burden comes from multiple sources:
 - Managing the household and finances alone during episodes
@@ -71,9 +71,9 @@ This isn't a failure of love or commitment. It's the reality of caring for someo
 
 ### Treatment Adherence
 
-The single most important factor: **consistent medication adherence significantly improves relationship outcomes** according to research.<sup>6</sup>
+The single most important factor: **consistent medication adherence significantly improves relationship outcomes** according to research.<sup>[[6]](#references)</sup>
 
-About half of people with bipolar disorder become non-adherent during long-term treatment.<sup>6</sup> This is often when relationships struggle most.
+About half of people with bipolar disorder become non-adherent during long-term treatment.<sup>[[6]](#references)</sup> This is often when relationships struggle most.
 
 What helps with adherence:
 - Strong therapeutic alliance with treatment providers
@@ -83,10 +83,10 @@ What helps with adherence:
 
 ### Family-Focused Therapy (FFT)
 
-FFT is a 21-session intervention with strong evidence for bipolar disorder.<sup>7</sup>
+FFT is a 21-session intervention with strong evidence for bipolar disorder.<sup>[[7]](#references)</sup>
 
 The results are striking:
-- In a randomized controlled trial, **52% of FFT patients remained relapse-free** compared to **17% in crisis management**<sup>8</sup>
+- In a randomized controlled trial, **52% of FFT patients remained relapse-free** compared to **17% in crisis management**<sup>[[8]](#references)</sup>
 - FFT patients show longer survival time before relapse
 - FFT improves medication adherence and overall functioning
 
@@ -99,7 +99,7 @@ FFT includes:
 
 Research on "expressed emotion" (EE) shows that how partners communicate affects relapse risk.
 
-High expressed emotion—hostility, criticism, emotional over-involvement—when combined with negative communication patterns, predicted the vast majority of bipolar relapses in landmark research. Patients in high-EE families had a **94% relapse rate** compared to just **17% in low-EE families**.<sup>9</sup>
+High expressed emotion—hostility, criticism, emotional over-involvement—when combined with negative communication patterns, predicted the vast majority of bipolar relapses in landmark research. Patients in high-EE families had a **94% relapse rate** compared to just **17% in low-EE families**.<sup>[[9]](#references)</sup>
 
 This doesn't mean partners should suppress all negative feelings. It means:
 - Criticize behavior, not character
@@ -113,7 +113,7 @@ The most effective partners learn to say "I'm concerned about this behavior" rat
 
 ### It's Neurobiological, Not Intentional
 
-Behaviors during episodes occur due to **brain chemistry changes, not choices.**<sup>1</sup> Partners who understand this demonstrate greater empathy and experience less caregiver burnout.
+Behaviors during episodes occur due to **brain chemistry changes, not choices.**<sup>[[1]](#references)</sup> Partners who understand this demonstrate greater empathy and experience less caregiver burnout.
 
 This doesn't mean excusing harmful behavior. It means understanding its source.
 
@@ -121,11 +121,11 @@ This doesn't mean excusing harmful behavior. It means understanding its source.
 
 Episodes are temporary states, not personality changes. The person during a severe episode isn't the person you'll have during stability.
 
-Some couples report that navigating bipolar together actually strengthened their relationship—creating deeper communication, greater appreciation for stable periods, and compassion they might never have developed otherwise.<sup>1</sup>
+Some couples report that navigating bipolar together actually strengthened their relationship—creating deeper communication, greater appreciation for stable periods, and compassion they might never have developed otherwise.<sup>[[1]](#references)</sup>
 
 ### Your Self-Care Isn't Optional
 
-Partners who neglect their own mental and physical health can't sustain caregiving. Research shows burned-out caregivers have:<sup>4</sup>
+Partners who neglect their own mental and physical health can't sustain caregiving. Research shows burned-out caregivers have:<sup>[[4]](#references)</sup>
 
 - More physical health problems
 - More depressive symptoms
@@ -136,9 +136,9 @@ Maintaining your own friendships, hobbies, exercise, and mental health support i
 
 ### Marriage May Actually Help
 
-Interestingly, research shows that **marriage is associated with fewer depression episodes** for women with bipolar disorder.<sup>10</sup> Stable relationships can be protective.
+Interestingly, research shows that **marriage is associated with fewer depression episodes** for women with bipolar disorder.<sup>[[10]](#references)</sup> Stable relationships can be protective.
 
-Being married also correlates with:<sup>10</sup>
+Being married also correlates with:<sup>[[10]](#references)</sup>
 - Better functionality
 - Fewer total episodes
 - Better treatment adherence
@@ -165,7 +165,7 @@ Not every difficult period means the relationship is doomed. But some patterns w
 
 ## For People with Bipolar: What Helps Your Partner
 
-If you have bipolar disorder, research suggests several things help your relationship survive:<sup>1</sup><sup>7</sup>
+If you have bipolar disorder, research suggests several things help your relationship survive:<sup>[[1]](#references)</sup><sup>[[7]](#references)</sup>
 
 1. **Consistent treatment** — This is the foundation
 2. **Early warning sign sharing** — Help your partner recognize your prodromal symptoms

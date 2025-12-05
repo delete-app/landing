@@ -11,7 +11,7 @@ Here's what the research actually says.
 
 ## How BPD Affects Relationships
 
-A study of clinical couples where one partner has BPD found striking patterns:<sup>1</sup>
+A study of clinical couples where one partner has BPD found striking patterns:<sup>[[1]](#references)</sup>
 
 - **Lower marital satisfaction** compared to non-clinical couples
 - **Higher attachment insecurity** in both partners
@@ -21,13 +21,13 @@ A study of clinical couples where one partner has BPD found striking patterns:<s
 
 Nearly 30% of these couples dissolved their relationship within 18 months of the study.
 
-But here's something important: a 10-year study of newlyweds found that while BPD symptoms predicted lower satisfaction and more problems, they did **not predict divorce rates**.<sup>2</sup> Partners often stay—sometimes in troubled relationships—rather than leave.
+But here's something important: a 10-year study of newlyweds found that while BPD symptoms predicted lower satisfaction and more problems, they did **not predict divorce rates**.<sup>[[2]](#references)</sup> Partners often stay—sometimes in troubled relationships—rather than leave.
 
 ## The Core Challenges
 
 ### Fear of Abandonment
 
-Fear of abandonment is a defining feature of BPD. It's not ordinary worry—it's an overwhelming terror that can feel life-threatening.<sup>3</sup>
+Fear of abandonment is a defining feature of BPD. It's not ordinary worry—it's an overwhelming terror that can feel life-threatening.<sup>[[3]](#references)</sup>
 
 This fear drives many BPD relationship behaviors:
 - **Frantic efforts** to avoid real or imagined abandonment
@@ -35,11 +35,11 @@ This fear drives many BPD relationship behaviors:
 - **Preemptive rejection**—leaving before being left
 - **Intense monitoring** of partner behavior for signs of withdrawal
 
-Research on attachment in BPD shows most characteristic patterns are unresolved, preoccupied, or fearful attachment styles.<sup>4</sup> These attachment patterns were often shaped by early experiences and aren't easily changed by reassurance alone.
+Research on attachment in BPD shows most characteristic patterns are unresolved, preoccupied, or fearful attachment styles.<sup>[[4]](#references)</sup> These attachment patterns were often shaped by early experiences and aren't easily changed by reassurance alone.
 
 ### Idealization and Devaluation
 
-One of the most challenging patterns for partners is the cycle of idealization and devaluation—sometimes called "splitting."<sup>5</sup>
+One of the most challenging patterns for partners is the cycle of idealization and devaluation—sometimes called "splitting."<sup>[[5]](#references)</sup>
 
 Early in relationships or good periods:
 - Partner is seen as **perfect, ideal, rescuer**
@@ -53,11 +53,11 @@ When triggered or threatened:
 
 This isn't manipulation—it's a genuine shift in perception. The person with BPD genuinely experiences both views as true in the moment.
 
-Research shows BPD patients have difficulty maintaining a stable, positive image of their partner during relationship threats. When trust is tested, their perception of partner trustworthiness rapidly decreases.<sup>6</sup>
+Research shows BPD patients have difficulty maintaining a stable, positive image of their partner during relationship threats. When trust is tested, their perception of partner trustworthiness rapidly decreases.<sup>[[6]](#references)</sup>
 
 ### Emotional Dysregulation
 
-Emotional dysregulation is central to BPD and mediates the relationship between BPD severity and interpersonal problems.<sup>7</sup>
+Emotional dysregulation is central to BPD and mediates the relationship between BPD severity and interpersonal problems.<sup>[[7]](#references)</sup>
 
 What this looks like in relationships:
 - **Intense emotional reactions** disproportionate to triggers
@@ -69,7 +69,7 @@ Partners often feel like they're "walking on eggshells," unable to predict what 
 
 ## Partner Experience
 
-Living with or loving someone with BPD takes a significant toll. Research shows partners experience:<sup>8</sup>
+Living with or loving someone with BPD takes a significant toll. Research shows partners experience:<sup>[[8]](#references)</sup>
 
 - Psychological distress comparable to caregivers of patients with schizophrenia
 - Elevated anxiety and depression
@@ -77,22 +77,22 @@ Living with or loving someone with BPD takes a significant toll. Research shows 
 - Confusion about what's "real" (gaslighting themselves)
 - Isolation from friends and family
 
-A key dynamic: BPD symptoms and partner responses create **mutually reinforcing patterns**.<sup>8</sup> The partner's well-meaning attempts to help can inadvertently reinforce problematic cycles.
+A key dynamic: BPD symptoms and partner responses create **mutually reinforcing patterns**.<sup>[[8]](#references)</sup> The partner's well-meaning attempts to help can inadvertently reinforce problematic cycles.
 
 ## Long-Term Outcomes: There's Hope
 
 The long-term data is more encouraging than many expect.
 
-A 16-year prospective study found:<sup>9</sup>
+A 16-year prospective study found:<sup>[[9]](#references)</sup>
 - By the 16-year follow-up, **99% of BPD patients had achieved at least 2-year remission** (significant symptom reduction)
 - **60% achieved 2-year recovery** (remission plus good social functioning)
-- At 10-year follow-up, **41% were married or cohabiting**<sup>10</sup>
+- At 10-year follow-up, **41% were married or cohabiting**<sup>[[10]](#references)</sup>
 
-A 27-year follow-up found **83% had been married or cohabiting** at some point, and 59% had children.<sup>11</sup>
+A 27-year follow-up found **83% had been married or cohabiting** at some point, and 59% had children.<sup>[[11]](#references)</sup>
 
 BPD symptoms typically improve with age. The intensity tends to decrease over time, especially with treatment.
 
-However—and this is critical—**functional recovery lags behind symptomatic improvement**.<sup>9</sup> Even when symptoms reduce, relationship skills may still need work.
+However—and this is critical—**functional recovery lags behind symptomatic improvement**.<sup>[[9]](#references)</sup> Even when symptoms reduce, relationship skills may still need work.
 
 ## What Actually Helps
 
@@ -102,7 +102,7 @@ Several therapies have strong evidence for BPD:
 
 **Dialectical Behavior Therapy (DBT)**
 
-DBT is the most researched treatment for BPD. A landmark randomized trial showed DBT patients were:<sup>12</sup>
+DBT is the most researched treatment for BPD. A landmark randomized trial showed DBT patients were:<sup>[[12]](#references)</sup>
 - **Half as likely to make suicide attempts**
 - Less likely to require hospitalization
 - Less likely to drop out of treatment
@@ -113,29 +113,29 @@ DBT teaches four core skill modules:
 - **Emotion regulation** — Understanding and managing intense emotions
 - **Interpersonal effectiveness** — Maintaining relationships while meeting needs
 
-Couples therapy integrating DBT with Gottman's couples methods shows promise for BPD relationships.<sup>13</sup>
+Couples therapy integrating DBT with Gottman's couples methods shows promise for BPD relationships.<sup>[[13]](#references)</sup>
 
 **Mentalization-Based Therapy (MBT)**
 
-MBT focuses on mentalizing—the capacity to understand mental states in yourself and others.<sup>14</sup>
+MBT focuses on mentalizing—the capacity to understand mental states in yourself and others.<sup>[[14]](#references)</sup>
 
 People with BPD often lose mentalizing capacity when emotionally activated, especially in intimate relationships. MBT helps stabilize this capacity.
 
-A randomized trial showed MBT significantly more effective than structured clinical management for reducing symptoms and improving social functioning, with effects maintained at 18-month follow-up.<sup>15</sup>
+A randomized trial showed MBT significantly more effective than structured clinical management for reducing symptoms and improving social functioning, with effects maintained at 18-month follow-up.<sup>[[15]](#references)</sup>
 
 **Schema Therapy**
 
-Schema therapy targets early maladaptive schemas—deep patterns established in childhood. A major trial found schema therapy led to greater improvements than transference-focused psychotherapy, with more patients recovering and fewer dropouts.<sup>16</sup>
+Schema therapy targets early maladaptive schemas—deep patterns established in childhood. A major trial found schema therapy led to greater improvements than transference-focused psychotherapy, with more patients recovering and fewer dropouts.<sup>[[16]](#references)</sup>
 
 ### Protective Factors
 
-Research identifies several factors associated with better relationship outcomes:<sup>9</sup><sup>17</sup>
+Research identifies several factors associated with better relationship outcomes:<sup>[[9]](#references)</sup><sup>[[17]](#references)</sup>
 
 - **Later age at marriage/cohabitation** — Waiting until symptoms improve
 - **Recovery status** — Recovered patients more likely to maintain stable relationships
 - **Treatment engagement** — Consistent therapy participation predicts better outcomes
 - **Distress tolerance skills** — Managing emotions without destructive behaviors
-- **Perceived tenderness in relationship** — Protective against trust erosion<sup>6</sup>
+- **Perceived tenderness in relationship** — Protective against trust erosion<sup>[[6]](#references)</sup>
 
 ## For Partners: What to Understand
 
@@ -174,7 +174,7 @@ This means:
 
 ## For People with BPD: What Helps Your Partner
 
-If you have BPD, research suggests several things help your relationships survive:<sup>1</sup><sup>17</sup>
+If you have BPD, research suggests several things help your relationships survive:<sup>[[1]](#references)</sup><sup>[[17]](#references)</sup>
 
 1. **Commit to treatment** — Evidence-based therapy is the foundation
 2. **Take responsibility** — During stable periods, acknowledge the impact of episodes

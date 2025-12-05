@@ -13,11 +13,11 @@ Here's what the research actually says.
 
 ## Chronotype: More Than a Preference
 
-Your chronotype—whether you're a morning person (lark) or evening person (owl)—isn't just a preference. It's biologically determined, influenced by genetics, and affects everything from when you're most alert to when you want sex.<sup>1</sup>
+Your chronotype—whether you're a morning person (lark) or evening person (owl)—isn't just a preference. It's biologically determined, influenced by genetics, and affects everything from when you're most alert to when you want sex.<sup>[[1]](#references)</sup>
 
 Research shows chronotype affects relationships in several ways:
 
-A study of 150 couples found that **mismatched wake/sleep patterns** (evening person married to morning person) reported:<sup>2</sup>
+A study of 150 couples found that **mismatched wake/sleep patterns** (evening person married to morning person) reported:<sup>[[2]](#references)</sup>
 - Less marital adjustment
 - More marital conflict
 - Less time in serious conversation
@@ -30,11 +30,11 @@ The timing extended even to intimacy: morning couples had more morning sex; even
 
 The research here is nuanced.
 
-A study of 357 heterosexual couples found that **chronotype similarity was positively related to relationship satisfaction**—but only in cohabiting couples.<sup>3</sup> For dating couples who don't live together, the effect was weaker.
+A study of 357 heterosexual couples found that **chronotype similarity was positively related to relationship satisfaction**—but only in cohabiting couples.<sup>[[3]](#references)</sup> For dating couples who don't live together, the effect was weaker.
 
 This makes sense: when you share a bed and a schedule, rhythm differences become daily friction. When you maintain separate homes, you can manage around them.
 
-Interestingly, one study found **different patterns by gender**:<sup>3</sup>
+Interestingly, one study found **different patterns by gender**:<sup>[[3]](#references)</sup>
 - Women's satisfaction related to their own chronotype
 - Men's satisfaction related to their partner's chronotype
 
@@ -42,7 +42,7 @@ Men married to morning-type women reported higher satisfaction, regardless of th
 
 ## The Large-Scale Surprise
 
-Here's where it gets interesting. A massive UK Biobank study of nearly 80,000 couples found something unexpected: a **small negative correlation for chronotype** (r = -0.18).<sup>4</sup>
+Here's where it gets interesting. A massive UK Biobank study of nearly 80,000 couples found something unexpected: a **small negative correlation for chronotype** (r = -0.18).<sup>[[4]](#references)</sup>
 
 This suggests couples may actually tend toward *different* chronotypes rather than matching ones—the largest significant negative correlation across 133 traits examined.
 
@@ -53,27 +53,27 @@ How do we reconcile this with smaller studies showing benefits of similarity? Po
 
 ## Sleep: The Hidden Relationship Variable
 
-Your sleep doesn't just affect you. Research on couples shows sleep is a **shared intimate biological process**.<sup>5</sup>
+Your sleep doesn't just affect you. Research on couples shows sleep is a **shared intimate biological process**.<sup>[[5]](#references)</sup>
 
-A study using actigraphy (movement tracking) found couples are awake or asleep simultaneously about **75% of the time**.<sup>5</sup> And this concordance matters:
+A study using actigraphy (movement tracking) found couples are awake or asleep simultaneously about **75% of the time**.<sup>[[5]](#references)</sup> And this concordance matters:
 - Both partners' marital satisfaction positively correlated with sleep concordance
 - Higher sleep efficiency in men predicted less negative interaction the next day
-- Less negative interaction during the day predicted better sleep for women that night<sup>6</sup>
+- Less negative interaction during the day predicted better sleep for women that night<sup>[[6]](#references)</sup>
 
 The relationship between sleep and relationship quality is **bidirectional**: poor sleep creates relationship problems, and relationship problems disrupt sleep.
 
-A meta-analysis confirmed moderate correlations between relationship quality and both sleep quality (r = 0.34) and sleep duration (r = 0.39).<sup>7</sup>
+A meta-analysis confirmed moderate correlations between relationship quality and both sleep quality (r = 0.34) and sleep duration (r = 0.39).<sup>[[7]](#references)</sup>
 
 ## Work-Life Balance: The Modern Challenge
 
 Work-family conflict has become one of the most researched areas in couple dynamics.
 
-A meta-analysis of 427 effect sizes found both directions of conflict affect relationships:<sup>8</sup>
+A meta-analysis of 427 effect sizes found both directions of conflict affect relationships:<sup>[[8]](#references)</sup>
 - **Work interfering with family** (WIF) reduces family satisfaction
 - **Family interfering with work** (FIW) reduces work satisfaction
 - Both spillover into general life dissatisfaction
 
-Another meta-analysis found work-family conflict significantly associated with lower marriage and family satisfaction, accounting for 38% variance in family satisfaction.<sup>9</sup>
+Another meta-analysis found work-family conflict significantly associated with lower marriage and family satisfaction, accounting for 38% variance in family satisfaction.<sup>[[9]](#references)</sup>
 
 The implication: it's not just about how much you work, but how work affects your availability, energy, and presence in the relationship.
 
@@ -81,9 +81,9 @@ The implication: it's not just about how much you work, but how work affects you
 
 Research consistently shows that how couples spend time together matters for relationship quality.
 
-A study of married couples found people enjoy activities more when done with their partner than alone.<sup>10</sup> Couples actively coordinate schedules to maximize shared leisure time.
+A study of married couples found people enjoy activities more when done with their partner than alone.<sup>[[10]](#references)</sup> Couples actively coordinate schedules to maximize shared leisure time.
 
-But not all time together is equal. A study of 49 married couples distinguished between types of time:<sup>11</sup>
+But not all time together is equal. A study of 49 married couples distinguished between types of time:<sup>[[11]](#references)</sup>
 - Couples spending larger proportion of time **talking** reported greater satisfaction, more positive qualities, and greater closeness
 - Couples spending more time **arguing** were less satisfied, even after controlling for communication behaviors
 
@@ -91,7 +91,7 @@ The ratio matters more than raw hours.
 
 ## Synchronization Beyond Sleep
 
-Couples synchronize more than just sleep. Research on physical activity found:<sup>12</sup>
+Couples synchronize more than just sleep. Research on physical activity found:<sup>[[12]](#references)</sup>
 - Overall time in moderate-to-vigorous physical activity correlated in couples
 - Sedentary behavior also correlated
 - Synchrony higher when couples spent more time together and reported higher closeness

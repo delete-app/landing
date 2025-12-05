@@ -13,7 +13,7 @@ Here's what decades of research reveals.
 
 ## Gottman's Four Horsemen: The Predictors of Doom
 
-John Gottman's research on married couples is famous for a reason: he can predict divorce with **93% accuracy** based on observing a single conflict conversation.<sup>1</sup>
+John Gottman's research on married couples is famous for a reason: he can predict divorce with **93% accuracy** based on observing a single conflict conversation.<sup>[[1]](#references)</sup>
 
 The four communication patterns that predict relationship failure:
 
@@ -33,7 +33,7 @@ Defensiveness says: the problem is you, not me. It blocks any possibility of res
 
 ### 3. Contempt
 
-**The single strongest predictor of divorce.**<sup>1</sup>
+**The single strongest predictor of divorce.**<sup>[[1]](#references)</sup>
 
 Contempt is criticism from a position of superiority: eye-rolling, mockery, sneering, sarcasm, hostile humor. It communicates disgust and disrespect.
 
@@ -49,30 +49,30 @@ When all four are present regularly, the relationship is in serious trouble. But
 
 ## The Demand-Withdraw Pattern
 
-Beyond the Four Horsemen, research has identified another destructive pattern: **demand-withdraw**.<sup>2</sup>
+Beyond the Four Horsemen, research has identified another destructive pattern: **demand-withdraw**.<sup>[[2]](#references)</sup>
 
 One partner presses for discussion, change, or resolution (demand). The other partner avoids, withdraws, or shuts down (withdraw). This creates a pursuing-distancing cycle that escalates over time.
 
-A comprehensive review established demand-withdraw as **one of the most destructive interaction patterns**, associated with:<sup>3</sup>
+A comprehensive review established demand-withdraw as **one of the most destructive interaction patterns**, associated with:<sup>[[3]](#references)</sup>
 - Relationship dissolution
 - Intimate partner violence
 - Poorer physical and mental health
 
-The pattern crosses cultures. Research across heterosexual and same-sex couples, and across different countries, found demand-withdraw is universal—not a Western phenomenon.<sup>4</sup>
+The pattern crosses cultures. Research across heterosexual and same-sex couples, and across different countries, found demand-withdraw is universal—not a Western phenomenon.<sup>[[4]](#references)</sup>
 
 ### It's Not Just Gender
 
-Earlier research suggested women demand while men withdraw. But more nuanced studies found the pattern depends on **who wants change**:<sup>5</sup>
+Earlier research suggested women demand while men withdraw. But more nuanced studies found the pattern depends on **who wants change**:<sup>[[5]](#references)</sup>
 
 - Wife-demand/husband-withdraw is more common when discussing the wife's issues
 - The pattern reverses when discussing the husband's issues
 - It's about whose agenda is on the table, not just gender
 
-Both directions predict negative emotions, destructive tactics, and lower conflict resolution.<sup>6</sup>
+Both directions predict negative emotions, destructive tactics, and lower conflict resolution.<sup>[[6]](#references)</sup>
 
 ## Conflict Resolution Styles
 
-Research identifies several distinct styles people use to handle conflict:<sup>7</sup>
+Research identifies several distinct styles people use to handle conflict:<sup>[[7]](#references)</sup>
 
 ### Integrating (Collaboration)
 High concern for self AND high concern for other. Seeks solutions that satisfy both parties. "How can we both get what we need?"
@@ -89,11 +89,11 @@ Low concern for self AND low concern for other. Sidesteps or postpones conflict.
 ### Compromising
 Moderate concern for both. Seeks middle ground where both give something up. "Let's meet in the middle."
 
-Research shows **integrating (collaboration) produces the best outcomes** for relationship satisfaction—but requires more skill and energy than other styles.<sup>7</sup>
+Research shows **integrating (collaboration) produces the best outcomes** for relationship satisfaction—but requires more skill and energy than other styles.<sup>[[7]](#references)</sup>
 
 ## The EVLN Model: Responses to Dissatisfaction
 
-When something goes wrong in a relationship, people respond in one of four ways:<sup>8</sup>
+When something goes wrong in a relationship, people respond in one of four ways:<sup>[[8]](#references)</sup>
 
 | Response | Active/Passive | Constructive/Destructive |
 |----------|---------------|-------------------------|
@@ -111,7 +111,7 @@ When something goes wrong in a relationship, people respond in one of four ways:
 
 ## Constructive vs. Destructive Conflict
 
-Research tracking couples over 16 years found that **destructive conflict behaviors in Year 1 predicted higher divorce rates** years later.<sup>9</sup>
+Research tracking couples over 16 years found that **destructive conflict behaviors in Year 1 predicted higher divorce rates** years later.<sup>[[9]](#references)</sup>
 
 Destructive behaviors:
 - Yelling, screaming
@@ -131,7 +131,7 @@ The research found wives decreased destructive behaviors over time, while husban
 
 ## Attachment and Conflict
 
-Your attachment style shapes how you handle conflict:<sup>10</sup>
+Your attachment style shapes how you handle conflict:<sup>[[10]](#references)</sup>
 
 **Anxiously attached individuals:**
 - Perceive relationships more negatively after conflict
@@ -143,24 +143,24 @@ Your attachment style shapes how you handle conflict:<sup>10</sup>
 - Withdraw rather than engage
 - May minimize problems to avoid discussion
 
-Attachment anxiety is a particularly potent predictor of criticism, defensiveness, contempt, and stonewalling—explaining 22% of variance in these behaviors beyond relationship satisfaction.<sup>11</sup>
+Attachment anxiety is a particularly potent predictor of criticism, defensiveness, contempt, and stonewalling—explaining 22% of variance in these behaviors beyond relationship satisfaction.<sup>[[11]](#references)</sup>
 
 ## Attributions: The Stories We Tell
 
 How you interpret your partner's behavior during conflict matters enormously.
 
-Research shows dissatisfied spouses make **attributions that cast partner behavior in negative light**:<sup>12</sup>
+Research shows dissatisfied spouses make **attributions that cast partner behavior in negative light**:<sup>[[12]](#references)</sup>
 - "They forgot because they don't care about me" (vs. "They were stressed")
 - "They're being defensive because they're guilty" (vs. "They feel attacked")
 - "They always do this" (vs. "This is unusual for them")
 
 These negative attributions create a feedback loop: you interpret behavior negatively, respond negatively, elicit negative behavior, which confirms your interpretation.
 
-Maladaptive attributions relate to less effective problem-solving and more negative behavior during conflict.<sup>13</sup>
+Maladaptive attributions relate to less effective problem-solving and more negative behavior during conflict.<sup>[[13]](#references)</sup>
 
 ## The Counterintuitive Finding
 
-Here's something surprising from research: **disagreement and anger exchanges predicted improvement in marital satisfaction longitudinally**—despite relating to concurrent unhappiness.<sup>14</sup>
+Here's something surprising from research: **disagreement and anger exchanges predicted improvement in marital satisfaction longitudinally**—despite relating to concurrent unhappiness.<sup>[[14]](#references)</sup>
 
 Three patterns were dysfunctional for long-term satisfaction:
 - Defensiveness
@@ -173,7 +173,7 @@ The implication: suppressing conflict to maintain surface harmony may backfire. 
 
 ## What Predicts Conflict Success
 
-A landmark review of 115 longitudinal studies identified patterns in how couples handle conflict:<sup>15</sup>
+A landmark review of 115 longitudinal studies identified patterns in how couples handle conflict:<sup>[[15]](#references)</sup>
 
 **Successful patterns:**
 - Accepting influence from each other
@@ -190,7 +190,7 @@ A landmark review of 115 longitudinal studies identified patterns in how couples
 
 ## Repair Attempts: The Secret Weapon
 
-Gottman's research found that what distinguishes happy couples isn't the absence of conflict—it's their ability to **repair**.<sup>1</sup>
+Gottman's research found that what distinguishes happy couples isn't the absence of conflict—it's their ability to **repair**.<sup>[[1]](#references)</sup>
 
 Repair attempts are any effort to de-escalate tension:
 - Humor (not sarcastic)
@@ -201,7 +201,7 @@ Repair attempts are any effort to de-escalate tension:
 
 In happy relationships, repair attempts are received and accepted. In unhappy relationships, they're ignored or rejected.
 
-The ratio matters too: stable relationships maintain roughly **5 positive interactions for every negative one** during conflict.<sup>1</sup>
+The ratio matters too: stable relationships maintain roughly **5 positive interactions for every negative one** during conflict.<sup>[[1]](#references)</sup>
 
 ## Assessing Your Conflict Style
 

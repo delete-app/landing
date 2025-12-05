@@ -5,13 +5,13 @@ sidebar:
   order: 4
 ---
 
-Online dating has fundamentally transformed how people meet. In 2017, it became the most common way heterosexual couples in the U.S. meet, surpassing meeting through friends.<sup>1</sup>
+Online dating has fundamentally transformed how people meet. In 2017, it became the most common way heterosexual couples in the U.S. meet, surpassing meeting through friends.<sup>[[1]](#references)</sup>
 
 But has this transformation been good for us? The research reveals a complicated picture—new opportunities mixed with new problems.
 
 ## The Rise of App-Based Dating
 
-The shift has been dramatic. Research tracking how couples meet shows:<sup>1</sup>
+The shift has been dramatic. Research tracking how couples meet shows:<sup>[[1]](#references)</sup>
 
 - **Pre-1995**: Meeting through friends, family, work, school, church dominated
 - **1995-2010**: Online dating grew steadily, mostly via websites
@@ -19,7 +19,7 @@ The shift has been dramatic. Research tracking how couples meet shows:<sup>1</su
 - **2017**: Online/app became the #1 way heterosexual couples meet
 - **Same-sex couples**: Online has been dominant since 2000
 
-By 2022, approximately **30% of U.S. adults** had used a dating site or app, with higher rates among younger adults and LGBTQ+ individuals.<sup>2</sup>
+By 2022, approximately **30% of U.S. adults** had used a dating site or app, with higher rates among younger adults and LGBTQ+ individuals.<sup>[[2]](#references)</sup>
 
 The question isn't whether online dating matters—it clearly does. The question is how it changes the experience of finding a partner.
 
@@ -29,14 +29,14 @@ Large-scale analyses of actual user behavior reveal consistent patterns:
 
 ### The selectivity gap
 
-Both men and women are highly selective, but women more so. Analysis of messaging behavior shows:<sup>3</sup>
+Both men and women are highly selective, but women more so. Analysis of messaging behavior shows:<sup>[[3]](#references)</sup>
 - Women "like" approximately 5-15% of profiles they view
 - Men "like" approximately 40-60% of profiles they view
 - This creates asymmetric matching dynamics
 
 ### The attractiveness distribution problem
 
-A study of Tinder-like swiping found that the **top 10-15% of men receive the majority of female interest**, while distribution of male interest across women is more even.<sup>4</sup>
+A study of Tinder-like swiping found that the **top 10-15% of men receive the majority of female interest**, while distribution of male interest across women is more even.<sup>[[4]](#references)</sup>
 
 This creates a challenging dynamic:
 - Average men receive very few matches
@@ -46,7 +46,7 @@ This creates a challenging dynamic:
 
 ### Message patterns
 
-When people do match, messaging behavior follows patterns:<sup>5</sup>
+When people do match, messaging behavior follows patterns:<sup>[[5]](#references)</sup>
 - Most matches never exchange messages
 - Initial messages are short and formulaic
 - Response rates to first messages average 20-30%
@@ -59,7 +59,7 @@ With potentially thousands of options, you might expect people to find better pa
 
 ### Choice overload
 
-A study of online dating decisions found that having more options led to:<sup>6</sup>
+A study of online dating decisions found that having more options led to:<sup>[[6]](#references)</sup>
 - Lower satisfaction with the dating process
 - More time spent searching, less time connecting
 - Tendency to reject good-enough options waiting for "better"
@@ -67,16 +67,16 @@ A study of online dating decisions found that having more options led to:<sup>6<
 
 ### The "shopping" mindset
 
-Dating apps encourage evaluation of people as products—quickly assessing a profile image and bio to decide yes/no. This promotes:<sup>7</sup>
+Dating apps encourage evaluation of people as products—quickly assessing a profile image and bio to decide yes/no. This promotes:<sup>[[7]](#references)</sup>
 - Emphasis on easily evaluated traits (appearance, demographics)
 - Devaluation of harder-to-assess qualities (character, compatibility)
 - "Maximizing" (seeking the best) rather than "satisficing" (finding good enough)
 
-Research shows people with maximizing tendencies report **lower satisfaction** with their choices and more regret—even when their choices are objectively good.<sup>7</sup>
+Research shows people with maximizing tendencies report **lower satisfaction** with their choices and more regret—even when their choices are objectively good.<sup>[[7]](#references)</sup>
 
 ### Comparison shopping continues
 
-Even after finding a partner, the "market" remains visible. Research finds that relationship commitment is lower when alternatives are perceived as plentiful and attractive.<sup>8</sup> Dating apps keep alternatives perpetually visible.
+Even after finding a partner, the "market" remains visible. Research finds that relationship commitment is lower when alternatives are perceived as plentiful and attractive.<sup>[[8]](#references)</sup> Dating apps keep alternatives perpetually visible.
 
 ## What Profiles Don't Tell You
 
@@ -84,19 +84,19 @@ People are remarkably bad at predicting attraction from profiles.
 
 ### Stated preferences vs. actual choices
 
-A landmark speed-dating study found that people's **stated preferences didn't predict their actual choices**.<sup>9</sup> Someone who claimed to want "intelligence" wasn't more attracted to intelligent people they met. Someone who said "sense of humor" wasn't more drawn to funny partners.
+A landmark speed-dating study found that people's **stated preferences didn't predict their actual choices**.<sup>[[9]](#references)</sup> Someone who claimed to want "intelligence" wasn't more attracted to intelligent people they met. Someone who said "sense of humor" wasn't more drawn to funny partners.
 
 What did predict attraction? **Physical attractiveness**—even for people who said looks didn't matter to them.
 
 ### The profile-to-person gap
 
-Online profiles present a curated, static version of a person. But attraction develops through:<sup>10</sup>
+Online profiles present a curated, static version of a person. But attraction develops through:<sup>[[10]](#references)</sup>
 - Dynamic interaction
 - Nonverbal communication
 - Voice, humor, warmth in real-time
 - Context-dependent behavior
 
-A study comparing online profile impressions to in-person meeting impressions found substantial differences—people changed their evaluations significantly after meeting face-to-face.<sup>10</sup>
+A study comparing online profile impressions to in-person meeting impressions found substantial differences—people changed their evaluations significantly after meeting face-to-face.<sup>[[10]](#references)</sup>
 
 ### The photo problem
 
@@ -106,7 +106,7 @@ Profile photos are the dominant factor in swipe decisions. But photos are:
 - Misleading about day-to-day appearance
 - A poor proxy for attraction in person
 
-Research shows that photo attractiveness ratings correlate only modestly with in-person attractiveness ratings—the person you meet may be more or less attractive than their best photo suggests.<sup>10</sup>
+Research shows that photo attractiveness ratings correlate only modestly with in-person attractiveness ratings—the person you meet may be more or less attractive than their best photo suggests.<sup>[[10]](#references)</sup>
 
 ## Online-to-Offline Transition
 
@@ -114,7 +114,7 @@ The transition from messaging to meeting is where many potential connections fai
 
 ### Timing matters
 
-Research suggests an optimal window for moving from online to in-person:<sup>11</sup>
+Research suggests an optimal window for moving from online to in-person:<sup>[[11]](#references)</sup>
 - Meeting too quickly: Not enough information to filter incompatibilities
 - Waiting too long: Building unrealistic expectations, losing momentum
 
@@ -122,7 +122,7 @@ The sweet spot appears to be **1-3 weeks of messaging**, then meeting. Extended 
 
 ### First meeting realities
 
-Studies find that most first dates from apps don't lead to second dates:<sup>11</sup>
+Studies find that most first dates from apps don't lead to second dates:<sup>[[11]](#references)</sup>
 - Approximately 30-40% of first dates lead to second dates
 - Physical chemistry often doesn't match online chemistry
 - "Dealbreakers" emerge that weren't apparent online
@@ -135,7 +135,7 @@ The relationship between dating app use and mental health is concerning.
 
 ### Correlational findings
 
-Multiple studies find associations between dating app use and:<sup>12</sup><sup>13</sup>
+Multiple studies find associations between dating app use and:<sup>[[12]](#references)</sup><sup>[[13]](#references)</sup>
 - Lower self-esteem
 - Higher depression and anxiety
 - Greater body dissatisfaction
@@ -147,11 +147,11 @@ Multiple studies find associations between dating app use and:<sup>12</sup><sup>
 
 Dating apps involve **high-volume rejection**. Each swipe left is a micro-rejection. Each unanswered message is rejection. Each unmatch is rejection.
 
-Research shows rejection activates the same brain regions as physical pain.<sup>14</sup> Dating apps expose users to far more rejection events than traditional dating—the psychological toll may accumulate.
+Research shows rejection activates the same brain regions as physical pain.<sup>[[14]](#references)</sup> Dating apps expose users to far more rejection events than traditional dating—the psychological toll may accumulate.
 
 ### Appearance-based self-worth
 
-Apps emphasize appearance-based evaluation. Research finds that after using appearance-focused apps, users show:<sup>13</sup>
+Apps emphasize appearance-based evaluation. Research finds that after using appearance-focused apps, users show:<sup>[[13]](#references)</sup>
 - Increased appearance anxiety
 - More social comparison
 - Decreased self-esteem related to appearance
@@ -164,7 +164,7 @@ It's not all negative. Research also shows benefits:
 
 ### Expanded access
 
-Dating apps dramatically expand the pool of potential partners, particularly for:<sup>1</sup>
+Dating apps dramatically expand the pool of potential partners, particularly for:<sup>[[1]](#references)</sup>
 - LGBTQ+ individuals (historically harder to identify partners)
 - People with niche interests or preferences
 - Those in small social networks
@@ -172,7 +172,7 @@ Dating apps dramatically expand the pool of potential partners, particularly for
 
 ### Weak-tie connections
 
-Apps facilitate meeting people outside your existing social network. Research shows these "weak tie" connections often lead to more demographically diverse relationships.<sup>1</sup>
+Apps facilitate meeting people outside your existing social network. Research shows these "weak tie" connections often lead to more demographically diverse relationships.<sup>[[1]](#references)</sup>
 
 ### Efficiency
 
@@ -180,7 +180,7 @@ For people with limited time or social opportunities, apps provide a way to scre
 
 ### Success rates
 
-Despite the challenges, many relationships do form through apps. Studies of relationship quality find:<sup>15</sup>
+Despite the challenges, many relationships do form through apps. Studies of relationship quality find:<sup>[[15]](#references)</sup>
 - Couples who met online report similar or slightly higher relationship satisfaction than those who met offline
 - Online-initiated relationships have similar breakup rates to offline-initiated ones
 - The "how you met" matters less than what you build together
@@ -190,19 +190,19 @@ Despite the challenges, many relationships do form through apps. Studies of rela
 Research suggests several approaches to improve outcomes:
 
 ### Limit time and exposure
-Set boundaries on app usage. Endless swiping produces diminishing returns and may increase negative psychological effects.<sup>12</sup>
+Set boundaries on app usage. Endless swiping produces diminishing returns and may increase negative psychological effects.<sup>[[12]](#references)</sup>
 
 ### Move offline quickly
-Don't let online conversation substitute for meeting. The sooner you meet in person, the sooner you have real information about compatibility.<sup>11</sup>
+Don't let online conversation substitute for meeting. The sooner you meet in person, the sooner you have real information about compatibility.<sup>[[11]](#references)</sup>
 
 ### Be honest in profiles
-Deceptive profiles backfire. One study found that profile honesty predicted relationship success—lying delays but doesn't prevent rejection.<sup>16</sup>
+Deceptive profiles backfire. One study found that profile honesty predicted relationship success—lying delays but doesn't prevent rejection.<sup>[[16]](#references)</sup>
 
 ### Focus on deal-breakers, not wish lists
-Research shows deal-breakers (things you can't accept) predict relationship outcomes better than wish lists (things you want). Screen for incompatibilities rather than optimizing for preferences.<sup>17</sup>
+Research shows deal-breakers (things you can't accept) predict relationship outcomes better than wish lists (things you want). Screen for incompatibilities rather than optimizing for preferences.<sup>[[17]](#references)</sup>
 
 ### Satisfice, don't maximize
-Choose someone who meets your needs rather than endlessly searching for the "best" option. Maximizers are less happy with their choices.<sup>7</sup>
+Choose someone who meets your needs rather than endlessly searching for the "best" option. Maximizers are less happy with their choices.<sup>[[7]](#references)</sup>
 
 ### Maintain self-worth externally
 Don't let app outcomes define your value. Match rates reflect algorithm mechanics and demographics, not your worthiness of love.

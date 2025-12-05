@@ -5,7 +5,7 @@ description: "How couples sustain emotional and physical connection over time—
 
 There's a pervasive myth that passion inevitably dies in long-term relationships. The honeymoon ends, the spark fades, and couples settle into comfortable but passionless routines. It's presented as an unavoidable fact of life.
 
-But neuroscience tells a different story. Brain imaging studies show that **30-40% of people married over 10 years report being "very intensely in love"**—and their brain scans prove it.¹
+But neuroscience tells a different story. Brain imaging studies show that **30-40% of people married over 10 years report being "very intensely in love"**—and their brain scans prove it.<sup>[[1]](#references)</sup>
 
 Intimacy doesn't automatically fade. It requires intention. Here's what the research says about couples who maintain it.
 
@@ -13,13 +13,13 @@ Intimacy doesn't automatically fade. It requires intention. Here's what the rese
 
 Let's start with the uncomfortable truth: almost all long-term couples experience desire discrepancy at some point. One partner wants sex more frequently than the other. This is normal—not a sign that something is wrong.
 
-A systematic review of 64 studies found that **desire discrepancy is one of the most common reasons couples seek therapy**.² It's ubiquitous because desire naturally fluctuates based on stress, health, life stage, and countless other factors.
+A systematic review of 64 studies found that **desire discrepancy is one of the most common reasons couples seek therapy**.<sup>[[2]](#references)</sup> It's ubiquitous because desire naturally fluctuates based on stress, health, life stage, and countless other factors.
 
 The problem isn't the discrepancy itself. It's how couples handle it.
 
 ### What Doesn't Work
 
-Research on 229 participants identified five main strategies couples use when facing desire discrepancy.³ Individual strategies—disengagement, handling it alone, or avoiding the issue—were associated with **lower relationship and sexual satisfaction**.
+Research on 229 participants identified five main strategies couples use when facing desire discrepancy.<sup>[[3]](#references)</sup> Individual strategies—disengagement, handling it alone, or avoiding the issue—were associated with **lower relationship and sexual satisfaction**.
 
 Having sex anyway when you don't want to? Also problematic. It breeds resentment and makes sex feel like an obligation.
 
@@ -33,13 +33,13 @@ This includes:
 - **Addressing underlying issues** (stress, health, relationship conflict)
 - **Reframing the narrative** from "you don't want me" to "we have different needs right now"
 
-A 2024 qualitative study of diverse couples found similar themes: couples who navigated discrepancy successfully treated it as a normal fluctuation, not a fundamental incompatibility.⁴
+A 2024 qualitative study of diverse couples found similar themes: couples who navigated discrepancy successfully treated it as a normal fluctuation, not a fundamental incompatibility.<sup>[[4]](#references)</sup>
 
 ## Emotional vs. Physical: The Interplay
 
 Here's something counterintuitive from a study of 335 married couples:
 
-**Sexual satisfaction predicts emotional intimacy—but emotional intimacy doesn't predict sexual satisfaction.**⁵
+**Sexual satisfaction predicts emotional intimacy—but emotional intimacy doesn't predict sexual satisfaction.**<sup>[[5]](#references)</sup>
 
 This challenges the common advice to "fix the emotional connection first." For many couples, physical intimacy actually builds emotional connection, not the other way around.
 
@@ -56,11 +56,11 @@ What this means practically:
 
 The most encouraging research comes from neuroscience.
 
-A 2012 fMRI study scanned the brains of 17 people who had been married an average of **21 years** and still reported intense love for their partners.⁶ When they viewed photos of their spouse, their brains showed activity in the same reward regions—the ventral tegmental area, dorsal striatum—that light up in people newly in love.
+A 2012 fMRI study scanned the brains of 17 people who had been married an average of **21 years** and still reported intense love for their partners.<sup>[[6]](#references)</sup> When they viewed photos of their spouse, their brains showed activity in the same reward regions—the ventral tegmental area, dorsal striatum—that light up in people newly in love.
 
 The brain can sustain romantic passion for decades. It's not common, but it's possible.
 
-What distinguished these couples? A related population study found key correlates of sustained passion:¹
+What distinguished these couples? A related population study found key correlates of sustained passion:<sup>[[1]](#references)</sup>
 
 - **Thinking positively about partner** when apart
 - **Frequent affectionate behaviors** (not just sex)
@@ -72,7 +72,7 @@ Notice that these are behaviors, not fixed traits. They're things couples do, no
 
 ## The Self-Expansion Secret
 
-One of the most robust findings in relationship science is **self-expansion theory**, developed by Arthur Aron and colleagues.⁷
+One of the most robust findings in relationship science is **self-expansion theory**, developed by Arthur Aron and colleagues.<sup>[[7]](#references)</sup>
 
 The theory: We're motivated to expand our sense of self—our knowledge, perspectives, and capabilities. Romantic relationships are a primary avenue for self-expansion. In early relationships, we're rapidly absorbing our partner's world, which feels exciting.
 
@@ -80,17 +80,17 @@ Once we've absorbed most of what our partner offers, expansion slows. The relati
 
 The solution? **Keep expanding together.**
 
-A 2019 study across three research designs found that couples who engaged in self-expanding activities together reported **higher sexual desire** than those who didn't.⁸ The key insight: the activities don't have to be extreme.
+A 2019 study across three research designs found that couples who engaged in self-expanding activities together reported **higher sexual desire** than those who didn't.<sup>[[8]](#references)</sup> The key insight: the activities don't have to be extreme.
 
 Walking in a new neighborhood. Trying a recipe neither has made before. Taking a class together. Learning something from each other.
 
 Couples assigned to do novel activities over a weekend showed **greater sexual desire for their partner** compared to control groups—even when the activities weren't physically arousing.
 
-Another study found the mechanism: novel activities work because they promote both **closeness and novelty** simultaneously—the two ingredients passion requires.⁹
+Another study found the mechanism: novel activities work because they promote both **closeness and novelty** simultaneously—the two ingredients passion requires.<sup>[[9]](#references)</sup>
 
 ### Boredom Is the Real Enemy
 
-In one experiment, the statistical relationship between exciting shared activities and relationship quality dropped significantly when researchers controlled for boredom. Boredom correlated -.58 with relationship quality.¹⁰
+In one experiment, the statistical relationship between exciting shared activities and relationship quality dropped significantly when researchers controlled for boredom. Boredom correlated -.58 with relationship quality.<sup>[[10]](#references)</sup>
 
 It's not that passion dies. It's that routine kills it.
 
@@ -98,15 +98,15 @@ The couples who maintain intimacy are the ones who keep introducing novelty—no
 
 ## The Power of Non-Sexual Touch
 
-Physical intimacy isn't just about sex. A cross-cultural study of 7,880 participants from 37 countries found that **affectionate touch is the primary way people communicate intimacy**, universally.¹¹
+Physical intimacy isn't just about sex. A cross-cultural study of 7,880 participants from 37 countries found that **affectionate touch is the primary way people communicate intimacy**, universally.<sup>[[11]](#references)</sup>
 
 The physiological benefits are striking:
 
-- Partners show **lower cortisol levels** (stress hormone) on days with more physical touch¹²
+- Partners show **lower cortisol levels** (stress hormone) on days with more physical touch<sup>[[12]](#references)</sup>
 - Regular affectionate touch is linked to **increased oxytocin and lower blood pressure**
-- Increases in physical intimacy lead to **decreases in physical symptoms** (headaches, muscle tension, insomnia)¹²
+- Increases in physical intimacy lead to **decreases in physical symptoms** (headaches, muscle tension, insomnia)<sup>[[12]](#references)</sup>
 
-The seven types of non-sexual physical affection that predict relationship satisfaction:¹³
+The seven types of non-sexual physical affection that predict relationship satisfaction:<sup>[[13]](#references)</sup>
 
 1. Backrubs/massages
 2. Caressing/stroking
@@ -116,7 +116,7 @@ The seven types of non-sexual physical affection that predict relationship satis
 6. Kissing on face
 7. Kissing on lips
 
-A study of 1,400 adults found that in long-term relationships, **cuddling and caressing contribute more to men's happiness than women's**—challenging the stereotype that men only want sex.¹⁴
+A study of 1,400 adults found that in long-term relationships, **cuddling and caressing contribute more to men's happiness than women's**—challenging the stereotype that men only want sex.<sup>[[14]](#references)</sup>
 
 The implication: non-sexual physical affection may become more important as relationships mature, not less. It maintains the physical bond even when sexual frequency changes.
 

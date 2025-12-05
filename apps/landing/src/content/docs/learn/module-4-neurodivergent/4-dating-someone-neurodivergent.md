@@ -13,13 +13,13 @@ Here's what research tells us about mixed-neurotype relationships, and how to bu
 
 For decades, autism research assumed autistic people lacked empathy and social understanding. But a paradigm shift is underway.
 
-Researcher Damian Milton proposed the **double empathy problem** in 2012: when people with very different experiences of the world interact, they will struggle to empathize with each other.¹ The communication breakdown isn't one-sided—it goes both ways.
+Researcher Damian Milton proposed the **double empathy problem** in 2012: when people with very different experiences of the world interact, they will struggle to empathize with each other.<sup>[[1]](#references)</sup> The communication breakdown isn't one-sided—it goes both ways.
 
 Research supports this:
 
-- Autistic people communicate **just as effectively with other autistic people** as neurotypical people do with each other²
-- It's specifically in **mixed interactions** (autistic-neurotypical) that communication and rapport deteriorate²
-- Outside observers rate mixed interactions as **less successful** than either autistic-autistic or neurotypical-neurotypical pairs³
+- Autistic people communicate **just as effectively with other autistic people** as neurotypical people do with each other<sup>[[2]](#references)</sup>
+- It's specifically in **mixed interactions** (autistic-neurotypical) that communication and rapport deteriorate<sup>[[2]](#references)</sup>
+- Outside observers rate mixed interactions as **less successful** than either autistic-autistic or neurotypical-neurotypical pairs<sup>[[3]](#references)</sup>
 
 The implication is profound: the "social deficit" isn't located solely in the autistic person. It's a **mutual misunderstanding** between different neurological styles.
 
@@ -29,7 +29,7 @@ This reframing matters for relationships. If you're neurotypical dating someone 
 
 Here's something surprising from recent research:
 
-A 2024 study in *Autism in Adulthood* compared relationship satisfaction across three types of couples:⁴
+A 2024 study in *Autism in Adulthood* compared relationship satisfaction across three types of couples:<sup>[[4]](#references)</sup>
 - Autistic person + autistic partner
 - Autistic person + neurotypical partner
 - Autistic person + non-autistic but neurodivergent partner (e.g., ADHD)
@@ -40,7 +40,7 @@ Autistic people find comparable levels of satisfaction regardless of whether the
 
 ## What Actually Predicts Satisfaction
 
-A study of 95 autistic individuals and 65 neurotypical partners found the strongest predictor of relationship satisfaction for both groups: **partner responsiveness**.⁵
+A study of 95 autistic individuals and 65 neurotypical partners found the strongest predictor of relationship satisfaction for both groups: **partner responsiveness**.<sup>[[5]](#references)</sup>
 
 Responsiveness means:
 - Feeling understood by your partner
@@ -49,7 +49,7 @@ Responsiveness means:
 
 This held true for both the autistic person and their non-autistic partner. The quality of attunement matters more than neurological matching.
 
-This has practical implications: rather than focusing intervention solely on the neurodivergent person, the responsiveness of both partners matters.⁵
+This has practical implications: rather than focusing intervention solely on the neurodivergent person, the responsiveness of both partners matters.<sup>[[5]](#references)</sup>
 
 ## ADHD in a Partner
 
@@ -57,26 +57,26 @@ Research paints a complex picture of relationships where one partner has ADHD.
 
 ### The Challenges
 
-Adults with ADHD report **lower marital satisfaction** than their neurotypical peers.⁶ ADHD symptoms are negatively associated with satisfaction in dating relationships.⁷
+Adults with ADHD report **lower marital satisfaction** than their neurotypical peers.<sup>[[6]](#references)</sup> ADHD symptoms are negatively associated with satisfaction in dating relationships.<sup>[[7]](#references)</sup>
 
 Common friction points:
 
-- **Emotional dysregulation** — Outbursts, mood swings, and rejection sensitivity can feel overwhelming for partners⁸
+- **Emotional dysregulation** — Outbursts, mood swings, and rejection sensitivity can feel overwhelming for partners<sup>[[8]](#references)</sup>
 - **Attention inconsistency** — Hyperfocus during courtship can shift to apparent inattention once comfortable
 - **Executive function gaps** — Forgetting commitments, time blindness, incomplete tasks
-- **Relationship turnover** — Higher rates of breakups and shorter relationships⁸
+- **Relationship turnover** — Higher rates of breakups and shorter relationships<sup>[[8]](#references)</sup>
 
-A 2021 study found that a partner's **anxious attachment style** made these challenges worse. The negative effect of ADHD symptoms on relationship quality was exacerbated when the partner had high anxious attachment.⁷
+A 2021 study found that a partner's **anxious attachment style** made these challenges worse. The negative effect of ADHD symptoms on relationship quality was exacerbated when the partner had high anxious attachment.<sup>[[7]](#references)</sup>
 
 ### What Helps
 
-Research on conflict resolution in couples with ADHD found that outcomes varied by ADHD presentation:⁹
+Research on conflict resolution in couples with ADHD found that outcomes varied by ADHD presentation:<sup>[[9]](#references)</sup>
 
 - Partners with **inattentive-type ADHD** showed different conflict patterns than those with combined type
 - Couples benefit from understanding how ADHD specifically manifests in their relationship
 - Generic couples therapy may miss ADHD-specific dynamics
 
-Recent qualitative research on women living with partners who have ADHD found that **psychoeducation**—understanding ADHD as a neurological condition, not a character flaw—significantly improved relationship quality.¹⁰
+Recent qualitative research on women living with partners who have ADHD found that **psychoeducation**—understanding ADHD as a neurological condition, not a character flaw—significantly improved relationship quality.<sup>[[10]](#references)</sup>
 
 ## Understanding Common Misunderstandings
 
@@ -90,7 +90,7 @@ Autistic people may express emotions differently—less through facial expressio
 
 **Need for routine ≠ rigidity or control**
 
-Predictability reduces cognitive load. When you cancel plans last-minute, it may disrupt their entire day's regulation—not because they're inflexible, but because transitions require significant effort.¹
+Predictability reduces cognitive load. When you cancel plans last-minute, it may disrupt their entire day's regulation—not because they're inflexible, but because transitions require significant effort.<sup>[[1]](#references)</sup>
 
 **Direct communication ≠ rudeness**
 
@@ -140,7 +140,7 @@ There's a critical difference between supporting a neurodivergent partner and tr
 - Accepting that some things won't change
 - Distinguishing between accommodation (helpful) and enabling (harmful)
 
-Research on accommodation in anxiety relationships is instructive: excessive accommodation of anxiety symptoms can **strengthen** the concordance between partners' distress rather than reducing it.¹¹ Support means helping them build capacity, not removing all challenge.
+Research on accommodation in anxiety relationships is instructive: excessive accommodation of anxiety symptoms can **strengthen** the concordance between partners' distress rather than reducing it.<sup>[[11]](#references)</sup> Support means helping them build capacity, not removing all challenge.
 
 ## Making It Work
 
@@ -169,15 +169,15 @@ For ADHD partners:
 
 Couples therapy can help, but **standard approaches may miss neurotype-specific dynamics**.
 
-Research suggests that solution-focused approaches show promise for neurodiverse couples.¹² Look for therapists who understand neurodivergence—many couples therapists don't.
+Research suggests that solution-focused approaches show promise for neurodiverse couples.<sup>[[12]](#references)</sup> Look for therapists who understand neurodivergence—many couples therapists don't.
 
-For ADHD specifically, individual treatment for the ADHD partner (medication, coaching, CBT) combined with couples work tends to be more effective than couples therapy alone.⁶
+For ADHD specifically, individual treatment for the ADHD partner (medication, coaching, CBT) combined with couples work tends to be more effective than couples therapy alone.<sup>[[6]](#references)</sup>
 
 ## When Neurotypes Complement
 
 It's not all challenge. Research and clinical observation suggest some neurotype pairings have complementary strengths:
 
-**Autistic + ADHD** partnerships are increasingly common and sometimes described as having natural fit—the autism providing structure and the ADHD providing flexibility and spontaneity.¹³
+**Autistic + ADHD** partnerships are increasingly common and sometimes described as having natural fit—the autism providing structure and the ADHD providing flexibility and spontaneity.<sup>[[13]](#references)</sup>
 
 **Shared neurodivergence** often means shared understanding of sensory needs, social exhaustion, and different communication styles—without needing to explain.
 

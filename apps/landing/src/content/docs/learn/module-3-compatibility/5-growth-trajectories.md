@@ -13,20 +13,20 @@ Research on personal growth in relationships reveals what helps couples evolve t
 
 ## Self-Expansion: The Growth Engine
 
-One of the most robust findings in relationship science is **self-expansion theory**: we're motivated to grow and expand our capabilities, and close relationships are a primary vehicle for this growth.<sup>1</sup>
+One of the most robust findings in relationship science is **self-expansion theory**: we're motivated to grow and expand our capabilities, and close relationships are a primary vehicle for this growth.<sup>[[1]](#references)</sup>
 
-When you fall in love, you literally expand your sense of self. Research shows people who fall in love experience:<sup>2</sup>
+When you fall in love, you literally expand your sense of self. Research shows people who fall in love experience:<sup>[[2]](#references)</sup>
 - Increased self-concept diversity
 - Greater self-efficacy
 - Incorporation of partner's resources, perspectives, and identities into their own
 
-This isn't metaphor—it's measurable. The **Inclusion of Other in Self** (IOS) scale shows how much people have integrated their partner's identity with their own.<sup>1</sup>
+This isn't metaphor—it's measurable. The **Inclusion of Other in Self** (IOS) scale shows how much people have integrated their partner's identity with their own.<sup>[[1]](#references)</sup>
 
 The implication: healthy relationships facilitate personal growth. When growth stops, relationships often stagnate.
 
 ## Perceived Similarity Matters More
 
-Here's the interesting finding about growth compatibility: **perceived similarity in values predicts relationship quality better than actual similarity**.<sup>3</sup>
+Here's the interesting finding about growth compatibility: **perceived similarity in values predicts relationship quality better than actual similarity**.<sup>[[3]](#references)</sup>
 
 In early relationships, being objectively similar helps attraction. But once you're established, what matters is whether you *feel* aligned—even if you're not actually that similar.
 
@@ -34,13 +34,13 @@ This means couples can diverge in objective ways while maintaining the perceptio
 
 ## Growth Mindset in Relationships
 
-Carol Dweck's research on growth mindset extends to relationships:<sup>4</sup>
+Carol Dweck's research on growth mindset extends to relationships:<sup>[[4]](#references)</sup>
 
 **Destiny beliefs**: Relationships are either "meant to be" or they're not. Compatibility is fixed.
 
 **Growth beliefs**: Relationships can be cultivated through effort. Challenges are opportunities to develop together.
 
-Research shows growth beliefs predict:<sup>4</sup><sup>5</sup>
+Research shows growth beliefs predict:<sup>[[4]](#references)</sup><sup>[[5]](#references)</sup>
 - Better coping with relationship challenges
 - Greater persistence through difficulties
 - Longer relationship duration
@@ -48,19 +48,19 @@ Research shows growth beliefs predict:<sup>4</sup><sup>5</sup>
 
 Destiny-oriented individuals abandon potentially salvageable relationships when challenges arise. Growth-oriented individuals work through them.
 
-A longitudinal study of 300 couples found stronger destiny beliefs predicted higher initial satisfaction, but higher growth beliefs predicted slower decline over time.<sup>5</sup>
+A longitudinal study of 300 couples found stronger destiny beliefs predicted higher initial satisfaction, but higher growth beliefs predicted slower decline over time.<sup>[[5]](#references)</sup>
 
 ## Supporting Partner Growth
 
 How you respond to your partner's growth pursuits significantly affects both individual and relationship outcomes.
 
-Research on **partner support for self-improvement** found:<sup>6</sup>
+Research on **partner support for self-improvement** found:<sup>[[6]](#references)</sup>
 - Supportive responses predicted both relationship quality AND actual self-improvement success
 - Effects persisted over one year
 - Nurturing and action-facilitating support was most helpful
 - Criticism and invalidation undermined both relationship quality and personal growth
 
-Another landmark study on **secure base support** found:<sup>7</sup>
+Another landmark study on **secure base support** found:<sup>[[7]](#references)</sup>
 - Partners who provide responsive (non-intrusive) support for exploration enhance their partner's happiness, self-esteem, and goal attainability
 - This support facilitates personal growth while strengthening the relationship bond
 
@@ -70,13 +70,13 @@ The key is supporting **autonomy**—helping your partner grow in their own dire
 
 Couples with aligned goals fare better—but research shows the mechanism matters.
 
-A study of older couples found:<sup>8</sup>
+A study of older couples found:<sup>[[8]](#references)</sup>
 - Goal coordination predicted better goal progress
 - It also predicted lower physiological stress
 - And higher relationship satisfaction
 - Discrepancies between assumed and actual joint goals hindered progress
 
-A longitudinal study of 148 couples found goal coordination increased goal attainment, which increased life satisfaction for both partners.<sup>9</sup>
+A longitudinal study of 148 couples found goal coordination increased goal attainment, which increased life satisfaction for both partners.<sup>[[9]](#references)</sup>
 
 The implication: don't just assume you know your partner's goals. Explicitly discuss them. Coordination requires communication.
 
@@ -84,7 +84,7 @@ The implication: don't just assume you know your partner's goals. Explicitly dis
 
 How you respond to your partner's good news matters as much as how you respond to their problems—maybe more.
 
-Research on **capitalization** (sharing positive events) found:<sup>10</sup>
+Research on **capitalization** (sharing positive events) found:<sup>[[10]](#references)</sup>
 
 | Response Style | Description | Effect on Relationship |
 |---------------|-------------|----------------------|
@@ -93,7 +93,7 @@ Research on **capitalization** (sharing positive events) found:<sup>10</sup>
 | Active-Destructive | Pointing out downsides | Damages relationship |
 | Passive-Destructive | Ignoring or changing subject | Damages relationship |
 
-Strikingly, **responses to positive events better predicted relationship well-being than responses to negative events**.<sup>11</sup>
+Strikingly, **responses to positive events better predicted relationship well-being than responses to negative events**.<sup>[[11]](#references)</sup>
 
 When your partner shares good news about a promotion, opportunity, or achievement:
 - Active-constructive: "That's amazing! Tell me all about it. What happens next?"
@@ -105,7 +105,7 @@ How you celebrate together shapes whether you grow together.
 
 ## The Suffocation Model
 
-Modern relationships face a unique challenge. Research calls it the **suffocation of marriage**:<sup>12</sup>
+Modern relationships face a unique challenge. Research calls it the **suffocation of marriage**:<sup>[[12]](#references)</sup>
 
 Americans increasingly expect marriage to fulfill higher-level needs (esteem, self-actualization)—needs that previous generations met through community, religion, or extended family. But couples are investing less time in their relationships.
 
@@ -117,13 +117,13 @@ The implication for growth: if you expect your partner to support your self-actu
 
 ## Relationship Satisfaction Trajectories
 
-A meta-analysis of longitudinal studies found relationship satisfaction follows predictable patterns:<sup>13</sup>
+A meta-analysis of longitudinal studies found relationship satisfaction follows predictable patterns:<sup>[[13]](#references)</sup>
 
 - **Declines from age 20-40**, reaching a low point around 40
 - **Increases from 40-65**, then plateaus
 - **By relationship duration**: declines first 10 years, lowest at 10 years, increases until 20 years, then may decline again
 
-But individual differences are substantial. A 10-year study identified distinct trajectory groups:<sup>14</sup>
+But individual differences are substantial. A 10-year study identified distinct trajectory groups:<sup>[[14]](#references)</sup>
 - **High stable satisfaction**: Most favorable outcomes—greater positive affect, better mental health
 - **Declining satisfaction**: Poorer outcomes even if initially high
 - **Low but stable**: Better outcomes than declining group
@@ -134,7 +134,7 @@ The takeaway: initial compatibility matters less than trajectory. A couple start
 
 Do couples influence each other's personality over time?
 
-A four-year study of 169 newlywed couples found:<sup>15</sup>
+A four-year study of 169 newlywed couples found:<sup>[[15]](#references)</sup>
 - Partners who became more agreeable reported greater marital satisfaction
 - Partners who became less neurotic reported greater marital satisfaction
 - Personality changes predicted changes in satisfaction
@@ -143,7 +143,7 @@ Couples don't just grow as individuals—they shape each other's growth.
 
 ## What Predicts Growing Together vs. Apart
 
-Machine learning analysis of 43 datasets (11,196 couples) identified the strongest predictors of relationship quality:<sup>16</sup>
+Machine learning analysis of 43 datasets (11,196 couples) identified the strongest predictors of relationship quality:<sup>[[16]](#references)</sup>
 
 **Top relationship-specific predictors:**
 1. Perceived partner commitment

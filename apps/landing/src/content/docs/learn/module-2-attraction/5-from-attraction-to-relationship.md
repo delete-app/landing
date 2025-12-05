@@ -11,7 +11,7 @@ The transition from attraction to relationship isn't automatic. Many promising c
 
 ## The Stages of Relationship Formation
 
-Research suggests relationships develop through predictable stages, though the boundaries are fluid:<sup>1</sup>
+Research suggests relationships develop through predictable stages, though the boundaries are fluid:<sup>[[1]](#references)</sup>
 
 ### 1. Awareness
 One or both parties notice the other. Initial attraction (physical, situational, or social) creates interest. This can happen in person, through friends, or via dating apps.
@@ -32,7 +32,7 @@ Not all connections progress through all stages. Most filter out at surface cont
 
 ## Self-Disclosure: The Engine of Intimacy
 
-One of the most robust findings in relationship science: **self-disclosure drives intimacy**.<sup>2</sup>
+One of the most robust findings in relationship science: **self-disclosure drives intimacy**.<sup>[[2]](#references)</sup>
 
 Self-disclosure means revealing personal information—thoughts, feelings, experiences, vulnerabilities—that isn't publicly known. Research shows:
 
@@ -40,13 +40,13 @@ Self-disclosure means revealing personal information—thoughts, feelings, exper
 - **Gradual escalation**: Healthy relationships involve progressively deeper disclosure over time.
 - **Vulnerability builds trust**: Sharing something risky and having it received well creates bonding.
 
-A landmark study had strangers answer 36 increasingly personal questions, then stare into each other's eyes for four minutes.<sup>3</sup> The result: participants reported feeling closer to their partner than to 30% of their other relationships—after just 45 minutes.
+A landmark study had strangers answer 36 increasingly personal questions, then stare into each other's eyes for four minutes.<sup>[[3]](#references)</sup> The result: participants reported feeling closer to their partner than to 30% of their other relationships—after just 45 minutes.
 
 The implication: intimacy isn't magic. It's produced by structured vulnerability exchange. The 36-question study worked because it artificially accelerated what happens naturally in developing relationships.
 
 ### The disclosure sweet spot
 
-Too much, too soon backfires. Research shows:<sup>2</sup>
+Too much, too soon backfires. Research shows:<sup>[[2]](#references)</sup>
 - Premature deep disclosure creates discomfort
 - Disclosure should match the relationship stage
 - Context matters—what's appropriate on date 10 isn't on date 1
@@ -55,7 +55,7 @@ The goal is **gradual reciprocal escalation**—each partner taking turns reveal
 
 ## Uncertainty Reduction
 
-When you meet someone new, you face uncertainty about who they are and how they'll behave. **Uncertainty reduction theory** suggests relationships form as uncertainty decreases.<sup>4</sup>
+When you meet someone new, you face uncertainty about who they are and how they'll behave. **Uncertainty reduction theory** suggests relationships form as uncertainty decreases.<sup>[[4]](#references)</sup>
 
 Three strategies for reducing uncertainty:
 
@@ -68,11 +68,11 @@ Seeking information from third parties—asking mutual friends about them, resea
 ### Interactive strategies
 Direct communication—asking questions, engaging in conversation, observing responses to your own disclosures.
 
-Research shows **interactive strategies are most effective** for uncertainty reduction—and for relationship formation. The conversations themselves build the connection.<sup>4</sup>
+Research shows **interactive strategies are most effective** for uncertainty reduction—and for relationship formation. The conversations themselves build the connection.<sup>[[4]](#references)</sup>
 
 ### Predicted outcome value
 
-People don't just reduce uncertainty—they use new information to predict whether future interaction will be rewarding.<sup>5</sup>
+People don't just reduce uncertainty—they use new information to predict whether future interaction will be rewarding.<sup>[[5]](#references)</sup>
 
 If uncertainty reduction reveals:
 - Shared values, interests, humor → predicted outcome positive → more interaction sought
@@ -86,26 +86,26 @@ Research identifies several factors that predict which initial connections devel
 
 ### Reciprocal liking
 
-Simply put: **knowing someone likes you increases your liking of them**.<sup>6</sup> This "reciprocity of attraction" is one of the strongest predictors of relationship formation.
+Simply put: **knowing someone likes you increases your liking of them**.<sup>[[6]](#references)</sup> This "reciprocity of attraction" is one of the strongest predictors of relationship formation.
 
-A meta-analysis found that perceived liking from a potential partner is among the strongest predictors of attraction—often stronger than the partner's actual characteristics.<sup>6</sup>
+A meta-analysis found that perceived liking from a potential partner is among the strongest predictors of attraction—often stronger than the partner's actual characteristics.<sup>[[6]](#references)</sup>
 
 This creates a positive feedback loop in successful connections: expressed interest increases attraction, which encourages more expressed interest.
 
 ### Responsiveness
 
-**Perceived partner responsiveness**—feeling that your partner understands you, values you, and cares about your well-being—strongly predicts relationship development.<sup>7</sup>
+**Perceived partner responsiveness**—feeling that your partner understands you, values you, and cares about your well-being—strongly predicts relationship development.<sup>[[7]](#references)</sup>
 
 Responsiveness involves:
 - **Understanding**: They "get" you
 - **Validation**: They respect your perspective
 - **Care**: They act in your interest
 
-Research shows responsiveness is particularly powerful during self-disclosure. When you share something vulnerable and your partner responds responsively, intimacy grows rapidly.<sup>7</sup>
+Research shows responsiveness is particularly powerful during self-disclosure. When you share something vulnerable and your partner responds responsively, intimacy grows rapidly.<sup>[[7]](#references)</sup>
 
 ### Positive interactions
 
-Early positive experiences build momentum. Research on married couples looking back at their courtship found that **positive first meetings predicted relationship satisfaction years later**.<sup>8</sup>
+Early positive experiences build momentum. Research on married couples looking back at their courtship found that **positive first meetings predicted relationship satisfaction years later**.<sup>[[8]](#references)</sup>
 
 Positive interactions include:
 - Shared laughter
@@ -117,7 +117,7 @@ Each positive interaction increases the probability of another. Each negative in
 
 ### Investment
 
-As relationships develop, partners invest **time, energy, and resources**. The **investment model** shows that these investments increase commitment—partly because leaving would mean losing what's been invested.<sup>9</sup>
+As relationships develop, partners invest **time, energy, and resources**. The **investment model** shows that these investments increase commitment—partly because leaving would mean losing what's been invested.<sup>[[9]](#references)</sup>
 
 Even small early investments (planning a date, remembering details, introducing to friends) signal and create commitment.
 
@@ -127,7 +127,7 @@ The first date is a critical transition point. Research reveals what matters:
 
 ### What predicts a second date?
 
-A speed-dating study found these factors predicted mutual interest:<sup>10</sup>
+A speed-dating study found these factors predicted mutual interest:<sup>[[10]](#references)</sup>
 - **Physical attractiveness** (strongest predictor for both sexes)
 - **Perceived chemistry** in conversation
 - **Perceived similarities**
@@ -137,16 +137,16 @@ Interestingly, objective similarity (having the same answers on questionnaires) 
 
 ### Conversation dynamics
 
-How the conversation flows matters. Research shows:<sup>11</sup>
+How the conversation flows matters. Research shows:<sup>[[11]](#references)</sup>
 - **Questions predict interest**: People who ask more questions are liked more
 - **Follow-up questions especially**: They signal listening and engagement
 - **Balance matters**: Conversations that feel mutual (vs. one-sided) predict more interest
 
-A study analyzing speed-dating conversations found that asking follow-up questions was particularly effective at increasing partner's liking.<sup>11</sup>
+A study analyzing speed-dating conversations found that asking follow-up questions was particularly effective at increasing partner's liking.<sup>[[11]](#references)</sup>
 
 ### Authenticity vs. impression management
 
-Everyone engages in some impression management on first dates. But research suggests **authenticity predicts better outcomes**.<sup>12</sup>
+Everyone engages in some impression management on first dates. But research suggests **authenticity predicts better outcomes**.<sup>[[12]](#references)</sup>
 
 Authentic self-presentation:
 - Increases liking (people can detect genuine vs. performed behavior)
@@ -157,7 +157,7 @@ The tension: early dating rewards some impression management, but too much creat
 
 ## Attachment Patterns in Relationship Formation
 
-Attachment style affects how relationships form:<sup>13</sup>
+Attachment style affects how relationships form:<sup>[[13]](#references)</sup>
 
 ### Secure attachment
 - Comfortable with closeness and autonomy
@@ -177,7 +177,7 @@ Attachment style affects how relationships form:<sup>13</sup>
 - Maintain emotional distance
 - Take longer to commit, or avoid commitment
 
-These patterns affect both how you approach new connections and who you're attracted to. Anxiously and avoidantly attached individuals often find each other—creating the push-pull dynamics that feel like "chemistry" but predict relationship problems.<sup>13</sup>
+These patterns affect both how you approach new connections and who you're attracted to. Anxiously and avoidantly attached individuals often find each other—creating the push-pull dynamics that feel like "chemistry" but predict relationship problems.<sup>[[13]](#references)</sup>
 
 ## The Role of Time
 
@@ -185,7 +185,7 @@ Relationship formation takes time—but how much?
 
 ### Too fast
 
-Moving too quickly can mean:<sup>14</sup>
+Moving too quickly can mean:<sup>[[14]](#references)</sup>
 - Insufficient information for good decisions
 - Idealization replacing realistic assessment
 - Ignoring red flags due to limerence
@@ -193,13 +193,13 @@ Moving too quickly can mean:<sup>14</sup>
 
 ### Too slow
 
-Moving too slowly risks:<sup>14</sup>
+Moving too slowly risks:<sup>[[14]](#references)</sup>
 - Losing momentum
 - Friendship zone (insufficient romantic energy)
 - Building unrealistic expectations through fantasy
 - Missing windows of opportunity
 
-Research suggests healthy relationships develop over **months, not days or years**. The specific timeline varies, but relationships that progress to commitment within 6-18 months tend to have better outcomes than those that rush or drag.<sup>14</sup>
+Research suggests healthy relationships develop over **months, not days or years**. The specific timeline varies, but relationships that progress to commitment within 6-18 months tend to have better outcomes than those that rush or drag.<sup>[[14]](#references)</sup>
 
 ## From Dating to Commitment
 
@@ -207,7 +207,7 @@ What marks the transition from "dating" to "relationship"?
 
 ### The DTR conversation
 
-"Define the Relationship" conversations are a modern ritual. Research shows:<sup>15</sup>
+"Define the Relationship" conversations are a modern ritual. Research shows:<sup>[[15]](#references)</sup>
 - Most couples have explicit conversations about relationship status
 - These conversations typically occur 1-4 months into dating
 - Timing matters—too early feels premature, too late creates anxiety
@@ -215,7 +215,7 @@ What marks the transition from "dating" to "relationship"?
 
 ### Markers of commitment
 
-Research identifies behaviors that signal relationship formation:<sup>9</sup>
+Research identifies behaviors that signal relationship formation:<sup>[[9]](#references)</sup>
 - **Exclusivity**: Stopping other dating
 - **Introduction**: Meeting each other's friends/family
 - **Future talk**: Making plans together
@@ -224,7 +224,7 @@ Research identifies behaviors that signal relationship formation:<sup>9</sup>
 
 ### What makes commitment happen?
 
-The investment model identifies three factors that predict commitment:<sup>9</sup>
+The investment model identifies three factors that predict commitment:<sup>[[9]](#references)</sup>
 
 1. **Satisfaction**: How happy are you with the relationship?
 2. **Alternatives**: How attractive are your other options?
@@ -236,7 +236,7 @@ This explains why people stay in unsatisfying relationships (high investment) an
 
 ## Warning Signs in Relationship Formation
 
-Not every attraction should become a relationship. Research identifies early warning signs:<sup>16</sup>
+Not every attraction should become a relationship. Research identifies early warning signs:<sup>[[16]](#references)</sup>
 
 ### Red flags
 - Inconsistent behavior (hot and cold)
