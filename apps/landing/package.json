@@ -8,7 +8,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "validate:refs": "npx tsx scripts/validate-references.ts",
+    "validate:refs:links": "npx tsx scripts/validate-references.ts --check-links"
   },
   "dependencies": {
     "astro": "^5.1.1",
