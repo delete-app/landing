@@ -53,6 +53,13 @@
         .pts{padding:2rem 0 4rem}
         .pts p{color:#666;margin-bottom:.75rem;padding-left:1.25rem;position:relative}
         .pts p::before{content:'';position:absolute;left:0;top:.55rem;width:5px;height:5px;background:#e67e22;border-radius:50%}
+        .why{padding:2rem 0 3rem}
+        .why-link{display:flex;flex-direction:column;gap:.5rem;padding:1.5rem;background:linear-gradient(135deg,rgba(230,126,34,.08) 0%,rgba(230,126,34,.02) 100%);border:1px solid rgba(230,126,34,.2);border-radius:12px;text-decoration:none;transition:all .2s ease}
+        .why-link:hover{border-color:rgba(230,126,34,.5);transform:translateY(-2px)}
+        .why-label{color:#888;font-size:.95rem}
+        .why-cta{color:#e67e22;font-weight:500;font-size:1.1rem;display:flex;align-items:center;gap:.5rem}
+        .why-cta .arrow{transition:transform .2s ease}
+        .why-link:hover .arrow{transform:translateX(4px)}
         footer{padding:1.5rem 0;border-top:1px solid #1a1a1a}
         footer .c{display:flex;justify-content:space-between;align-items:center}
         .cp{font-size:.875rem;color:#555}
@@ -85,6 +92,14 @@
                 <p>We match on how you actually live, not just how you look.</p>
                 <p>Built for relationships that outlast the honeymoon phase.</p>
                 <p>No hidden algorithms. No engagement tricks. Just honesty.</p>
+            </div>
+        </section>
+        <section class="why">
+            <div class="c">
+                <a href="/why" class="why-link">
+                    <span class="why-label">Ever wondered why dating apps feel so... broken?</span>
+                    <span class="why-cta">5 experts explain <span class="arrow">→</span></span>
+                </a>
             </div>
         </section>
     </main>

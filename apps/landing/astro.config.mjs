@@ -1,11 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://trydelete.app',
 	integrations: [
+		react(),
 		starlight({
 			title: 'Delete Learn',
 			description: 'Research-backed relationship education. Understand yourself, attraction, compatibility, and how to build lasting connections — with peer-reviewed sources.',

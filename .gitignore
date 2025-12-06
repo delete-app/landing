@@ -49,3 +49,10 @@ coverage/
 
 # Generated reports
 apps/landing/contradiction-notes.md
+
+# Research files (not for version control)
+research/
+research-papers-bibliography.md
+
+# Design references
+design-references/
