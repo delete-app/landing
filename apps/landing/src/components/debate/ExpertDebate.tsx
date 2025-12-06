@@ -1,7 +1,34 @@
 'use client'
 
-import { motion, useScroll, useTransform, useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion'
+import { useRef, useState, useEffect } from 'react'
+
+// Research citations for credibility (validated sources)
+const citations = [
+  { id: 1, text: 'Tinder swipe behavior data as reported by The New York Times (2014).' },
+  {
+    id: 2,
+    text: 'OkCupid OkTrends Blog (2009). "Your Looks and Your Inbox." Analysis of user rating patterns.',
+  },
+  {
+    id: 3,
+    text: 'Berridge, K. C. (2007). "The debate over dopamine\'s role in reward: the case for incentive salience." Psychopharmacology, 191(3), 391-431.',
+  },
+  {
+    id: 4,
+    text: 'Forbes Health/OnePoll Survey (2024). "Dating App Burnout Study" - Survey of Gen Z dating habits.',
+  },
+  {
+    id: 5,
+    text: 'Iyengar, S. S. & Lepper, M. R. (2000). "When choice is demotivating." Journal of Personality and Social Psychology, 79(6), 995-1006.',
+  },
+  { id: 6, text: 'Badoo Survey (2018). Dating app usage patterns among 18-30 year olds.' },
+  { id: 7, text: 'Statista (2023). "U.S. online dating users by gender."' },
+  {
+    id: 8,
+    text: 'Class Action Lawsuit against Match Group, U.S. District Court, N.D. California (Filed Feb. 14, 2024).',
+  },
+]
 
 // Expert data - playful fictional names from the strategy doc
 const experts = [
@@ -13,9 +40,10 @@ const experts = [
     color: '#22c55e',
     bgGradient: 'linear-gradient(135deg, #052e16 0%, #0a0a0a 50%, #0a0a0a 100%)',
     problem: `Dating apps created an evolutionarily novel environment. Humans evolved evaluating 50-100 partners in a lifetime. Now you see 50 in 10 minutes.`,
-    insight: `Women's evolved selectivity gets amplified—they swipe right on only 5%. Men mass-swipe on 46%. Both strategies become dysfunctional at scale.`,
+    insight: `Women's evolved selectivity gets amplified—they swipe right on only 14%. Men mass-swipe on 46%. Both strategies become dysfunctional at scale.`,
     stat: { value: '80%', label: 'of men rated "below average" by women on apps' },
     quote: `That's not biology. That's contrast effect from too many options too fast.`,
+    citations: [1, 2],
   },
   {
     id: 'neuro',
@@ -24,10 +52,11 @@ const experts = [
     icon: '🧠',
     color: '#ec4899',
     bgGradient: 'linear-gradient(135deg, #500724 0%, #0a0a0a 50%, #0a0a0a 100%)',
-    problem: `These apps are literally hijacking the dopamine system. Dopamine rises twice as much anticipating a match than actually getting one.`,
+    problem: `These apps are literally hijacking the dopamine system. Dopamine surges more during anticipation of a match than when you actually get one.`,
     insight: `Variable reinforcement—the same mechanism as slot machines. Each swipe is a mini-gamble. The brain can't tell the difference.`,
-    stat: { value: '2×', label: 'more dopamine from anticipation than reward' },
+    stat: { value: '3×', label: 'more swipes from men than women' },
     quote: `You're stuck in dopaminergic seeking mode. You never reach attachment mode.`,
+    citations: [3],
   },
   {
     id: 'psych',
@@ -40,6 +69,7 @@ const experts = [
     insight: `Commodification of self. Thousands of micro-rejections eroding self-worth. And the paradox of choice—more options, less satisfaction.`,
     stat: { value: '79%', label: 'of Gen Z report dating app burnout' },
     quote: `People choosing from 24 profiles are LESS satisfied than those choosing from 6.`,
+    citations: [4, 5],
   },
   {
     id: 'shrink',
@@ -52,6 +82,7 @@ const experts = [
     insight: `Social comparison on steroids. Intermittent reinforcement creating compulsive checking. Rejection loops that reinforce depression.`,
     stat: { value: '10h', label: 'average weekly use for 18-30 year olds' },
     quote: `These apps are making people mentally unwell.`,
+    citations: [6],
   },
   {
     id: 'econ',
@@ -63,9 +94,45 @@ const experts = [
     problem: `The market is broken by design. A textbook case of misaligned incentives.`,
     insight: `Apps profit from engagement, not successful matching. If everyone found partners quickly, revenue collapses.`,
     stat: { value: '67%', label: 'of users are men—a death spiral marketplace' },
-    quote: `"Engineered to prevent users from finding love" — per the class-action lawsuit.`,
+    quote: `"Designed to be addictive" rather than help find love — per the class-action lawsuit.`,
+    citations: [7, 8],
   },
 ]
+
+// Typewriter hook for animating stat values
+function useTypewriter(text: string, isInView: boolean, delay = 0) {
+  const [displayText, setDisplayText] = useState('')
+  const [isComplete, setIsComplete] = useState(false)
+
+  useEffect(() => {
+    if (!isInView) return
+
+    setDisplayText('')
+    setIsComplete(false)
+
+    let intervalId: ReturnType<typeof setInterval> | null = null
+
+    const timeoutId = setTimeout(() => {
+      let i = 0
+      intervalId = setInterval(() => {
+        if (i < text.length) {
+          setDisplayText(text.slice(0, i + 1))
+          i++
+        } else {
+          setIsComplete(true)
+          if (intervalId) clearInterval(intervalId)
+        }
+      }, 80)
+    }, delay)
+
+    return () => {
+      clearTimeout(timeoutId)
+      if (intervalId) clearInterval(intervalId)
+    }
+  }, [text, isInView, delay])
+
+  return { displayText, isComplete }
+}
 
 function HeroSection() {
   const ref = useRef(null)
@@ -174,6 +241,40 @@ function PanelOverview() {
   )
 }
 
+function FloatingDots() {
+  return (
+    <div className="floating-dots">
+      <div className="floating-dot" />
+      <div className="floating-dot" />
+      <div className="floating-dot" />
+      <div className="floating-dot" />
+    </div>
+  )
+}
+
+function CitationMarker({ ids }: { ids: number[] }) {
+  return (
+    <>
+      {ids.map((id) => (
+        <span key={id} className="citation-marker">
+          {id}
+        </span>
+      ))}
+    </>
+  )
+}
+
+function TypewriterStat({ value, isInView }: { value: string; isInView: boolean }) {
+  const { displayText, isComplete } = useTypewriter(value, isInView, 400)
+
+  return (
+    <span className="stat-value">
+      {displayText}
+      {!isComplete && <span className="typewriter-cursor" />}
+    </span>
+  )
+}
+
 function ExpertSection({ expert }: { expert: (typeof experts)[0] }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-30%' })
@@ -194,6 +295,11 @@ function ExpertSection({ expert }: { expert: (typeof experts)[0] }) {
         } as React.CSSProperties
       }
     >
+      {/* Floating blob shapes */}
+      <div className="expert-blob expert-blob-1" />
+      <div className="expert-blob expert-blob-2" />
+      <FloatingDots />
+
       <motion.div
         className="expert-bg"
         style={{
@@ -212,7 +318,7 @@ function ExpertSection({ expert }: { expert: (typeof experts)[0] }) {
           <span className="expert-icon-large">{expert.icon}</span>
           <div className="expert-meta">
             <h2>{expert.name}</h2>
-            <span className="expert-field-tag">{expert.field}</span>
+            <span className="field-pill">{expert.field}</span>
           </div>
         </motion.div>
 
@@ -223,7 +329,10 @@ function ExpertSection({ expert }: { expert: (typeof experts)[0] }) {
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.2 }}
         >
           <p className="statement-problem">{expert.problem}</p>
-          <p className="statement-insight">{expert.insight}</p>
+          <p className="statement-insight">
+            {expert.insight}
+            <CitationMarker ids={expert.citations} />
+          </p>
         </motion.div>
 
         <motion.div
@@ -233,7 +342,7 @@ function ExpertSection({ expert }: { expert: (typeof experts)[0] }) {
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.4 }}
         >
           <div className="stat-display">
-            <span className="stat-value">{expert.stat.value}</span>
+            <TypewriterStat value={expert.stat.value} isInView={isInView} />
             <span className="stat-label">{expert.stat.label}</span>
           </div>
         </motion.div>
@@ -309,15 +418,73 @@ function Verdict() {
   )
 }
 
-export default function ExpertDebate() {
+function CitationsToggle({ isActive, onClick }: { isActive: boolean; onClick: () => void }) {
   return (
-    <div className="debate-wrapper">
+    <motion.button
+      className={`citations-toggle ${isActive ? 'active' : ''}`}
+      onClick={onClick}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 1.5, duration: 0.5 }}
+    >
+      <span className="citations-toggle-icon">{isActive ? '📚' : '📖'}</span>
+      <span>{isActive ? 'Hide Sources' : 'Show Sources'}</span>
+    </motion.button>
+  )
+}
+
+function CitationsPanel({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          className="citations-panel"
+          initial={{ y: '100%' }}
+          animate={{ y: 0 }}
+          exit={{ y: '100%' }}
+          transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+        >
+          <div className="citations-panel-header">
+            <span className="citations-panel-title">Research Sources</span>
+            <button className="citations-close" onClick={onClose}>
+              ×
+            </button>
+          </div>
+          <div className="citations-list">
+            {citations.map((citation) => (
+              <div key={citation.id} className="citation-item">
+                <span className="citation-number">{citation.id}</span>
+                <span className="citation-text">{citation.text}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  )
+}
+
+export default function ExpertDebate() {
+  const [showCitations, setShowCitations] = useState(false)
+  const [citationsPanelOpen, setCitationsPanelOpen] = useState(false)
+
+  const toggleCitations = () => {
+    const newState = !showCitations
+    setShowCitations(newState)
+    setCitationsPanelOpen(newState)
+  }
+
+  return (
+    <div className={`debate-wrapper ${showCitations ? 'show-citations' : ''}`}>
       <HeroSection />
       <PanelOverview />
       {experts.map((expert) => (
         <ExpertSection key={expert.id} expert={expert} />
       ))}
       <Verdict />
+
+      <CitationsToggle isActive={showCitations} onClick={toggleCitations} />
+      <CitationsPanel isOpen={citationsPanelOpen} onClose={() => setCitationsPanelOpen(false)} />
     </div>
   )
 }

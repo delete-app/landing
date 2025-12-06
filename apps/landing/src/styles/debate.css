@@ -1,5 +1,4 @@
 /* Expert Debate - Award-Winning Design */
-/* Inspired by: concom.tv, doooing.be, mindmarket.com */
 
 /* ========================================
    CSS Custom Properties
@@ -16,7 +15,7 @@
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-display: 'Inter', system-ui, sans-serif;
 
-  /* Animation timing - from concom.tv */
+  /* Animation timing */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -484,6 +483,325 @@
 }
 
 /* ========================================
+   Floating Blob Shapes (MindMarket inspired)
+   ======================================== */
+.expert-blob {
+  position: absolute;
+  border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  opacity: 0.15;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.expert-blob-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--expert-color);
+  top: 10%;
+  right: -100px;
+  animation: blob-float 20s ease-in-out infinite;
+}
+
+.expert-blob-2 {
+  width: 300px;
+  height: 300px;
+  background: var(--expert-color);
+  bottom: 15%;
+  left: -80px;
+  animation: blob-float 25s ease-in-out infinite reverse;
+}
+
+@keyframes blob-float {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  }
+  25% {
+    transform: translate(20px, -30px) rotate(5deg) scale(1.05);
+    border-radius: 50% 60% 40% 50% / 40% 50% 60% 50%;
+  }
+  50% {
+    transform: translate(-10px, 20px) rotate(-3deg) scale(0.98);
+    border-radius: 40% 50% 60% 50% / 60% 40% 50% 50%;
+  }
+  75% {
+    transform: translate(15px, 10px) rotate(2deg) scale(1.02);
+    border-radius: 55% 45% 45% 55% / 45% 55% 45% 55%;
+  }
+}
+
+/* ========================================
+   Floating Decorative Dots
+   ======================================== */
+.floating-dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--expert-color);
+  opacity: 0.4;
+}
+
+.floating-dot:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation: dot-pulse 3s ease-in-out infinite;
+}
+.floating-dot:nth-child(2) {
+  top: 40%;
+  right: 15%;
+  animation: dot-pulse 4s ease-in-out infinite 0.5s;
+}
+.floating-dot:nth-child(3) {
+  bottom: 30%;
+  left: 20%;
+  animation: dot-pulse 3.5s ease-in-out infinite 1s;
+}
+.floating-dot:nth-child(4) {
+  top: 60%;
+  right: 25%;
+  animation: dot-pulse 4.5s ease-in-out infinite 1.5s;
+}
+
+@keyframes dot-pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.5);
+  }
+}
+
+/* ========================================
+   Pill Tags (Doooing inspired)
+   ======================================== */
+.field-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--expert-color);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--expert-color);
+  backdrop-filter: blur(4px);
+}
+
+.field-pill::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--expert-color);
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+
+/* ========================================
+   Typewriter Effect
+   ======================================== */
+.typewriter-cursor {
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  background: var(--expert-color);
+  margin-left: 4px;
+  animation: cursor-blink 1s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ========================================
+   Research Citations Toggle
+   ======================================== */
+.citations-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-out-expo);
+  backdrop-filter: blur(8px);
+}
+
+.citations-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-text);
+}
+
+.citations-toggle.active {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.citations-toggle-icon {
+  font-size: 1rem;
+}
+
+.citation-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.25rem;
+  background: var(--expert-color);
+  color: var(--color-bg);
+  font-size: 0.625rem;
+  font-weight: 700;
+  border-radius: 50%;
+  vertical-align: super;
+  cursor: help;
+  transition: transform 0.2s var(--ease-out-expo);
+}
+
+.citation-marker:hover {
+  transform: scale(1.2);
+}
+
+.citation-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 1rem;
+  background: #1a1a1a;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.citation-marker:hover .citation-tooltip {
+  opacity: 1;
+}
+
+.citations-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 40vh;
+  background: rgba(10, 10, 10, 0.95);
+  border-top: 1px solid var(--color-border);
+  padding: 2rem;
+  overflow-y: auto;
+  z-index: 99;
+  backdrop-filter: blur(12px);
+}
+
+.citations-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.citations-panel-title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-text-muted);
+}
+
+.citations-close {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.citations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.citation-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.citation-number {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.citation-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.citation-text a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.citation-text a:hover {
+  text-decoration: underline;
+}
+
+/* Hide citations when toggle is off */
+.debate-wrapper:not(.show-citations) .citation-marker {
+  display: none;
+}
+
+/* ========================================
    Reduced Motion
    ======================================== */
 @media (prefers-reduced-motion: reduce) {
@@ -491,7 +809,34 @@
     animation: none !important;
   }
 
+  .expert-blob,
+  .floating-dot {
+    animation: none !important;
+  }
+
   * {
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   Mobile Citations
+   ======================================== */
+@media (max-width: 768px) {
+  .citations-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .citations-panel {
+    max-height: 50vh;
+    padding: 1.5rem;
+  }
+
+  .expert-blob-1,
+  .expert-blob-2 {
+    display: none;
   }
 }
