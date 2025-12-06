@@ -9,13 +9,13 @@ function getTodayDate(): string {
   return new Date().toISOString().split('T')[0]
 }
 
-// Mock profiles for development
+// Mock profiles for development - age is pre-calculated (server-side in production)
+// Note: In production, PII like birth_date is never sent to client - only derived age
 const MOCK_PROFILES: DiscoveryProfile[] = [
   {
     id: '1',
     name: 'Priya',
-    birth_date: '1998-03-15',
-    gender: 'female',
+    age: 27,
     bio: 'Software engineer by day, amateur chef by night. Looking for someone who appreciates both good code and good food.',
     location: 'Bangalore',
     photos: [
@@ -47,8 +47,7 @@ const MOCK_PROFILES: DiscoveryProfile[] = [
   {
     id: '2',
     name: 'Arjun',
-    birth_date: '1996-07-22',
-    gender: 'male',
+    age: 29,
     bio: 'Product manager who believes in building things that matter. Weekend trekker and amateur photographer.',
     location: 'Mumbai',
     photos: [
@@ -75,8 +74,7 @@ const MOCK_PROFILES: DiscoveryProfile[] = [
   {
     id: '3',
     name: 'Meera',
-    birth_date: '1999-11-08',
-    gender: 'female',
+    age: 26,
     bio: 'UX designer passionate about making technology more human. Plant parent of 12 (and counting).',
     location: 'Delhi',
     photos: [
@@ -104,8 +102,7 @@ const MOCK_PROFILES: DiscoveryProfile[] = [
   {
     id: '4',
     name: 'Vikram',
-    birth_date: '1995-02-14',
-    gender: 'male',
+    age: 30,
     bio: 'Data scientist who finds patterns everywhere. Music producer on weekends. Believer in slow living.',
     location: 'Bangalore',
     photos: [
@@ -132,8 +129,7 @@ const MOCK_PROFILES: DiscoveryProfile[] = [
   {
     id: '5',
     name: 'Ananya',
-    birth_date: '1997-09-30',
-    gender: 'female',
+    age: 28,
     bio: 'Lawyer by profession, writer by passion. Collecting stories and making sense of the world one conversation at a time.',
     location: 'Chennai',
     photos: [

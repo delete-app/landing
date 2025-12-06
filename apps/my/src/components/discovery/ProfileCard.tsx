@@ -1,16 +1,5 @@
-import { useState, useMemo } from 'react'
+import { useState } from 'react'
 import type { DiscoveryProfile } from '../../types/discovery'
-
-function calculateAge(birthDate: string): number {
-  const today = new Date()
-  const birth = new Date(birthDate)
-  let age = today.getFullYear() - birth.getFullYear()
-  const monthDiff = today.getMonth() - birth.getMonth()
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
-    age--
-  }
-  return age
-}
 
 interface ProfileCardProps {
   profile: DiscoveryProfile
@@ -28,11 +17,6 @@ export function ProfileCard({ profile, onImageChange }: ProfileCardProps) {
     setCurrentImageIndex(newIndex)
     onImageChange?.(newIndex)
   }
-
-  const age = useMemo(
-    () => (profile.birth_date ? calculateAge(profile.birth_date) : null),
-    [profile.birth_date]
-  )
 
   return (
     <div className="relative w-full max-w-md mx-auto">
@@ -85,7 +69,7 @@ export function ProfileCard({ profile, onImageChange }: ProfileCardProps) {
         <div className="absolute bottom-0 left-0 right-0 p-5">
           <div className="flex items-baseline gap-2 mb-1">
             <h2 className="text-2xl font-medium text-white">{profile.name}</h2>
-            {age && <span className="text-xl text-white/80">{age}</span>}
+            {profile.age && <span className="text-xl text-white/80">{profile.age}</span>}
           </div>
           {profile.location && <p className="text-sm text-white/70">{profile.location}</p>}
         </div>

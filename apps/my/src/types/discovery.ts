@@ -19,8 +19,8 @@ export interface DiscoveryBadge {
 export interface DiscoveryProfile {
   id: string
   name: string
-  birth_date: string | null
-  gender: string | null
+  /** Age calculated server-side from birth_date - PII never sent to client */
+  age: number | null
   bio: string | null
   location: string | null
   photos: DiscoveryPhoto[]
