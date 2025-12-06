@@ -1,171 +1,71 @@
 'use client'
 
 import { motion, useScroll, useTransform, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
-// Expert data
+// Expert data - playful fictional names from the strategy doc
 const experts = [
   {
     id: 'evo',
     name: 'Dr. Evo',
-    title: 'Evolutionary Biologist',
-    color: '#4ade80', // green
-    avatar: '🧬',
-    problem: `The fundamental problem is that dating apps have created an environment that's evolutionarily novel and maladaptive. Humans evolved for small-group mate selection—you'd evaluate maybe 50-100 potential partners in your lifetime. Now people see 50 in 10 minutes.`,
-    detail: `Women's evolved selectivity (because pregnancy is costly) gets amplified to pathological levels—they swipe right on only 5-8% of profiles. Men's evolved tendency to pursue multiple partners becomes mass-swiping on 40-46% of profiles. Both strategies that made sense in small groups become dysfunctional at scale.`,
-    stat: `Women find 80% of men "below average" attractiveness on apps. That's not biology—that's contrast effect from seeing too many options too fast.`,
-    solution: [
-      'Limit the pool — Humans can meaningfully evaluate maybe 5-7 options at a time',
-      'Slow down evaluation — In nature, you observe someone over time, not in 7 seconds',
-      'Multi-dimensional assessment — Attraction evolved to assess health, resources, personality, compatibility—not just photos',
-    ],
+    field: 'Evolutionary Biologist',
+    icon: '🧬',
+    color: '#22c55e',
+    bgGradient: 'linear-gradient(135deg, #052e16 0%, #0a0a0a 50%, #0a0a0a 100%)',
+    problem: `Dating apps created an evolutionarily novel environment. Humans evolved evaluating 50-100 partners in a lifetime. Now you see 50 in 10 minutes.`,
+    insight: `Women's evolved selectivity gets amplified—they swipe right on only 5%. Men mass-swipe on 46%. Both strategies become dysfunctional at scale.`,
+    stat: { value: '80%', label: 'of men rated "below average" by women on apps' },
+    quote: `That's not biology. That's contrast effect from too many options too fast.`,
   },
   {
     id: 'neuro',
     name: 'Dr. Neuro',
-    title: 'Neurobiologist',
-    color: '#f472b6', // pink
-    avatar: '🧠',
-    problem: `The apps are literally hijacking the dopamine system. Dopamine rises TWICE as much in anticipation of a match than actually getting one. That's the same mechanism as slot machines.`,
-    detail: `The variable reinforcement schedule is the most addictive pattern known to neuroscience. Each swipe is a mini-gamble. The brain can't distinguish between swiping for mates and pulling a slot machine lever.`,
-    stat: `Worse: the constant novelty prevents the brain from ever settling into the calmer oxytocin-vasopressin bonding system. You're stuck in dopaminergic seeking mode, never reaching attachment mode.`,
-    solution: [
-      'Remove variable rewards — No random matches, no surprise notifications',
-      'Build toward oxytocin — Design for depth over novelty',
-      'Time-gate the experience — Prevent binge-swiping; the brain needs rest to process',
-    ],
+    field: 'Neurobiologist',
+    icon: '🧠',
+    color: '#ec4899',
+    bgGradient: 'linear-gradient(135deg, #500724 0%, #0a0a0a 50%, #0a0a0a 100%)',
+    problem: `These apps are literally hijacking the dopamine system. Dopamine rises twice as much anticipating a match than actually getting one.`,
+    insight: `Variable reinforcement—the same mechanism as slot machines. Each swipe is a mini-gamble. The brain can't tell the difference.`,
+    stat: { value: '2×', label: 'more dopamine from anticipation than reward' },
+    quote: `You're stuck in dopaminergic seeking mode. You never reach attachment mode.`,
   },
   {
     id: 'psych',
     name: 'Dr. Psych',
-    title: 'Clinical Psychologist',
-    color: '#60a5fa', // blue
-    avatar: '🛋️',
-    problem: `I'm seeing an epidemic of dating app burnout in my practice. 79% of Gen Z reports it. The psychological damage is real and measurable.`,
-    detail: `Commodification of self — People start seeing themselves as products to be marketed. Rejection sensitivity — Thousands of micro-rejections erode self-worth. Paradox of choice — More options equals less satisfaction.`,
-    stat: `Research shows people choosing from 24 profiles are LESS satisfied than those choosing from 6. We've created the opposite of what humans need.`,
-    solution: [
-      'Reduce choice — Decision paralysis is real',
-      'Encourage investment — What we invest in, we value more',
-      'Create psychological safety — People need to feel safe to be authentic',
-    ],
+    field: 'Clinical Psychologist',
+    icon: '🛋️',
+    color: '#3b82f6',
+    bgGradient: 'linear-gradient(135deg, #172554 0%, #0a0a0a 50%, #0a0a0a 100%)',
+    problem: `I'm seeing an epidemic of dating app burnout in my practice. 79% of Gen Z reports it. The psychological damage is real.`,
+    insight: `Commodification of self. Thousands of micro-rejections eroding self-worth. And the paradox of choice—more options, less satisfaction.`,
+    stat: { value: '79%', label: 'of Gen Z report dating app burnout' },
+    quote: `People choosing from 24 profiles are LESS satisfied than those choosing from 6.`,
   },
   {
     id: 'shrink',
     name: 'Dr. Shrink',
-    title: 'Psychiatrist',
-    color: '#c084fc', // purple
-    avatar: '💊',
-    problem: `From a psychiatric perspective, dating apps are triggering and maintaining anxiety and depression at clinical levels.`,
-    detail: `Social comparison on steroids—everyone's highlight reel. Intermittent reinforcement creating compulsive checking behaviors. Rejection loops that mirror and reinforce existing depression.`,
-    stat: `The 10 hours/week average for 18-30 year olds correlates with higher loneliness and anxiety. These apps are making people mentally unwell.`,
-    solution: [
-      'Built-in breaks — Prevent compulsive use patterns',
-      'Explicit rejection over ghosting — Research shows ghosting causes MORE psychological harm',
-      'Safety infrastructure — Reduce anxiety through verification, check-ins, emergency features',
-    ],
+    field: 'Psychiatrist',
+    icon: '💊',
+    color: '#a855f7',
+    bgGradient: 'linear-gradient(135deg, #3b0764 0%, #0a0a0a 50%, #0a0a0a 100%)',
+    problem: `Dating apps are triggering and maintaining anxiety and depression at clinical levels.`,
+    insight: `Social comparison on steroids. Intermittent reinforcement creating compulsive checking. Rejection loops that reinforce depression.`,
+    stat: { value: '10h', label: 'average weekly use for 18-30 year olds' },
+    quote: `These apps are making people mentally unwell.`,
   },
   {
     id: 'econ',
     name: 'Prof. Econ',
-    title: 'Behavioral Economist',
-    color: '#fbbf24', // amber
-    avatar: '📊',
-    problem: `The market is broken by design. Dating apps are a textbook case of misaligned incentives.`,
-    detail: `The apps profit from engagement, not from successful matching. If everyone found partners quickly, revenue would collapse. Match Group's business model is literally "engineered to prevent users from finding love" — per the class-action lawsuit.`,
-    stat: `The gender ratio (67% men / 33% women) creates a dysfunctional marketplace. Men face scarcity, respond with low-effort mass-swiping, which creates volume overload for women, who respond with hyper-selectivity. It's a death spiral.`,
-    solution: [
-      'Align business model with user success — Subscription that ends when you match successfully',
-      "Two-sided marketplace balance — Can't have 67/33 gender split",
-      'Quality over quantity metrics — Measure conversation depth, not swipe volume',
-    ],
+    field: 'Behavioral Economist',
+    icon: '📊',
+    color: '#f59e0b',
+    bgGradient: 'linear-gradient(135deg, #451a03 0%, #0a0a0a 50%, #0a0a0a 100%)',
+    problem: `The market is broken by design. A textbook case of misaligned incentives.`,
+    insight: `Apps profit from engagement, not successful matching. If everyone found partners quickly, revenue collapses.`,
+    stat: { value: '67%', label: 'of users are men—a death spiral marketplace' },
+    quote: `"Engineered to prevent users from finding love" — per the class-action lawsuit.`,
   },
 ]
-
-function ExpertCard({ expert }: { expert: (typeof experts)[0] }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
-
-  return (
-    <motion.section
-      ref={ref}
-      className="expert-section"
-      style={{ '--expert-color': expert.color } as React.CSSProperties}
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
-    >
-      <div className="expert-header">
-        <motion.div
-          className="expert-avatar"
-          initial={{ scale: 0, rotate: -180 }}
-          animate={isInView ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -180 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 15, delay: 0.3 }}
-        >
-          {expert.avatar}
-        </motion.div>
-        <motion.div
-          className="expert-info"
-          initial={{ x: -50, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <h2>{expert.name}</h2>
-          <p className="expert-title">{expert.title}</p>
-        </motion.div>
-      </div>
-
-      <motion.blockquote
-        className="expert-problem"
-        initial={{ y: 30, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-      >
-        "{expert.problem}"
-      </motion.blockquote>
-
-      <motion.p
-        className="expert-detail"
-        initial={{ y: 30, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-      >
-        {expert.detail}
-      </motion.p>
-
-      <motion.div
-        className="expert-stat"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
-        transition={{ duration: 0.6, delay: 0.7 }}
-      >
-        <span className="stat-icon">⚡</span>
-        {expert.stat}
-      </motion.div>
-
-      <motion.div
-        className="expert-solutions"
-        initial={{ y: 30, opacity: 0 }}
-        animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
-        transition={{ duration: 0.6, delay: 0.8 }}
-      >
-        <h3>The fix:</h3>
-        <ul>
-          {expert.solution.map((sol, i) => (
-            <motion.li
-              key={i}
-              initial={{ x: -20, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }}
-              transition={{ duration: 0.4, delay: 0.9 + i * 0.1 }}
-            >
-              {sol}
-            </motion.li>
-          ))}
-        </ul>
-      </motion.div>
-    </motion.section>
-  )
-}
 
 function HeroSection() {
   const ref = useRef(null)
@@ -174,83 +74,99 @@ function HeroSection() {
     offset: ['start start', 'end start'],
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '40%'])
+  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
+  const scale = useTransform(scrollYProgress, [0, 0.6], [1, 0.95])
 
   return (
     <motion.section ref={ref} className="hero-section" style={{ opacity }}>
-      <motion.div className="hero-content" style={{ y }}>
+      <motion.div className="hero-content" style={{ y, scale }}>
         <motion.p
           className="hero-kicker"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.2 }}
         >
           A panel of experts walk into a dating app...
         </motion.p>
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.4 }}
         >
-          Why Dating Apps
-          <br />
-          <span className="gradient-text">Are Failing You</span>
+          <span className="hero-line">Why Dating Apps</span>
+          <span className="hero-line-accent">Are Failing You</span>
         </motion.h1>
         <motion.p
           className="hero-subtitle"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.6 }}
         >
           Five experts. Five disciplines. One uncomfortable truth.
         </motion.p>
+      </motion.div>
+      <motion.div
+        className="scroll-cue"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
         <motion.div
-          className="scroll-indicator"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-        >
-          <span>Scroll to explore</span>
-          <motion.div
-            className="scroll-arrow"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            ↓
-          </motion.div>
-        </motion.div>
+          className="scroll-line"
+          animate={{ scaleY: [0, 1, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        />
       </motion.div>
     </motion.section>
   )
 }
 
-function PanelIntro() {
+function PanelOverview() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-20%' })
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <motion.section ref={ref} className="panel-intro">
-      <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-        transition={{ duration: 0.8 }}
+    <motion.section ref={ref} className="panel-overview">
+      <motion.div
+        className="panel-header"
+        initial={{ opacity: 0, y: 40 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
       >
-        The Panel
-      </motion.h2>
-      <div className="panel-grid">
+        <span className="panel-label">The Panel</span>
+        <h2>Five perspectives on a broken system</h2>
+      </motion.div>
+
+      <div className="panel-experts">
         {experts.map((expert, i) => (
           <motion.div
             key={expert.id}
-            className="panel-member"
-            style={{ '--expert-color': expert.color } as React.CSSProperties}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.5, delay: 0.1 * i }}
+            className="panel-expert"
+            initial={{ opacity: 0, y: 60 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1], delay: 0.1 + i * 0.1 }}
+            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            style={
+              {
+                '--expert-color': expert.color,
+                opacity: hoveredIndex === null || hoveredIndex === i ? 1 : 0.4,
+              } as React.CSSProperties
+            }
           >
-            <span className="panel-avatar">{expert.avatar}</span>
-            <span className="panel-name">{expert.name}</span>
-            <span className="panel-title">{expert.title}</span>
+            <div className="expert-icon">{expert.icon}</div>
+            <div className="expert-details">
+              <span className="expert-name">{expert.name}</span>
+              <span className="expert-field">{expert.field}</span>
+            </div>
+            <motion.div
+              className="expert-line"
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: hoveredIndex === i ? 1 : 0 }}
+              transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+            />
           </motion.div>
         ))}
       </div>
@@ -258,62 +174,134 @@ function PanelIntro() {
   )
 }
 
-function DebateTopic() {
+function ExpertSection({ expert }: { expert: (typeof experts)[0] }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-30%' })
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  })
+
+  const bgOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0])
 
   return (
-    <motion.section ref={ref} className="debate-topic">
+    <motion.section
+      ref={ref}
+      className="expert-fullscreen"
+      style={
+        {
+          '--expert-color': expert.color,
+        } as React.CSSProperties
+      }
+    >
       <motion.div
-        className="topic-badge"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-        transition={{ duration: 0.6 }}
-      >
-        DEBATE TOPIC 1
-      </motion.div>
-      <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        Why Are Dating Apps Failing?
-      </motion.h2>
+        className="expert-bg"
+        style={{
+          background: expert.bgGradient,
+          opacity: bgOpacity,
+        }}
+      />
+
+      <div className="expert-content">
+        <motion.div
+          className="expert-intro"
+          initial={{ opacity: 0, x: -60 }}
+          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
+        >
+          <span className="expert-icon-large">{expert.icon}</span>
+          <div className="expert-meta">
+            <h2>{expert.name}</h2>
+            <span className="expert-field-tag">{expert.field}</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="expert-statement"
+          initial={{ opacity: 0, y: 60 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.2 }}
+        >
+          <p className="statement-problem">{expert.problem}</p>
+          <p className="statement-insight">{expert.insight}</p>
+        </motion.div>
+
+        <motion.div
+          className="expert-data"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.4 }}
+        >
+          <div className="stat-display">
+            <span className="stat-value">{expert.stat.value}</span>
+            <span className="stat-label">{expert.stat.label}</span>
+          </div>
+        </motion.div>
+
+        <motion.blockquote
+          className="expert-quote"
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, ease: [0.4, 0, 0.2, 1], delay: 0.6 }}
+        >
+          <span className="quote-mark">"</span>
+          {expert.quote}
+        </motion.blockquote>
+      </div>
     </motion.section>
   )
 }
 
-function Conclusion() {
+function Verdict() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-30%' })
 
   return (
-    <motion.section ref={ref} className="conclusion-section">
+    <motion.section ref={ref} className="verdict-section">
       <motion.div
-        className="conclusion-content"
-        initial={{ opacity: 0, y: 50 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-        transition={{ duration: 0.8 }}
+        className="verdict-content"
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : {}}
+        transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}
       >
-        <h2>The Verdict</h2>
-        <p className="verdict-text">
-          Dating apps aren't broken by accident.
-          <br />
-          <strong>They're broken by design.</strong>
-        </p>
-        <p className="verdict-detail">
-          Every expert arrived at the same conclusion through different lenses: the incentive
-          structure rewards keeping you single, not helping you find love.
-        </p>
-        <motion.div
-          className="cta-section"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+        <motion.span
+          className="verdict-label"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="cta-intro">That's why we built Delete differently.</p>
-          <a href="/" className="cta-button">
-            Join the waitlist
+          The Verdict
+        </motion.span>
+
+        <motion.h2
+          className="verdict-headline"
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          <span>Dating apps aren't broken</span>
+          <span className="verdict-accent">by accident.</span>
+        </motion.h2>
+
+        <motion.p
+          className="verdict-subtext"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          They're broken <em>by design</em>. The incentive structure rewards keeping you single.
+        </motion.p>
+
+        <motion.div
+          className="verdict-cta"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <p>That's why we built Delete differently.</p>
+          <a href="/" className="cta-link">
+            <span>Join the waitlist</span>
+            <span className="cta-arrow">→</span>
           </a>
         </motion.div>
       </motion.div>
@@ -323,14 +311,13 @@ function Conclusion() {
 
 export default function ExpertDebate() {
   return (
-    <div className="debate-container">
+    <div className="debate-wrapper">
       <HeroSection />
-      <PanelIntro />
-      <DebateTopic />
+      <PanelOverview />
       {experts.map((expert) => (
-        <ExpertCard key={expert.id} expert={expert} />
+        <ExpertSection key={expert.id} expert={expert} />
       ))}
-      <Conclusion />
+      <Verdict />
     </div>
   )
 }
