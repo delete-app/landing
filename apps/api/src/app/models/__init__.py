@@ -12,6 +12,13 @@ from app.models.matching import (
     UnmatchReason,
     ReportReason,
 )
+from app.models.discovery import (
+    ProfileView,
+    DailyDiscoveryState,
+    Interest,
+    InterestType,
+    ViewAction,
+)
 
 __all__ = [
     "User",
@@ -29,4 +36,9 @@ __all__ = [
     "MatchStatus",
     "UnmatchReason",
     "ReportReason",
+    "ProfileView",
+    "DailyDiscoveryState",
+    "Interest",
+    "InterestType",
+    "ViewAction",
 ]
