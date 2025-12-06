@@ -3,18 +3,21 @@
  *
  * This hook manages the daily discovery flow using React Query:
  * - Fetches daily profiles from server
- * - Tracks view start time (server-side)
+ * - Auto-starts views when profile changes (encapsulated here, not in component)
+ * - Tracks view timer state
  * - Validates minimum view time before expressing interest
  * - First pick is free, subsequent picks require earned time
  */
 
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { $api } from '../lib/api/client'
 import type { components } from '../lib/api/schema'
 
 // Type aliases from generated schema
 type DailyDiscoveryProfileOut = components['schemas']['DailyDiscoveryProfileOut']
 type InterestType = components['schemas']['InterestType']
+
+const MINIMUM_VIEW_TIME = 20 // seconds
 
 interface UseDailyDiscoveryResult {
   // State
@@ -33,13 +36,16 @@ interface UseDailyDiscoveryResult {
   totalProfiles: number
   interestedCount: number
 
+  // Timer state (managed internally)
+  isTimerComplete: boolean
+  remainingTime: number
+
   // Mutation states
   isStartingView: boolean
   isExpressingInterest: boolean
   isPassing: boolean
 
-  // Actions
-  startView: () => Promise<void>
+  // Actions (no startView - it's automatic now)
   expressInterest: () => Promise<{ success: boolean; interestType?: InterestType; error?: string }>
   pass: () => Promise<{ success: boolean; error?: string }>
   resetForTesting: () => Promise<void>
@@ -49,6 +55,14 @@ export function useDailyDiscovery(): UseDailyDiscoveryResult {
   const [localActiveViewId, setLocalActiveViewId] = useState<string | null>(null)
   const [localViewStartedAt, setLocalViewStartedAt] = useState<Date | null>(null)
   const [error, setError] = useState<string | null>(null)
+
+  // Timer state - track per profile using Maps to avoid effect-based state resets
+  const [profileTimerState, setProfileTimerState] = useState<Map<string, number>>(new Map())
+  const [completedProfileIds, setCompletedProfileIds] = useState<Set<string>>(new Set())
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  // Track which profile we've started a view for to prevent double-starts
+  const startedViewForProfileRef = useRef<string | null>(null)
 
   // Fetch daily discovery state with React Query
   const {
@@ -68,6 +82,7 @@ export function useDailyDiscovery(): UseDailyDiscoveryResult {
   // Extract state from response
   const state = discoveryData?.state
   const currentProfile = discoveryData?.current_profile ?? null
+  const currentProfileId = currentProfile?.id ?? null
 
   // Derive active view from server or local state
   const activeViewId = useMemo(
@@ -85,24 +100,92 @@ export function useDailyDiscovery(): UseDailyDiscoveryResult {
     return null
   }, [localViewStartedAt, serverViewStartedAt])
 
-  // Start viewing current profile
-  const startView = useCallback(async () => {
-    if (!currentProfile) return
+  // Timer completion derived from set
+  const isTimerComplete = currentProfileId ? completedProfileIds.has(currentProfileId) : false
 
-    try {
-      setError(null)
-      const data = await startViewMutation.mutateAsync({
-        body: { profile_id: currentProfile.id },
-      })
+  // Get remaining time for current profile from map, defaulting to full time for new profiles
+  const remainingTime = currentProfileId
+    ? (profileTimerState.get(currentProfileId) ?? MINIMUM_VIEW_TIME)
+    : MINIMUM_VIEW_TIME
 
-      if (data) {
-        setLocalActiveViewId(data.view_id)
-        setLocalViewStartedAt(new Date(data.started_at))
-      }
-    } catch {
-      setError('Failed to start view')
+  // Auto-start view when profile changes (internal effect)
+  // We use a ref to track which profile we've started, not setState
+  useEffect(() => {
+    // Skip if no profile, already have active view, or already starting for this profile
+    if (
+      !currentProfileId ||
+      activeViewId ||
+      startedViewForProfileRef.current === currentProfileId
+    ) {
+      return
     }
-  }, [currentProfile, startViewMutation])
+
+    // Mark that we're starting for this profile (ref update, not state)
+    startedViewForProfileRef.current = currentProfileId
+
+    // Start the view
+    const doStartView = async () => {
+      try {
+        setError(null)
+        const data = await startViewMutation.mutateAsync({
+          body: { profile_id: currentProfileId },
+        })
+
+        if (data) {
+          setLocalActiveViewId(data.view_id)
+          setLocalViewStartedAt(new Date(data.started_at))
+        }
+      } catch {
+        setError('Failed to start view')
+        // Reset so we can retry
+        startedViewForProfileRef.current = null
+      }
+    }
+
+    doStartView()
+  }, [currentProfileId, activeViewId, startViewMutation])
+
+  // Timer countdown effect
+  useEffect(() => {
+    // Clear any existing timer
+    if (timerRef.current) {
+      clearInterval(timerRef.current)
+      timerRef.current = null
+    }
+
+    // Don't run timer if no profile or already complete
+    if (!currentProfileId || isTimerComplete) {
+      return
+    }
+
+    // Start countdown - update the Map for this specific profile
+    timerRef.current = setInterval(() => {
+      setProfileTimerState((prevMap) => {
+        const currentTime = prevMap.get(currentProfileId) ?? MINIMUM_VIEW_TIME
+        if (currentTime <= 1) {
+          // Timer complete - add to completed set
+          setCompletedProfileIds((ids) => new Set(ids).add(currentProfileId))
+          if (timerRef.current) {
+            clearInterval(timerRef.current)
+            timerRef.current = null
+          }
+          const newMap = new Map(prevMap)
+          newMap.set(currentProfileId, 0)
+          return newMap
+        }
+        const newMap = new Map(prevMap)
+        newMap.set(currentProfileId, currentTime - 1)
+        return newMap
+      })
+    }, 1000)
+
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+        timerRef.current = null
+      }
+    }
+  }, [currentProfileId, isTimerComplete])
 
   // Express interest in current profile
   const expressInterest = useCallback(async (): Promise<{
@@ -191,13 +274,16 @@ export function useDailyDiscovery(): UseDailyDiscoveryResult {
     totalProfiles: state?.total_profiles ?? 0,
     interestedCount: state?.interested_count ?? 0,
 
+    // Timer state (managed internally)
+    isTimerComplete,
+    remainingTime,
+
     // Mutation states
     isStartingView: startViewMutation.isPending,
     isExpressingInterest: expressInterestMutation.isPending,
     isPassing: passMutation.isPending,
 
     // Actions
-    startView,
     expressInterest,
     pass,
     resetForTesting,

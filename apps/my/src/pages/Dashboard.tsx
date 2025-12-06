@@ -1,17 +1,13 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback } from 'react'
 import { ProfileCard } from '../components/discovery/ProfileCard'
 import { ActionButtons } from '../components/discovery/ActionButtons'
 import { DailyProgress } from '../components/discovery/DailyProgress'
-import { ViewTimer } from '../components/discovery/ViewTimer'
 import { useDailyDiscovery } from '../hooks/useDailyDiscovery'
 import { Button } from '../components/ui/button'
-
-const MINIMUM_VIEW_TIME = 20 // seconds (cosmetic - server validates actual time)
 
 export default function Dashboard() {
   const {
     currentProfile,
-    activeViewId,
     isComplete,
     isFreePick,
     viewedCount,
@@ -19,7 +15,8 @@ export default function Dashboard() {
     interestedCount,
     isLoading,
     error,
-    startView,
+    isTimerComplete,
+    remainingTime,
     expressInterest,
     pass,
     resetForTesting,
@@ -27,29 +24,9 @@ export default function Dashboard() {
     isPassing,
   } = useDailyDiscovery()
 
-  // Track timer completion per profile using a map to avoid useEffect setState
-  const [completedProfiles, setCompletedProfiles] = useState<Set<string>>(new Set())
-
-  // Derive timer completion from the set
-  const isTimerComplete = currentProfile ? completedProfiles.has(currentProfile.id) : false
-
-  // Start view when profile changes
-  useEffect(() => {
-    if (currentProfile && !activeViewId) {
-      startView()
-    }
-  }, [currentProfile, activeViewId, startView])
-
-  const handleTimerComplete = useCallback(() => {
-    if (currentProfile) {
-      setCompletedProfiles((prev) => new Set(prev).add(currentProfile.id))
-    }
-  }, [currentProfile])
-
   const handleInterest = useCallback(async () => {
     const result = await expressInterest()
     if (!result.success && result.error) {
-      // Server rejected - likely didn't meet minimum time
       console.error('Interest failed:', result.error)
     }
   }, [expressInterest])
@@ -81,7 +58,7 @@ export default function Dashboard() {
     return (
       <div className="max-w-md mx-auto px-4 py-8">
         <div className="text-center py-16">
-          <div className="text-4xl mb-4">⚠️</div>
+          <div className="text-4xl mb-4">!</div>
           <h2 className="text-xl font-medium mb-2">Something went wrong</h2>
           <p className="text-text-muted mb-4">{error}</p>
           <Button onClick={() => window.location.reload()}>Try again</Button>
@@ -95,7 +72,6 @@ export default function Dashboard() {
     return (
       <div className="max-w-md mx-auto px-4 py-8">
         <div className="text-center py-16">
-          <div className="text-5xl mb-6">✨</div>
           <h2 className="text-2xl font-medium mb-3">That's all for today</h2>
           <p className="text-text-muted mb-2">
             You've viewed all {totalProfiles} profiles for today.
@@ -135,9 +111,7 @@ export default function Dashboard() {
     )
   }
 
-  // Determine if interest button should be unlocked
-  // Free pick: always unlocked after timer (no server validation needed)
-  // Earned: timer is cosmetic, server validates actual time
+  // Interest button unlocked when: free pick OR timer complete
   const isUnlocked = isFreePick || isTimerComplete
 
   return (
@@ -152,19 +126,20 @@ export default function Dashboard() {
         <ProfileCard profile={currentProfile} />
       </div>
 
-      {/* View timer - cosmetic only, server validates actual time */}
-      <div className="mb-6">
-        <ViewTimer
-          duration={MINIMUM_VIEW_TIME}
-          resetKey={currentProfile.id}
-          onComplete={handleTimerComplete}
-        />
-      </div>
+      {/* Timer indicator - only show when not free pick and timer running */}
+      {!isFreePick && !isTimerComplete && (
+        <div className="mb-6 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface-dim rounded-full">
+            <div className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+            <span className="text-sm text-text-muted">Take your time... {remainingTime}s</span>
+          </div>
+        </div>
+      )}
 
       {/* Action buttons */}
       <ActionButtons
         isLocked={!isUnlocked}
-        remainingTime={0}
+        remainingTime={remainingTime}
         isFreePick={isFreePick}
         onPass={handlePass}
         onInterest={handleInterest}
@@ -173,7 +148,7 @@ export default function Dashboard() {
       />
 
       {/* Free pick explanation */}
-      {isFreePick && isUnlocked && (
+      {isFreePick && (
         <p className="text-center text-xs text-text-dimmest mt-4">
           This is your one free pick for today. Choose wisely.
         </p>

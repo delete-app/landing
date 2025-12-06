@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import type { DiscoveryProfile } from '../../types/discovery'
+import type { components } from '../../lib/api/schema'
+
+type DailyDiscoveryProfileOut = components['schemas']['DailyDiscoveryProfileOut']
 
 interface ProfileCardProps {
-  profile: DiscoveryProfile
+  profile: DailyDiscoveryProfileOut
   onImageChange?: (index: number) => void
 }
 
@@ -26,7 +28,7 @@ export function ProfileCard({ profile, onImageChange }: ProfileCardProps) {
           <>
             <img
               src={profile.photos[currentImageIndex]?.url}
-              alt={profile.name}
+              alt={profile.name ?? 'Profile photo'}
               className="w-full h-full object-cover"
             />
             {/* Image navigation areas */}
@@ -68,7 +70,7 @@ export function ProfileCard({ profile, onImageChange }: ProfileCardProps) {
         {/* Profile info overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-5">
           <div className="flex items-baseline gap-2 mb-1">
-            <h2 className="text-2xl font-medium text-white">{profile.name}</h2>
+            <h2 className="text-2xl font-medium text-white">{profile.name ?? 'Anonymous'}</h2>
             {profile.age && <span className="text-xl text-white/80">{profile.age}</span>}
           </div>
           {profile.location && <p className="text-sm text-white/70">{profile.location}</p>}
