@@ -33,7 +33,7 @@ const citations = [
   },
   {
     id: 6,
-    text: 'Badoo Survey (2018). Dating app usage patterns among 18-30 year olds.',
+    text: 'Badoo Survey (2018). Dating app usage patterns among 18–30-year-olds.',
     url: 'https://www.bustle.com/p/millennials-spend-average-of-10-hours-a-week-on-dating-apps-survey-finds-but-heres-what-experts-actually-recommend-8066805',
   },
   {
@@ -85,7 +85,7 @@ const experts = [
     bgGradient: 'linear-gradient(135deg, #172554 0%, #0a0a0a 50%, #0a0a0a 100%)',
     problem: `I'm seeing an epidemic of dating app burnout in my practice. 79% of Gen Z reports it. The psychological damage is real.`,
     insight: `Commodification of self. Thousands of micro-rejections eroding self-worth. And the paradox of choice—more options, less satisfaction.`,
-    stat: { value: '79%', label: 'of Gen Z report dating app burnout' },
+    stat: { value: '79%', label: 'of Gen Z reports dating app burnout' },
     quote: `People choosing from 24 profiles are LESS satisfied than those choosing from 6.`,
     citations: [4, 5],
   },
@@ -98,7 +98,7 @@ const experts = [
     bgGradient: 'linear-gradient(135deg, #3b0764 0%, #0a0a0a 50%, #0a0a0a 100%)',
     problem: `Dating apps are triggering and maintaining anxiety and depression at clinical levels.`,
     insight: `Social comparison on steroids. Intermittent reinforcement creating compulsive checking. Rejection loops that reinforce depression.`,
-    stat: { value: '10h', label: 'average weekly use for 18-30 year olds' },
+    stat: { value: '10h', label: 'average weekly use for 18–30-year-olds' },
     quote: `These apps are making people mentally unwell.`,
     citations: [6],
   },
