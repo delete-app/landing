@@ -460,6 +460,149 @@ We optimize for:
 
 ---
 
-*Document Version: 1.0*
-*Created: December 2024*
-*Status: Strategic Foundation*
+## Part 9: Costly Signaling Feature Roadmap
+
+### The Core Problem
+Dating apps enable "cheap signaling" - swiping costs nothing, leading to:
+- Men swiping right on 46% of profiles (low-effort mass approach)
+- Women swiping right on only 14% (hyper-selectivity as defense)
+- Matches that don't lead to conversations (no investment = no value)
+
+### Research Foundation
+
+| Principle | Research | Key Finding |
+|-----------|----------|-------------|
+| **Costly signals are honest** | Zahavi (1975) Handicap Principle | Effort in signaling proves genuine quality |
+| **Effort increases value** | Aronson & Mills (1959) | People who work harder to join a group value it more |
+| **Less choice = better decisions** | Iyengar & Lepper (2000) | 6x more likely to choose when offered 6 vs 24 options |
+| **Swipe fatigue harms users** | Wadham et al. (2023) | Excessive swiping → comparison, FOMO, lower well-being |
+| **Scarcity focuses attention** | Shah et al. (2015) | Limited availability increases perceived value |
+| **Attention predicts quality** | van der Zanden (2022) | Time spent viewing correlates with relationship intention |
+
+### MVP Features (Implement First)
+- **Daily Profile Limit (5-7)** - Issue #44
+- **Minimum View Time (20s)** - Issue #45
+- **One Free Pick + Effort for Others** - Issue #46
+
+### V2 Features (Post-MVP)
+
+#### Press and Hold with Progressive Reveal (12 seconds)
+```
+┌────────────────────────────────────────┐
+│         Hold to Express Interest       │
+│                                        │
+│     ████████████░░░░░ 8s / 12s         │
+│                                        │
+│  As you hold, profile reveals more:    │
+│  • 3s: Their favorite quote            │
+│  • 6s: What they're looking for        │
+│  • 9s: A voice note intro              │
+│  • 12s: ✓ Interest expressed           │
+└────────────────────────────────────────┘
+```
+**Why it works:** Time investment + progressive reward creates anticipation
+**Research:** Effort justification (Aronson & Mills) + variable reward schedules
+
+#### Profile Attention Quiz
+```
+┌────────────────────────────────────────┐
+│  To express interest, answer:          │
+│                                        │
+│  "What does Maya do on weekends?"      │
+│                                        │
+│  ○ Hiking and photography              │
+│  ○ Netflix and cooking                 │
+│  ○ Reading and yoga                    │
+│                                        │
+│  (Answer is in her profile)            │
+└────────────────────────────────────────┘
+```
+**Why it works:** Proves you actually read their profile
+**Research:** Attention correlates with intention quality (van der Zanden 2022)
+
+### V3 Features (Future)
+
+#### Thoughtful Message Required (Highest Quality Signal)
+```
+┌────────────────────────────────────────┐
+│  "What about Maya caught your eye?"    │
+│                                        │
+│  [____________________________]        │
+│  (min 20 characters)                   │
+│                                        │
+│  Your message is sent WITH your like   │
+│  - becomes the first message.          │
+│                                        │
+│  [Send Interest]                       │
+└────────────────────────────────────────┘
+```
+**Why it works:** Creates conversation starter, highest effort = highest quality
+**Research:** Costly signaling theory - message content reveals intent quality
+
+#### Compatibility Mini-Game
+```
+┌────────────────────────────────────────┐
+│  Quick Compatibility Check             │
+│                                        │
+│  "Perfect Sunday morning?"             │
+│                                        │
+│  🏃 Early run     📚 Sleep in & read   │
+│  ☕ Café & paper  🍳 Cook breakfast    │
+│                                        │
+│  Maya answered this too - see if       │
+│  you match after expressing interest   │
+└────────────────────────────────────────┘
+```
+**Why it works:** Gamification + curiosity + reveals compatibility
+**Research:** Game mechanics increase commitment (Xi & Hamari 2021)
+
+### Recipient Experience (Critical)
+
+When someone receives interest, they see context:
+```
+┌─────────────────────────────────────────┐
+│  Rahul expressed interest in you        │
+│                                         │
+│  ⭐ You were his FREE PICK today        │
+│     (His #1 choice out of 5 profiles)   │
+│                                         │
+│  OR                                     │
+│                                         │
+│  📝 He answered about your profile:     │
+│     "I love that you mentioned hiking   │
+│      the Western Ghats!"                │
+│                                         │
+│  OR                                     │
+│                                         │
+│  ⏱️ He held for 12 seconds to learn:    │
+│     • Your favorite quote               │
+│     • What you're looking for           │
+│     • Your voice intro                  │
+└─────────────────────────────────────────┘
+```
+
+### Key Insight: The "One Free Pick" Psychology
+
+This is the killer differentiator:
+1. **Forces intentionality** - Can't swipe right on everyone
+2. **Creates value for recipient** - "I was their #1 choice today" feels meaningful
+3. **Reduces choice paralysis** - Clear hierarchy of picks
+4. **Triggers effort justification** - Free pick feels precious because others cost effort
+
+### Research Citations (Full)
+
+1. **Zahavi, A. (1975)** "Mate selection—A selection for a handicap." *Journal of Theoretical Biology*
+2. **Aronson, E., & Mills, J. (1959)** "The effect of severity of initiation on liking for a group." *Journal of Abnormal and Social Psychology*
+3. **Iyengar, S. S., & Lepper, M. R. (2000)** "When choice is demotivating." *Journal of Personality and Social Psychology*
+4. **Schwartz, B. (2004)** *The Paradox of Choice: Why More Is Less*
+5. **van der Zanden, T. et al. (2022)** "What People Look at in Multimodal Online Dating Profiles." *Communication Research*
+6. **Wadham, M. et al. (2023)** "99+ matches but a spark ain't one: Adverse effects of excessive swiping." *Computers in Human Behavior*
+7. **Shah, A. K. et al. (2015)** "Scarcity frames value." *Psychological Science*
+8. **Xi, N., & Hamari, J. (2021)** "Enhancing user engagement through gamification." *Journal of Business Research*
+9. **Finkel, E. J. et al. (2012)** "Online Dating: A Critical Analysis." *Psychological Science in the Public Interest*
+
+---
+
+*Document Version: 1.1*
+*Updated: December 2024*
+*Status: Strategic Foundation + Costly Signaling Roadmap*
