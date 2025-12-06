@@ -17,7 +17,8 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    op.execute("CREATE EXTENSION IF NOT EXISTS vector")
+    # Note: pgvector extension creation moved to a separate migration
+    # to avoid transaction issues on providers that don't support it (e.g., Railway)
 
     op.create_table(
         "users",
