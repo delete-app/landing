@@ -10,10 +10,18 @@
     "preview": "astro preview",
     "astro": "astro",
     "validate:refs": "npx tsx scripts/validate-references.ts",
-    "validate:refs:links": "npx tsx scripts/validate-references.ts --check-links"
+    "validate:refs:links": "npx tsx scripts/validate-references.ts --check-links",
+    "validate:facts": "npx tsx scripts/validate-facts.ts",
+    "validate:facts:changed": "npx tsx scripts/validate-facts.ts --changed --diff-only",
+    "check:contradictions": "npx tsx scripts/check-contradictions.ts",
+    "lint:content": "npm run validate:refs && npm run check:contradictions"
   },
   "dependencies": {
-    "astro": "^5.1.1",
-    "@astrojs/starlight": "^0.31.1"
+    "@astrojs/starlight": "^0.31.1",
+    "astro": "^5.1.1"
+  },
+  "devDependencies": {
+    "wink-eng-lite-web-model": "^1.8.1",
+    "wink-nlp": "^2.4.0"
   }
 }

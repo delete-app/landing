@@ -46,3 +46,6 @@ venv/
 # Testing
 coverage/
 .nyc_output/
+
+# Generated reports
+apps/landing/contradiction-notes.md

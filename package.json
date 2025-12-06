@@ -26,6 +26,8 @@
     "lint:fix": "eslint apps/landing/src apps/my/src --fix",
     "format": "prettier --write 'apps/*/src/**/*.{ts,tsx,js,jsx,json,css}'",
     "format:check": "prettier --check 'apps/*/src/**/*.{ts,tsx,js,jsx,json,css}'",
+    "check:contradictions": "cd apps/landing && npx tsx scripts/check-contradictions.ts",
+    "lint:content": "pnpm --filter @delete/landing validate:refs && pnpm check:contradictions",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -39,6 +41,10 @@
     "apps/api/src/**/*.py": [
       "cd apps/api && uv run ruff check --fix",
       "cd apps/api && uv run ruff format"
+    ],
+    "apps/landing/src/content/docs/learn/**/*.md": [
+      "cd apps/landing && npx tsx scripts/validate-references.ts",
+      "cd apps/landing && npx tsx scripts/check-contradictions.ts"
     ]
   },
   "devDependencies": {
