@@ -1,9 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": {
-    "title": "Delete API",
-    "version": "0.1.0"
-  },
+  "info": { "title": "Delete API", "version": "0.1.0" },
   "paths": {
     "/v1/health": {
       "get": {
@@ -14,11 +11,7 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HealthResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/HealthResponse" } }
             }
           }
         }
@@ -31,11 +24,7 @@
         "operationId": "signup_v1_auth_signup_post",
         "requestBody": {
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserCreate"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/UserCreate" } }
           },
           "required": true
         },
@@ -43,20 +32,14 @@
           "201": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -70,11 +53,7 @@
         "operationId": "login_v1_auth_login_post",
         "requestBody": {
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/LoginRequest" } }
           },
           "required": true
         },
@@ -82,20 +61,14 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Token"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/Token" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -113,14 +86,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Refresh Token"
             }
           }
@@ -129,14 +95,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "anyOf": [
-                  {
-                    "$ref": "#/components/schemas/TokenRefresh"
-                  },
-                  {
-                    "type": "null"
-                  }
-                ],
+                "anyOf": [{ "$ref": "#/components/schemas/TokenRefresh" }, { "type": "null" }],
                 "title": "Token Data"
               }
             }
@@ -146,20 +105,14 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Token"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/Token" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -178,9 +131,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": {
-                    "type": "string"
-                  },
+                  "additionalProperties": { "type": "string" },
                   "type": "object",
                   "title": "Response Logout V1 Auth Logout Post"
                 }
@@ -202,14 +153,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -218,14 +162,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -234,20 +171,14 @@
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -264,14 +195,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -280,14 +204,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -295,31 +212,21 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ProfileUpdate"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/ProfileUpdate" } }
           }
         },
         "responses": {
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -338,14 +245,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -354,14 +254,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -373,9 +266,7 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PhotoResponse"
-                  },
+                  "items": { "$ref": "#/components/schemas/PhotoResponse" },
                   "title": "Response List Photos V1 Profile Photos Get"
                 }
               }
@@ -385,9 +276,7 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -404,14 +293,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -420,14 +302,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -435,31 +310,21 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhotoCreate"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/PhotoCreate" } }
           }
         },
         "responses": {
           "201": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PhotoResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/PhotoResponse" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -477,25 +342,14 @@
             "name": "photo_id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid",
-              "title": "Photo Id"
-            }
+            "schema": { "type": "string", "format": "uuid", "title": "Photo Id" }
           },
           {
             "name": "authorization",
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -504,29 +358,18 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
         ],
         "responses": {
-          "204": {
-            "description": "Successful Response"
-          },
+          "204": { "description": "Successful Response" },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -545,14 +388,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -561,14 +397,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -576,11 +405,7 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PhotoReorder"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/PhotoReorder" } }
           }
         },
         "responses": {
@@ -590,9 +415,7 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PhotoResponse"
-                  },
+                  "items": { "$ref": "#/components/schemas/PhotoResponse" },
                   "title": "Response Reorder User Photos V1 Profile Photos Reorder Put"
                 }
               }
@@ -602,9 +425,7 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -622,9 +443,7 @@
             "description": "Successful Response",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AvailablePromptsResponse"
-                }
+                "schema": { "$ref": "#/components/schemas/AvailablePromptsResponse" }
               }
             }
           }
@@ -643,14 +462,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -659,14 +471,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -678,9 +483,7 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/PromptResponse"
-                  },
+                  "items": { "$ref": "#/components/schemas/PromptResponse" },
                   "title": "Response List Prompts V1 Profile Prompts Get"
                 }
               }
@@ -690,9 +493,7 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -709,14 +510,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -725,14 +519,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -740,31 +527,21 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PromptCreate"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/PromptCreate" } }
           }
         },
         "responses": {
           "201": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PromptResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/PromptResponse" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -782,25 +559,14 @@
             "name": "prompt_id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid",
-              "title": "Prompt Id"
-            }
+            "schema": { "type": "string", "format": "uuid", "title": "Prompt Id" }
           },
           {
             "name": "authorization",
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -809,14 +575,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -824,31 +583,21 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PromptUpdate"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/PromptUpdate" } }
           }
         },
         "responses": {
           "200": {
             "description": "Successful Response",
             "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PromptResponse"
-                }
-              }
+              "application/json": { "schema": { "$ref": "#/components/schemas/PromptResponse" } }
             }
           },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -864,25 +613,14 @@
             "name": "prompt_id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid",
-              "title": "Prompt Id"
-            }
+            "schema": { "type": "string", "format": "uuid", "title": "Prompt Id" }
           },
           {
             "name": "authorization",
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -891,29 +629,18 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
         ],
         "responses": {
-          "204": {
-            "description": "Successful Response"
-          },
+          "204": { "description": "Successful Response" },
           "422": {
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -932,14 +659,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -948,14 +668,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -963,11 +676,7 @@
         "requestBody": {
           "required": true,
           "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/QuizSubmit"
-              }
-            }
+            "application/json": { "schema": { "$ref": "#/components/schemas/QuizSubmit" } }
           }
         },
         "responses": {
@@ -977,9 +686,7 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/BadgeResponse"
-                  },
+                  "items": { "$ref": "#/components/schemas/BadgeResponse" },
                   "title": "Response Submit Quiz Answers V1 Profile Quiz Post"
                 }
               }
@@ -989,9 +696,7 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -1008,14 +713,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -1024,14 +722,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -1043,9 +734,7 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResponseOut"
-                  },
+                  "items": { "$ref": "#/components/schemas/QuizResponseOut" },
                   "title": "Response Get Quiz Responses V1 Profile Quiz Get"
                 }
               }
@@ -1055,9 +744,7 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -1076,14 +763,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -1092,14 +772,7 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -1111,9 +784,7 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/BadgeResponse"
-                  },
+                  "items": { "$ref": "#/components/schemas/BadgeResponse" },
                   "title": "Response List Badges V1 Profile Badges Get"
                 }
               }
@@ -1123,9 +794,7 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -1144,14 +813,7 @@
             "in": "header",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Authorization"
             }
           },
@@ -1160,14 +822,147 @@
             "in": "cookie",
             "required": false,
             "schema": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "null"
-                }
-              ],
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/ProfileCompletion" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/discover": {
+      "get": {
+        "tags": ["matching"],
+        "summary": "Get Discovery Feed",
+        "description": "Get discovery feed with up to 10 curated profiles.\n\nReturns profiles ranked by compatibility, completeness, and activity.\nHandles scarcity gracefully with suggestions if pool is limited.",
+        "operationId": "get_discovery_feed_v1_matching_discover_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/DiscoveryResultOut" }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/likes": {
+      "post": {
+        "tags": ["matching"],
+        "summary": "Send Like To User",
+        "description": "Send a like to another user.\n\n- Limited to 10 likes per day\n- First 5 likes require a comment\n- Rate limited to prevent spam\n- Creates a match if mutual",
+        "operationId": "send_like_to_user_v1_matching_likes_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/LikeCreate" } }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/LikeResultOut" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/likes/pending": {
+      "get": {
+        "tags": ["matching"],
+        "summary": "Get Likes Received",
+        "description": "Get likes received that you haven't acted on yet.",
+        "operationId": "get_likes_received_v1_matching_likes_pending_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
               "title": "Access Token"
             }
           }
@@ -1178,7 +973,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProfileCompletion"
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/PendingLikeOut" },
+                  "title": "Response Get Likes Received V1 Matching Likes Pending Get"
                 }
               }
             }
@@ -1187,9 +984,644 @@
             "description": "Validation Error",
             "content": {
               "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/passes": {
+      "post": {
+        "tags": ["matching"],
+        "summary": "Pass On User",
+        "description": "Pass on a profile.\n\n- Not permanent: expires after 30 days\n- User will see this profile again after cooldown",
+        "operationId": "pass_on_user_v1_matching_passes_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/PassCreate" } }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/PassOut" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/passes/{to_user_id}": {
+      "delete": {
+        "tags": ["matching"],
+        "summary": "Undo Pass On User",
+        "description": "Undo a pass (limited usage).\n\nUse this if you accidentally passed on someone.",
+        "operationId": "undo_pass_on_user_v1_matching_passes__to_user_id__delete",
+        "parameters": [
+          {
+            "name": "to_user_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "To User Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "204": { "description": "Successful Response" },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/matches": {
+      "get": {
+        "tags": ["matching"],
+        "summary": "List Matches",
+        "description": "Get all your matches.",
+        "operationId": "list_matches_v1_matching_matches_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/MatchOut" },
+                  "title": "Response List Matches V1 Matching Matches Get"
                 }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/matches/{match_id}": {
+      "delete": {
+        "tags": ["matching"],
+        "summary": "Unmatch User",
+        "description": "Unmatch from a match.",
+        "operationId": "unmatch_user_v1_matching_matches__match_id__delete",
+        "parameters": [
+          {
+            "name": "match_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Match Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/UnmatchRequest" } }
+          }
+        },
+        "responses": {
+          "204": { "description": "Successful Response" },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/blocks": {
+      "post": {
+        "tags": ["matching"],
+        "summary": "Block Another User",
+        "description": "Block a user.\n\n- They will never appear in your feed again\n- You will never appear in their feed\n- Any active match will be ended",
+        "operationId": "block_another_user_v1_matching_blocks_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/BlockCreate" } }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/BlockOut" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/reports": {
+      "post": {
+        "tags": ["matching"],
+        "summary": "Report Another User",
+        "description": "Report a user for review.\n\n- User will be automatically blocked\n- Report will be reviewed by moderators",
+        "operationId": "report_another_user_v1_matching_reports_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/ReportCreate" } }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/ReportOut" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/matching/compatibility/{other_user_id}": {
+      "get": {
+        "tags": ["matching"],
+        "summary": "Get Compatibility",
+        "description": "Get compatibility details with another user.",
+        "operationId": "get_compatibility_v1_matching_compatibility__other_user_id__get",
+        "parameters": [
+          {
+            "name": "other_user_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Other User Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/CompatibilityOut" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/daily-discovery": {
+      "get": {
+        "tags": ["daily-discovery"],
+        "summary": "Get Daily Discovery",
+        "description": "Get current daily discovery state and profile to view.\n\nReturns:\n- Today's discovery state (profiles, progress, free pick status)\n- Current profile to view (if not complete)\n- Active view info if already viewing a profile",
+        "operationId": "get_daily_discovery_v1_daily_discovery_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/DailyDiscoveryInitResponse" }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/daily-discovery/view/start": {
+      "post": {
+        "tags": ["daily-discovery"],
+        "summary": "Start View",
+        "description": "Start viewing a profile. Records server-side timestamp.\n\nCall this when displaying a profile to the user.\nThe server records the exact start time for validation.",
+        "operationId": "start_view_v1_daily_discovery_view_start_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/ViewStartRequest" } }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/ViewStartResponse" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/daily-discovery/view/end": {
+      "post": {
+        "tags": ["daily-discovery"],
+        "summary": "End View",
+        "description": "End viewing a profile with an action (interest or pass).\n\nServer validates:\n- View exists and belongs to user\n- For 'interest' with free_pick already used: minimum view time met\n- Server calculates actual duration (not client-provided)\n\nFree pick rules:\n- First interest of the day is always allowed (becomes 'free_pick')\n- Subsequent interests require MINIMUM_VIEW_SECONDS seconds of viewing",
+        "operationId": "end_view_v1_daily_discovery_view_end_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/ViewEndRequest" } }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/ViewEndResponse" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/daily-discovery/interest": {
+      "post": {
+        "tags": ["daily-discovery"],
+        "summary": "Express Interest",
+        "description": "Express interest in a profile (convenience endpoint).\n\nEnds the view with 'interest' action and returns next profile.",
+        "operationId": "express_interest_v1_daily_discovery_interest_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ExpressInterestRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ExpressInterestResponse" }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/daily-discovery/pass": {
+      "post": {
+        "tags": ["daily-discovery"],
+        "summary": "Pass Profile",
+        "description": "Pass on a profile (convenience endpoint).\n\nEnds the view with 'pass' action and returns next profile.\nPass does not require minimum view time.",
+        "operationId": "pass_profile_v1_daily_discovery_pass_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/PassProfileRequest" } }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/PassProfileResponse" }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/daily-discovery/reset": {
+      "post": {
+        "tags": ["daily-discovery"],
+        "summary": "Reset For Testing",
+        "description": "Reset daily discovery state for testing.\n\nOnly available in development mode.",
+        "operationId": "reset_for_testing_v1_daily_discovery_reset_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "204": { "description": "Successful Response" },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
               }
             }
           }
@@ -1201,13 +1633,7 @@
     "schemas": {
       "AvailablePromptsResponse": {
         "properties": {
-          "prompts": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Prompts"
-          }
+          "prompts": { "items": { "type": "string" }, "type": "array", "title": "Prompts" }
         },
         "type": "object",
         "required": ["prompts"],
@@ -1215,39 +1641,258 @@
       },
       "BadgeResponse": {
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid",
-            "title": "Id"
-          },
-          "badge_type": {
-            "type": "string",
-            "title": "Badge Type"
-          },
-          "label": {
-            "type": "string",
-            "title": "Label"
-          },
-          "description": {
-            "type": "string",
-            "title": "Description"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time",
-            "title": "Created At"
-          }
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "badge_type": { "type": "string", "title": "Badge Type" },
+          "label": { "type": "string", "title": "Label" },
+          "description": { "type": "string", "title": "Description" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
         },
         "type": "object",
         "required": ["id", "badge_type", "label", "description", "created_at"],
         "title": "BadgeResponse"
       },
+      "BlockCreate": {
+        "properties": {
+          "blocked_id": { "type": "string", "format": "uuid", "title": "Blocked Id" }
+        },
+        "type": "object",
+        "required": ["blocked_id"],
+        "title": "BlockCreate"
+      },
+      "BlockOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "blocked_id": { "type": "string", "format": "uuid", "title": "Blocked Id" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
+        },
+        "type": "object",
+        "required": ["id", "blocked_id", "created_at"],
+        "title": "BlockOut"
+      },
+      "CompatibilityOut": {
+        "properties": {
+          "overall_score": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Overall Score"
+          },
+          "trait_comparisons": {
+            "items": { "$ref": "#/components/schemas/TraitComparisonOut" },
+            "type": "array",
+            "title": "Trait Comparisons"
+          },
+          "summary": { "type": "string", "title": "Summary" },
+          "highlights": { "items": { "type": "string" }, "type": "array", "title": "Highlights" }
+        },
+        "type": "object",
+        "required": ["overall_score", "trait_comparisons", "summary", "highlights"],
+        "title": "CompatibilityOut"
+      },
+      "DailyDiscoveryInitResponse": {
+        "properties": {
+          "state": { "$ref": "#/components/schemas/DailyDiscoveryStateOut" },
+          "current_profile": {
+            "anyOf": [
+              { "$ref": "#/components/schemas/DailyDiscoveryProfileOut" },
+              { "type": "null" }
+            ]
+          },
+          "active_view_id": {
+            "anyOf": [{ "type": "string", "format": "uuid" }, { "type": "null" }],
+            "title": "Active View Id"
+          },
+          "active_view_started_at": {
+            "anyOf": [{ "type": "string", "format": "date-time" }, { "type": "null" }],
+            "title": "Active View Started At"
+          }
+        },
+        "type": "object",
+        "required": ["state", "current_profile"],
+        "title": "DailyDiscoveryInitResponse",
+        "description": "Response when initializing/getting daily discovery."
+      },
+      "DailyDiscoveryProfileOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" },
+          "age": { "anyOf": [{ "type": "integer" }, { "type": "null" }], "title": "Age" },
+          "bio": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Bio" },
+          "location": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Location" },
+          "photos": {
+            "items": { "$ref": "#/components/schemas/DiscoveryPhotoOut" },
+            "type": "array",
+            "title": "Photos"
+          },
+          "prompts": {
+            "items": { "$ref": "#/components/schemas/DiscoveryPromptOut" },
+            "type": "array",
+            "title": "Prompts"
+          },
+          "badges": {
+            "items": { "$ref": "#/components/schemas/DiscoveryBadgeOut" },
+            "type": "array",
+            "title": "Badges"
+          }
+        },
+        "type": "object",
+        "required": ["id", "name", "age", "bio", "location", "photos", "prompts", "badges"],
+        "title": "DailyDiscoveryProfileOut",
+        "description": "Profile for daily discovery - age calculated server-side, no PII."
+      },
+      "DailyDiscoveryStateOut": {
+        "properties": {
+          "date": { "type": "string", "format": "date", "title": "Date" },
+          "profiles": {
+            "items": { "$ref": "#/components/schemas/DailyDiscoveryProfileOut" },
+            "type": "array",
+            "title": "Profiles"
+          },
+          "current_index": { "type": "integer", "title": "Current Index" },
+          "total_profiles": { "type": "integer", "title": "Total Profiles" },
+          "viewed_count": { "type": "integer", "title": "Viewed Count" },
+          "is_free_pick": { "type": "boolean", "title": "Is Free Pick" },
+          "free_pick_used": { "type": "boolean", "title": "Free Pick Used" },
+          "interested_count": { "type": "integer", "title": "Interested Count" },
+          "passed_count": { "type": "integer", "title": "Passed Count" },
+          "is_complete": { "type": "boolean", "title": "Is Complete" }
+        },
+        "type": "object",
+        "required": [
+          "date",
+          "profiles",
+          "current_index",
+          "total_profiles",
+          "viewed_count",
+          "is_free_pick",
+          "free_pick_used",
+          "interested_count",
+          "passed_count",
+          "is_complete"
+        ],
+        "title": "DailyDiscoveryStateOut",
+        "description": "Current state of user's daily discovery."
+      },
+      "DiscoveryBadgeOut": {
+        "properties": {
+          "id": { "type": "string", "title": "Id" },
+          "label": { "type": "string", "title": "Label" },
+          "description": { "type": "string", "title": "Description" }
+        },
+        "type": "object",
+        "required": ["id", "label", "description"],
+        "title": "DiscoveryBadgeOut"
+      },
+      "DiscoveryPhotoOut": {
+        "properties": {
+          "id": { "type": "string", "title": "Id" },
+          "url": { "type": "string", "title": "Url" },
+          "order": { "type": "integer", "title": "Order" }
+        },
+        "type": "object",
+        "required": ["id", "url", "order"],
+        "title": "DiscoveryPhotoOut"
+      },
+      "DiscoveryProfileOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" },
+          "age": { "anyOf": [{ "type": "integer" }, { "type": "null" }], "title": "Age" },
+          "gender": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Gender" },
+          "bio": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Bio" },
+          "location": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Location" },
+          "photos": {
+            "items": { "additionalProperties": true, "type": "object" },
+            "type": "array",
+            "title": "Photos"
+          },
+          "prompts": {
+            "items": { "additionalProperties": true, "type": "object" },
+            "type": "array",
+            "title": "Prompts"
+          },
+          "compatibility": {
+            "anyOf": [{ "$ref": "#/components/schemas/CompatibilityOut" }, { "type": "null" }]
+          },
+          "is_new_user": { "type": "boolean", "title": "Is New User" }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "age",
+          "gender",
+          "bio",
+          "location",
+          "photos",
+          "prompts",
+          "compatibility",
+          "is_new_user"
+        ],
+        "title": "DiscoveryProfileOut"
+      },
+      "DiscoveryPromptOut": {
+        "properties": {
+          "id": { "type": "string", "title": "Id" },
+          "question": { "type": "string", "title": "Question" },
+          "answer": { "type": "string", "title": "Answer" }
+        },
+        "type": "object",
+        "required": ["id", "question", "answer"],
+        "title": "DiscoveryPromptOut"
+      },
+      "DiscoveryResultOut": {
+        "properties": {
+          "profiles": {
+            "items": { "$ref": "#/components/schemas/DiscoveryProfileOut" },
+            "type": "array",
+            "title": "Profiles"
+          },
+          "total_available": { "type": "integer", "title": "Total Available" },
+          "exhausted_pool": { "type": "boolean", "title": "Exhausted Pool" },
+          "suggestions": { "items": { "type": "string" }, "type": "array", "title": "Suggestions" },
+          "likes_remaining": { "type": "integer", "title": "Likes Remaining" }
+        },
+        "type": "object",
+        "required": [
+          "profiles",
+          "total_available",
+          "exhausted_pool",
+          "suggestions",
+          "likes_remaining"
+        ],
+        "title": "DiscoveryResultOut"
+      },
+      "ExpressInterestRequest": {
+        "properties": { "view_id": { "type": "string", "format": "uuid", "title": "View Id" } },
+        "type": "object",
+        "required": ["view_id"],
+        "title": "ExpressInterestRequest",
+        "description": "Request to express interest in a profile."
+      },
+      "ExpressInterestResponse": {
+        "properties": {
+          "success": { "type": "boolean", "title": "Success" },
+          "interest_type": { "$ref": "#/components/schemas/InterestType" },
+          "view_duration_seconds": { "type": "integer", "title": "View Duration Seconds" },
+          "next_profile": {
+            "anyOf": [
+              { "$ref": "#/components/schemas/DailyDiscoveryProfileOut" },
+              { "type": "null" }
+            ]
+          },
+          "is_complete": { "type": "boolean", "title": "Is Complete", "default": false },
+          "error": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Error" }
+        },
+        "type": "object",
+        "required": ["success", "interest_type", "view_duration_seconds"],
+        "title": "ExpressInterestResponse",
+        "description": "Response when expressing interest."
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
-            "items": {
-              "$ref": "#/components/schemas/ValidationError"
-            },
+            "items": { "$ref": "#/components/schemas/ValidationError" },
             "type": "array",
             "title": "Detail"
           }
@@ -1257,42 +1902,165 @@
       },
       "HealthResponse": {
         "properties": {
-          "status": {
-            "type": "string",
-            "title": "Status"
-          },
-          "version": {
-            "type": "string",
-            "title": "Version"
-          }
+          "status": { "type": "string", "title": "Status" },
+          "version": { "type": "string", "title": "Version" }
         },
         "type": "object",
         "required": ["status", "version"],
         "title": "HealthResponse"
       },
+      "InterestType": {
+        "type": "string",
+        "enum": ["free_pick", "earned"],
+        "title": "InterestType"
+      },
+      "LikeCreate": {
+        "properties": {
+          "to_user_id": { "type": "string", "format": "uuid", "title": "To User Id" },
+          "message": {
+            "anyOf": [{ "type": "string", "maxLength": 500 }, { "type": "null" }],
+            "title": "Message"
+          },
+          "liked_item": {
+            "anyOf": [{ "type": "string", "maxLength": 50 }, { "type": "null" }],
+            "title": "Liked Item"
+          }
+        },
+        "type": "object",
+        "required": ["to_user_id"],
+        "title": "LikeCreate"
+      },
+      "LikeResultOut": {
+        "properties": {
+          "success": { "type": "boolean", "title": "Success" },
+          "is_match": { "type": "boolean", "title": "Is Match" },
+          "match_id": {
+            "anyOf": [{ "type": "string", "format": "uuid" }, { "type": "null" }],
+            "title": "Match Id"
+          },
+          "error": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Error" }
+        },
+        "type": "object",
+        "required": ["success", "is_match", "match_id", "error"],
+        "title": "LikeResultOut"
+      },
       "LoginRequest": {
         "properties": {
-          "email": {
-            "type": "string",
-            "format": "email",
-            "title": "Email"
-          },
-          "password": {
-            "type": "string",
-            "title": "Password"
-          }
+          "email": { "type": "string", "format": "email", "title": "Email" },
+          "password": { "type": "string", "title": "Password" }
         },
         "type": "object",
         "required": ["email", "password"],
         "title": "LoginRequest"
       },
+      "MatchOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "other_user_id": { "type": "string", "format": "uuid", "title": "Other User Id" },
+          "other_user_name": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Other User Name"
+          },
+          "other_user_photo": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Other User Photo"
+          },
+          "matched_at": { "type": "string", "format": "date-time", "title": "Matched At" },
+          "status": { "type": "string", "title": "Status" },
+          "last_message_at": {
+            "anyOf": [{ "type": "string", "format": "date-time" }, { "type": "null" }],
+            "title": "Last Message At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "other_user_id",
+          "other_user_name",
+          "other_user_photo",
+          "matched_at",
+          "status",
+          "last_message_at"
+        ],
+        "title": "MatchOut"
+      },
+      "PassCreate": {
+        "properties": {
+          "to_user_id": { "type": "string", "format": "uuid", "title": "To User Id" }
+        },
+        "type": "object",
+        "required": ["to_user_id"],
+        "title": "PassCreate"
+      },
+      "PassOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "to_user_id": { "type": "string", "format": "uuid", "title": "To User Id" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" },
+          "expires_at": { "type": "string", "format": "date-time", "title": "Expires At" }
+        },
+        "type": "object",
+        "required": ["id", "to_user_id", "created_at", "expires_at"],
+        "title": "PassOut"
+      },
+      "PassProfileRequest": {
+        "properties": { "view_id": { "type": "string", "format": "uuid", "title": "View Id" } },
+        "type": "object",
+        "required": ["view_id"],
+        "title": "PassProfileRequest",
+        "description": "Request to pass on a profile."
+      },
+      "PassProfileResponse": {
+        "properties": {
+          "success": { "type": "boolean", "title": "Success" },
+          "next_profile": {
+            "anyOf": [
+              { "$ref": "#/components/schemas/DailyDiscoveryProfileOut" },
+              { "type": "null" }
+            ]
+          },
+          "is_complete": { "type": "boolean", "title": "Is Complete", "default": false },
+          "error": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Error" }
+        },
+        "type": "object",
+        "required": ["success"],
+        "title": "PassProfileResponse",
+        "description": "Response when passing on a profile."
+      },
+      "PendingLikeOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "from_user_id": { "type": "string", "format": "uuid", "title": "From User Id" },
+          "from_user_name": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "From User Name"
+          },
+          "from_user_photo": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "From User Photo"
+          },
+          "message": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Message" },
+          "liked_item": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Liked Item"
+          },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "from_user_id",
+          "from_user_name",
+          "from_user_photo",
+          "message",
+          "liked_item",
+          "created_at"
+        ],
+        "title": "PendingLikeOut"
+      },
       "PhotoCreate": {
         "properties": {
-          "url": {
-            "type": "string",
-            "maxLength": 500,
-            "title": "Url"
-          },
+          "url": { "type": "string", "maxLength": 500, "title": "Url" },
           "order": {
             "type": "integer",
             "maximum": 5.0,
@@ -1308,10 +2076,7 @@
       "PhotoReorder": {
         "properties": {
           "photo_ids": {
-            "items": {
-              "type": "string",
-              "format": "uuid"
-            },
+            "items": { "type": "string", "format": "uuid" },
             "type": "array",
             "maxItems": 6,
             "minItems": 1,
@@ -1324,24 +2089,10 @@
       },
       "PhotoResponse": {
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid",
-            "title": "Id"
-          },
-          "url": {
-            "type": "string",
-            "title": "Url"
-          },
-          "order": {
-            "type": "integer",
-            "title": "Order"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time",
-            "title": "Created At"
-          }
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "url": { "type": "string", "title": "Url" },
+          "order": { "type": "integer", "title": "Order" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
         },
         "type": "object",
         "required": ["id", "url", "order", "created_at"],
@@ -1355,37 +2106,13 @@
             "minimum": 0.0,
             "title": "Percentage"
           },
-          "has_photos": {
-            "type": "boolean",
-            "title": "Has Photos"
-          },
-          "photo_count": {
-            "type": "integer",
-            "title": "Photo Count"
-          },
-          "has_prompts": {
-            "type": "boolean",
-            "title": "Has Prompts"
-          },
-          "prompt_count": {
-            "type": "integer",
-            "title": "Prompt Count"
-          },
-          "has_quiz": {
-            "type": "boolean",
-            "title": "Has Quiz"
-          },
-          "has_basic_info": {
-            "type": "boolean",
-            "title": "Has Basic Info"
-          },
-          "missing": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Missing"
-          }
+          "has_photos": { "type": "boolean", "title": "Has Photos" },
+          "photo_count": { "type": "integer", "title": "Photo Count" },
+          "has_prompts": { "type": "boolean", "title": "Has Prompts" },
+          "prompt_count": { "type": "integer", "title": "Prompt Count" },
+          "has_quiz": { "type": "boolean", "title": "Has Quiz" },
+          "has_basic_info": { "type": "boolean", "title": "Has Basic Info" },
+          "missing": { "items": { "type": "string" }, "type": "array", "title": "Missing" }
         },
         "type": "object",
         "required": [
@@ -1403,87 +2130,39 @@
       "ProfileUpdate": {
         "properties": {
           "name": {
-            "anyOf": [
-              {
-                "type": "string",
-                "maxLength": 100
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "string", "maxLength": 100 }, { "type": "null" }],
             "title": "Name"
           },
           "birth_date": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "date"
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "string", "format": "date" }, { "type": "null" }],
             "title": "Birth Date"
           },
           "gender": {
             "anyOf": [
-              {
-                "type": "string",
-                "pattern": "^(male|female|non-binary|other)$"
-              },
-              {
-                "type": "null"
-              }
+              { "type": "string", "pattern": "^(male|female|non-binary|other)$" },
+              { "type": "null" }
             ],
             "title": "Gender"
           },
           "bio": {
-            "anyOf": [
-              {
-                "type": "string",
-                "maxLength": 500
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "string", "maxLength": 500 }, { "type": "null" }],
             "title": "Bio"
           },
           "location": {
-            "anyOf": [
-              {
-                "type": "string",
-                "maxLength": 100
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "string", "maxLength": 100 }, { "type": "null" }],
             "title": "Location"
           },
           "looking_for": {
             "anyOf": [
-              {
-                "type": "string",
-                "pattern": "^(male|female|everyone)$"
-              },
-              {
-                "type": "null"
-              }
+              { "type": "string", "pattern": "^(male|female|everyone)$" },
+              { "type": "null" }
             ],
             "title": "Looking For"
           },
           "height_cm": {
             "anyOf": [
-              {
-                "type": "integer",
-                "maximum": 250.0,
-                "minimum": 100.0
-              },
-              {
-                "type": "null"
-              }
+              { "type": "integer", "maximum": 250.0, "minimum": 100.0 },
+              { "type": "null" }
             ],
             "title": "Height Cm"
           }
@@ -1493,17 +2172,8 @@
       },
       "PromptCreate": {
         "properties": {
-          "question": {
-            "type": "string",
-            "maxLength": 200,
-            "title": "Question"
-          },
-          "answer": {
-            "type": "string",
-            "maxLength": 500,
-            "minLength": 1,
-            "title": "Answer"
-          }
+          "question": { "type": "string", "maxLength": 200, "title": "Question" },
+          "answer": { "type": "string", "maxLength": 500, "minLength": 1, "title": "Answer" }
         },
         "type": "object",
         "required": ["question", "answer"],
@@ -1511,28 +2181,11 @@
       },
       "PromptResponse": {
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid",
-            "title": "Id"
-          },
-          "question": {
-            "type": "string",
-            "title": "Question"
-          },
-          "answer": {
-            "type": "string",
-            "title": "Answer"
-          },
-          "order": {
-            "type": "integer",
-            "title": "Order"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time",
-            "title": "Created At"
-          }
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "question": { "type": "string", "title": "Question" },
+          "answer": { "type": "string", "title": "Answer" },
+          "order": { "type": "integer", "title": "Order" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
         },
         "type": "object",
         "required": ["id", "question", "answer", "order", "created_at"],
@@ -1540,12 +2193,7 @@
       },
       "PromptUpdate": {
         "properties": {
-          "answer": {
-            "type": "string",
-            "maxLength": 500,
-            "minLength": 1,
-            "title": "Answer"
-          }
+          "answer": { "type": "string", "maxLength": 500, "minLength": 1, "title": "Answer" }
         },
         "type": "object",
         "required": ["answer"],
@@ -1553,11 +2201,7 @@
       },
       "QuizAnswer": {
         "properties": {
-          "question_key": {
-            "type": "string",
-            "maxLength": 50,
-            "title": "Question Key"
-          },
+          "question_key": { "type": "string", "maxLength": 50, "title": "Question Key" },
           "answer_value": {
             "type": "integer",
             "maximum": 5.0,
@@ -1571,14 +2215,8 @@
       },
       "QuizResponseOut": {
         "properties": {
-          "question_key": {
-            "type": "string",
-            "title": "Question Key"
-          },
-          "answer_value": {
-            "type": "integer",
-            "title": "Answer Value"
-          }
+          "question_key": { "type": "string", "title": "Question Key" },
+          "answer_value": { "type": "integer", "title": "Answer Value" }
         },
         "type": "object",
         "required": ["question_key", "answer_value"],
@@ -1587,9 +2225,7 @@
       "QuizSubmit": {
         "properties": {
           "answers": {
-            "items": {
-              "$ref": "#/components/schemas/QuizAnswer"
-            },
+            "items": { "$ref": "#/components/schemas/QuizAnswer" },
             "type": "array",
             "maxItems": 6,
             "minItems": 6,
@@ -1600,59 +2236,94 @@
         "required": ["answers"],
         "title": "QuizSubmit"
       },
+      "ReportCreate": {
+        "properties": {
+          "reported_id": { "type": "string", "format": "uuid", "title": "Reported Id" },
+          "reason": { "$ref": "#/components/schemas/ReportReason" },
+          "details": {
+            "anyOf": [{ "type": "string", "maxLength": 1000 }, { "type": "null" }],
+            "title": "Details"
+          }
+        },
+        "type": "object",
+        "required": ["reported_id", "reason"],
+        "title": "ReportCreate"
+      },
+      "ReportOut": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "reported_id": { "type": "string", "format": "uuid", "title": "Reported Id" },
+          "reason": { "type": "string", "title": "Reason" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
+        },
+        "type": "object",
+        "required": ["id", "reported_id", "reason", "created_at"],
+        "title": "ReportOut"
+      },
+      "ReportReason": {
+        "type": "string",
+        "enum": [
+          "fake_profile",
+          "inappropriate_content",
+          "harassment",
+          "spam",
+          "underage",
+          "other"
+        ],
+        "title": "ReportReason"
+      },
       "Token": {
         "properties": {
-          "access_token": {
-            "type": "string",
-            "title": "Access Token"
-          },
-          "refresh_token": {
-            "type": "string",
-            "title": "Refresh Token"
-          },
-          "token_type": {
-            "type": "string",
-            "title": "Token Type",
-            "default": "bearer"
-          }
+          "access_token": { "type": "string", "title": "Access Token" },
+          "refresh_token": { "type": "string", "title": "Refresh Token" },
+          "token_type": { "type": "string", "title": "Token Type", "default": "bearer" }
         },
         "type": "object",
         "required": ["access_token", "refresh_token"],
         "title": "Token"
       },
       "TokenRefresh": {
-        "properties": {
-          "refresh_token": {
-            "type": "string",
-            "title": "Refresh Token"
-          }
-        },
+        "properties": { "refresh_token": { "type": "string", "title": "Refresh Token" } },
         "type": "object",
         "required": ["refresh_token"],
         "title": "TokenRefresh"
       },
+      "TraitComparisonOut": {
+        "properties": {
+          "trait_name": { "type": "string", "title": "Trait Name" },
+          "user_score": { "type": "integer", "title": "User Score" },
+          "other_score": { "type": "integer", "title": "Other Score" },
+          "difference": { "type": "integer", "title": "Difference" },
+          "compatibility": { "type": "string", "title": "Compatibility" },
+          "description": { "type": "string", "title": "Description" }
+        },
+        "type": "object",
+        "required": [
+          "trait_name",
+          "user_score",
+          "other_score",
+          "difference",
+          "compatibility",
+          "description"
+        ],
+        "title": "TraitComparisonOut"
+      },
+      "UnmatchReason": {
+        "type": "string",
+        "enum": ["not_interested", "no_response", "inappropriate", "met_offline", "other"],
+        "title": "UnmatchReason"
+      },
+      "UnmatchRequest": {
+        "properties": { "reason": { "$ref": "#/components/schemas/UnmatchReason" } },
+        "type": "object",
+        "required": ["reason"],
+        "title": "UnmatchRequest"
+      },
       "UserCreate": {
         "properties": {
-          "email": {
-            "type": "string",
-            "format": "email",
-            "title": "Email"
-          },
-          "password": {
-            "type": "string",
-            "title": "Password"
-          },
-          "name": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Name"
-          }
+          "email": { "type": "string", "format": "email", "title": "Email" },
+          "password": { "type": "string", "title": "Password" },
+          "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" }
         },
         "type": "object",
         "required": ["email", "password"],
@@ -1660,107 +2331,27 @@
       },
       "UserResponse": {
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid",
-            "title": "Id"
-          },
-          "email": {
-            "type": "string",
-            "format": "email",
-            "title": "Email"
-          },
-          "name": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Name"
-          },
-          "is_active": {
-            "type": "boolean",
-            "title": "Is Active"
-          },
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "email": { "type": "string", "format": "email", "title": "Email" },
+          "name": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Name" },
+          "is_active": { "type": "boolean", "title": "Is Active" },
           "birth_date": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "date"
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "string", "format": "date" }, { "type": "null" }],
             "title": "Birth Date"
           },
-          "gender": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Gender"
-          },
-          "bio": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Bio"
-          },
-          "location": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Location"
-          },
+          "gender": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Gender" },
+          "bio": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Bio" },
+          "location": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Location" },
           "looking_for": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
             "title": "Looking For"
           },
           "height_cm": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
+            "anyOf": [{ "type": "integer" }, { "type": "null" }],
             "title": "Height Cm"
           },
-          "profile_complete": {
-            "type": "boolean",
-            "title": "Profile Complete"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time",
-            "title": "Created At"
-          }
+          "profile_complete": { "type": "boolean", "title": "Profile Complete" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" }
         },
         "type": "object",
         "required": [
@@ -1782,31 +2373,72 @@
       "ValidationError": {
         "properties": {
           "loc": {
-            "items": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "integer"
-                }
-              ]
-            },
+            "items": { "anyOf": [{ "type": "string" }, { "type": "integer" }] },
             "type": "array",
             "title": "Location"
           },
-          "msg": {
-            "type": "string",
-            "title": "Message"
-          },
-          "type": {
-            "type": "string",
-            "title": "Error Type"
-          }
+          "msg": { "type": "string", "title": "Message" },
+          "type": { "type": "string", "title": "Error Type" }
         },
         "type": "object",
         "required": ["loc", "msg", "type"],
         "title": "ValidationError"
+      },
+      "ViewEndRequest": {
+        "properties": {
+          "view_id": { "type": "string", "format": "uuid", "title": "View Id" },
+          "action": { "type": "string", "pattern": "^(interest|pass)$", "title": "Action" }
+        },
+        "type": "object",
+        "required": ["view_id", "action"],
+        "title": "ViewEndRequest",
+        "description": "Request to end viewing (interest or pass)."
+      },
+      "ViewEndResponse": {
+        "properties": {
+          "success": { "type": "boolean", "title": "Success" },
+          "view_duration_seconds": { "type": "integer", "title": "View Duration Seconds" },
+          "action": { "type": "string", "title": "Action" },
+          "interest_type": {
+            "anyOf": [{ "$ref": "#/components/schemas/InterestType" }, { "type": "null" }]
+          },
+          "error": { "anyOf": [{ "type": "string" }, { "type": "null" }], "title": "Error" }
+        },
+        "type": "object",
+        "required": ["success", "view_duration_seconds", "action"],
+        "title": "ViewEndResponse",
+        "description": "Response when ending a view."
+      },
+      "ViewStartRequest": {
+        "properties": {
+          "profile_id": { "type": "string", "format": "uuid", "title": "Profile Id" }
+        },
+        "type": "object",
+        "required": ["profile_id"],
+        "title": "ViewStartRequest",
+        "description": "Request to start viewing a profile."
+      },
+      "ViewStartResponse": {
+        "properties": {
+          "view_id": { "type": "string", "format": "uuid", "title": "View Id" },
+          "profile": { "$ref": "#/components/schemas/DailyDiscoveryProfileOut" },
+          "started_at": { "type": "string", "format": "date-time", "title": "Started At" },
+          "minimum_view_seconds": {
+            "type": "integer",
+            "title": "Minimum View Seconds",
+            "description": "Minimum seconds before interest allowed",
+            "default": 20
+          },
+          "is_free_pick": {
+            "type": "boolean",
+            "title": "Is Free Pick",
+            "description": "Whether this is the user's free pick (no wait required)"
+          }
+        },
+        "type": "object",
+        "required": ["view_id", "profile", "started_at", "is_free_pick"],
+        "title": "ViewStartResponse",
+        "description": "Response when starting to view a profile."
       }
     }
   }

@@ -312,6 +312,370 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/v1/matching/discover": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Discovery Feed
+         * @description Get discovery feed with up to 10 curated profiles.
+         *
+         *     Returns profiles ranked by compatibility, completeness, and activity.
+         *     Handles scarcity gracefully with suggestions if pool is limited.
+         */
+        get: operations["get_discovery_feed_v1_matching_discover_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/likes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Send Like To User
+         * @description Send a like to another user.
+         *
+         *     - Limited to 10 likes per day
+         *     - First 5 likes require a comment
+         *     - Rate limited to prevent spam
+         *     - Creates a match if mutual
+         */
+        post: operations["send_like_to_user_v1_matching_likes_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/likes/pending": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Likes Received
+         * @description Get likes received that you haven't acted on yet.
+         */
+        get: operations["get_likes_received_v1_matching_likes_pending_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/passes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Pass On User
+         * @description Pass on a profile.
+         *
+         *     - Not permanent: expires after 30 days
+         *     - User will see this profile again after cooldown
+         */
+        post: operations["pass_on_user_v1_matching_passes_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/passes/{to_user_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /**
+         * Undo Pass On User
+         * @description Undo a pass (limited usage).
+         *
+         *     Use this if you accidentally passed on someone.
+         */
+        delete: operations["undo_pass_on_user_v1_matching_passes__to_user_id__delete"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/matches": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * List Matches
+         * @description Get all your matches.
+         */
+        get: operations["list_matches_v1_matching_matches_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/matches/{match_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /**
+         * Unmatch User
+         * @description Unmatch from a match.
+         */
+        delete: operations["unmatch_user_v1_matching_matches__match_id__delete"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/blocks": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Block Another User
+         * @description Block a user.
+         *
+         *     - They will never appear in your feed again
+         *     - You will never appear in their feed
+         *     - Any active match will be ended
+         */
+        post: operations["block_another_user_v1_matching_blocks_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/reports": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Report Another User
+         * @description Report a user for review.
+         *
+         *     - User will be automatically blocked
+         *     - Report will be reviewed by moderators
+         */
+        post: operations["report_another_user_v1_matching_reports_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/matching/compatibility/{other_user_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Compatibility
+         * @description Get compatibility details with another user.
+         */
+        get: operations["get_compatibility_v1_matching_compatibility__other_user_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/daily-discovery": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Daily Discovery
+         * @description Get current daily discovery state and profile to view.
+         *
+         *     Returns:
+         *     - Today's discovery state (profiles, progress, free pick status)
+         *     - Current profile to view (if not complete)
+         *     - Active view info if already viewing a profile
+         */
+        get: operations["get_daily_discovery_v1_daily_discovery_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/daily-discovery/view/start": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Start View
+         * @description Start viewing a profile. Records server-side timestamp.
+         *
+         *     Call this when displaying a profile to the user.
+         *     The server records the exact start time for validation.
+         */
+        post: operations["start_view_v1_daily_discovery_view_start_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/daily-discovery/view/end": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * End View
+         * @description End viewing a profile with an action (interest or pass).
+         *
+         *     Server validates:
+         *     - View exists and belongs to user
+         *     - For 'interest' with free_pick already used: minimum view time met
+         *     - Server calculates actual duration (not client-provided)
+         *
+         *     Free pick rules:
+         *     - First interest of the day is always allowed (becomes 'free_pick')
+         *     - Subsequent interests require MINIMUM_VIEW_SECONDS seconds of viewing
+         */
+        post: operations["end_view_v1_daily_discovery_view_end_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/daily-discovery/interest": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Express Interest
+         * @description Express interest in a profile (convenience endpoint).
+         *
+         *     Ends the view with 'interest' action and returns next profile.
+         */
+        post: operations["express_interest_v1_daily_discovery_interest_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/daily-discovery/pass": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Pass Profile
+         * @description Pass on a profile (convenience endpoint).
+         *
+         *     Ends the view with 'pass' action and returns next profile.
+         *     Pass does not require minimum view time.
+         */
+        post: operations["pass_profile_v1_daily_discovery_pass_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/daily-discovery/reset": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Reset For Testing
+         * @description Reset daily discovery state for testing.
+         *
+         *     Only available in development mode.
+         */
+        post: operations["reset_for_testing_v1_daily_discovery_reset_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -340,6 +704,208 @@ export interface components {
              */
             created_at: string;
         };
+        /** BlockCreate */
+        BlockCreate: {
+            /**
+             * Blocked Id
+             * Format: uuid
+             */
+            blocked_id: string;
+        };
+        /** BlockOut */
+        BlockOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * Blocked Id
+             * Format: uuid
+             */
+            blocked_id: string;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+        };
+        /** CompatibilityOut */
+        CompatibilityOut: {
+            /** Overall Score */
+            overall_score: number;
+            /** Trait Comparisons */
+            trait_comparisons: components["schemas"]["TraitComparisonOut"][];
+            /** Summary */
+            summary: string;
+            /** Highlights */
+            highlights: string[];
+        };
+        /**
+         * DailyDiscoveryInitResponse
+         * @description Response when initializing/getting daily discovery.
+         */
+        DailyDiscoveryInitResponse: {
+            state: components["schemas"]["DailyDiscoveryStateOut"];
+            current_profile: components["schemas"]["DailyDiscoveryProfileOut"] | null;
+            /** Active View Id */
+            active_view_id?: string | null;
+            /** Active View Started At */
+            active_view_started_at?: string | null;
+        };
+        /**
+         * DailyDiscoveryProfileOut
+         * @description Profile for daily discovery - age calculated server-side, no PII.
+         */
+        DailyDiscoveryProfileOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Name */
+            name: string | null;
+            /** Age */
+            age: number | null;
+            /** Bio */
+            bio: string | null;
+            /** Location */
+            location: string | null;
+            /** Photos */
+            photos: components["schemas"]["DiscoveryPhotoOut"][];
+            /** Prompts */
+            prompts: components["schemas"]["DiscoveryPromptOut"][];
+            /** Badges */
+            badges: components["schemas"]["DiscoveryBadgeOut"][];
+        };
+        /**
+         * DailyDiscoveryStateOut
+         * @description Current state of user's daily discovery.
+         */
+        DailyDiscoveryStateOut: {
+            /**
+             * Date
+             * Format: date
+             */
+            date: string;
+            /** Profiles */
+            profiles: components["schemas"]["DailyDiscoveryProfileOut"][];
+            /** Current Index */
+            current_index: number;
+            /** Total Profiles */
+            total_profiles: number;
+            /** Viewed Count */
+            viewed_count: number;
+            /** Is Free Pick */
+            is_free_pick: boolean;
+            /** Free Pick Used */
+            free_pick_used: boolean;
+            /** Interested Count */
+            interested_count: number;
+            /** Passed Count */
+            passed_count: number;
+            /** Is Complete */
+            is_complete: boolean;
+        };
+        /** DiscoveryBadgeOut */
+        DiscoveryBadgeOut: {
+            /** Id */
+            id: string;
+            /** Label */
+            label: string;
+            /** Description */
+            description: string;
+        };
+        /** DiscoveryPhotoOut */
+        DiscoveryPhotoOut: {
+            /** Id */
+            id: string;
+            /** Url */
+            url: string;
+            /** Order */
+            order: number;
+        };
+        /** DiscoveryProfileOut */
+        DiscoveryProfileOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Name */
+            name: string | null;
+            /** Age */
+            age: number | null;
+            /** Gender */
+            gender: string | null;
+            /** Bio */
+            bio: string | null;
+            /** Location */
+            location: string | null;
+            /** Photos */
+            photos: {
+                [key: string]: unknown;
+            }[];
+            /** Prompts */
+            prompts: {
+                [key: string]: unknown;
+            }[];
+            compatibility: components["schemas"]["CompatibilityOut"] | null;
+            /** Is New User */
+            is_new_user: boolean;
+        };
+        /** DiscoveryPromptOut */
+        DiscoveryPromptOut: {
+            /** Id */
+            id: string;
+            /** Question */
+            question: string;
+            /** Answer */
+            answer: string;
+        };
+        /** DiscoveryResultOut */
+        DiscoveryResultOut: {
+            /** Profiles */
+            profiles: components["schemas"]["DiscoveryProfileOut"][];
+            /** Total Available */
+            total_available: number;
+            /** Exhausted Pool */
+            exhausted_pool: boolean;
+            /** Suggestions */
+            suggestions: string[];
+            /** Likes Remaining */
+            likes_remaining: number;
+        };
+        /**
+         * ExpressInterestRequest
+         * @description Request to express interest in a profile.
+         */
+        ExpressInterestRequest: {
+            /**
+             * View Id
+             * Format: uuid
+             */
+            view_id: string;
+        };
+        /**
+         * ExpressInterestResponse
+         * @description Response when expressing interest.
+         */
+        ExpressInterestResponse: {
+            /** Success */
+            success: boolean;
+            interest_type: components["schemas"]["InterestType"];
+            /** View Duration Seconds */
+            view_duration_seconds: number;
+            next_profile?: components["schemas"]["DailyDiscoveryProfileOut"] | null;
+            /**
+             * Is Complete
+             * @default false
+             */
+            is_complete: boolean;
+            /** Error */
+            error?: string | null;
+        };
         /** HTTPValidationError */
         HTTPValidationError: {
             /** Detail */
@@ -352,6 +918,34 @@ export interface components {
             /** Version */
             version: string;
         };
+        /**
+         * InterestType
+         * @enum {string}
+         */
+        InterestType: "free_pick" | "earned";
+        /** LikeCreate */
+        LikeCreate: {
+            /**
+             * To User Id
+             * Format: uuid
+             */
+            to_user_id: string;
+            /** Message */
+            message?: string | null;
+            /** Liked Item */
+            liked_item?: string | null;
+        };
+        /** LikeResultOut */
+        LikeResultOut: {
+            /** Success */
+            success: boolean;
+            /** Is Match */
+            is_match: boolean;
+            /** Match Id */
+            match_id: string | null;
+            /** Error */
+            error: string | null;
+        };
         /** LoginRequest */
         LoginRequest: {
             /**
@@ -361,6 +955,116 @@ export interface components {
             email: string;
             /** Password */
             password: string;
+        };
+        /** MatchOut */
+        MatchOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * Other User Id
+             * Format: uuid
+             */
+            other_user_id: string;
+            /** Other User Name */
+            other_user_name: string | null;
+            /** Other User Photo */
+            other_user_photo: string | null;
+            /**
+             * Matched At
+             * Format: date-time
+             */
+            matched_at: string;
+            /** Status */
+            status: string;
+            /** Last Message At */
+            last_message_at: string | null;
+        };
+        /** PassCreate */
+        PassCreate: {
+            /**
+             * To User Id
+             * Format: uuid
+             */
+            to_user_id: string;
+        };
+        /** PassOut */
+        PassOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * To User Id
+             * Format: uuid
+             */
+            to_user_id: string;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /**
+             * Expires At
+             * Format: date-time
+             */
+            expires_at: string;
+        };
+        /**
+         * PassProfileRequest
+         * @description Request to pass on a profile.
+         */
+        PassProfileRequest: {
+            /**
+             * View Id
+             * Format: uuid
+             */
+            view_id: string;
+        };
+        /**
+         * PassProfileResponse
+         * @description Response when passing on a profile.
+         */
+        PassProfileResponse: {
+            /** Success */
+            success: boolean;
+            next_profile?: components["schemas"]["DailyDiscoveryProfileOut"] | null;
+            /**
+             * Is Complete
+             * @default false
+             */
+            is_complete: boolean;
+            /** Error */
+            error?: string | null;
+        };
+        /** PendingLikeOut */
+        PendingLikeOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * From User Id
+             * Format: uuid
+             */
+            from_user_id: string;
+            /** From User Name */
+            from_user_name: string | null;
+            /** From User Photo */
+            from_user_photo: string | null;
+            /** Message */
+            message: string | null;
+            /** Liked Item */
+            liked_item: string | null;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
         };
         /** PhotoCreate */
         PhotoCreate: {
@@ -480,6 +1184,42 @@ export interface components {
             /** Answers */
             answers: components["schemas"]["QuizAnswer"][];
         };
+        /** ReportCreate */
+        ReportCreate: {
+            /**
+             * Reported Id
+             * Format: uuid
+             */
+            reported_id: string;
+            reason: components["schemas"]["ReportReason"];
+            /** Details */
+            details?: string | null;
+        };
+        /** ReportOut */
+        ReportOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * Reported Id
+             * Format: uuid
+             */
+            reported_id: string;
+            /** Reason */
+            reason: string;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+        };
+        /**
+         * ReportReason
+         * @enum {string}
+         */
+        ReportReason: "fake_profile" | "inappropriate_content" | "harassment" | "spam" | "underage" | "other";
         /** Token */
         Token: {
             /** Access Token */
@@ -496,6 +1236,30 @@ export interface components {
         TokenRefresh: {
             /** Refresh Token */
             refresh_token: string;
+        };
+        /** TraitComparisonOut */
+        TraitComparisonOut: {
+            /** Trait Name */
+            trait_name: string;
+            /** User Score */
+            user_score: number;
+            /** Other Score */
+            other_score: number;
+            /** Difference */
+            difference: number;
+            /** Compatibility */
+            compatibility: string;
+            /** Description */
+            description: string;
+        };
+        /**
+         * UnmatchReason
+         * @enum {string}
+         */
+        UnmatchReason: "not_interested" | "no_response" | "inappropriate" | "met_offline" | "other";
+        /** UnmatchRequest */
+        UnmatchRequest: {
+            reason: components["schemas"]["UnmatchReason"];
         };
         /** UserCreate */
         UserCreate: {
@@ -553,6 +1317,73 @@ export interface components {
             msg: string;
             /** Error Type */
             type: string;
+        };
+        /**
+         * ViewEndRequest
+         * @description Request to end viewing (interest or pass).
+         */
+        ViewEndRequest: {
+            /**
+             * View Id
+             * Format: uuid
+             */
+            view_id: string;
+            /** Action */
+            action: string;
+        };
+        /**
+         * ViewEndResponse
+         * @description Response when ending a view.
+         */
+        ViewEndResponse: {
+            /** Success */
+            success: boolean;
+            /** View Duration Seconds */
+            view_duration_seconds: number;
+            /** Action */
+            action: string;
+            interest_type?: components["schemas"]["InterestType"] | null;
+            /** Error */
+            error?: string | null;
+        };
+        /**
+         * ViewStartRequest
+         * @description Request to start viewing a profile.
+         */
+        ViewStartRequest: {
+            /**
+             * Profile Id
+             * Format: uuid
+             */
+            profile_id: string;
+        };
+        /**
+         * ViewStartResponse
+         * @description Response when starting to view a profile.
+         */
+        ViewStartResponse: {
+            /**
+             * View Id
+             * Format: uuid
+             */
+            view_id: string;
+            profile: components["schemas"]["DailyDiscoveryProfileOut"];
+            /**
+             * Started At
+             * Format: date-time
+             */
+            started_at: string;
+            /**
+             * Minimum View Seconds
+             * @description Minimum seconds before interest allowed
+             * @default 20
+             */
+            minimum_view_seconds: number;
+            /**
+             * Is Free Pick
+             * @description Whether this is the user's free pick (no wait required)
+             */
+            is_free_pick: boolean;
         };
     };
     responses: never;
@@ -1202,6 +2033,570 @@ export interface operations {
                 content: {
                     "application/json": components["schemas"]["ProfileCompletion"];
                 };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    get_discovery_feed_v1_matching_discover_get: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["DiscoveryResultOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    send_like_to_user_v1_matching_likes_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["LikeCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["LikeResultOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    get_likes_received_v1_matching_likes_pending_get: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PendingLikeOut"][];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    pass_on_user_v1_matching_passes_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["PassCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PassOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    undo_pass_on_user_v1_matching_passes__to_user_id__delete: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path: {
+                to_user_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    list_matches_v1_matching_matches_get: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MatchOut"][];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    unmatch_user_v1_matching_matches__match_id__delete: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path: {
+                match_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["UnmatchRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    block_another_user_v1_matching_blocks_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["BlockCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["BlockOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    report_another_user_v1_matching_reports_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ReportCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReportOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    get_compatibility_v1_matching_compatibility__other_user_id__get: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path: {
+                other_user_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CompatibilityOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    get_daily_discovery_v1_daily_discovery_get: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["DailyDiscoveryInitResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    start_view_v1_daily_discovery_view_start_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ViewStartRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ViewStartResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    end_view_v1_daily_discovery_view_end_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ViewEndRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ViewEndResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    express_interest_v1_daily_discovery_interest_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ExpressInterestRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExpressInterestResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    pass_profile_v1_daily_discovery_pass_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["PassProfileRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PassProfileResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    reset_for_testing_v1_daily_discovery_reset_post: {
+        parameters: {
+            query?: never;
+            header?: {
+                authorization?: string | null;
+            };
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
             };
             /** @description Validation Error */
             422: {
