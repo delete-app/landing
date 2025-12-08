@@ -30,7 +30,15 @@ export function Layout({ children }: LayoutProps) {
                 location.pathname === '/dashboard' ? 'text-text' : 'text-text-dim hover:text-text'
               }`}
             >
-              Home
+              Discover
+            </Link>
+            <Link
+              to="/matches"
+              className={`text-sm no-underline transition-colors ${
+                location.pathname === '/matches' ? 'text-text' : 'text-text-dim hover:text-text'
+              }`}
+            >
+              Matches
             </Link>
             <Link
               to="/settings"
