@@ -1627,6 +1627,295 @@
           }
         }
       }
+    },
+    "/v1/chat/matches/{match_id}/messages": {
+      "get": {
+        "tags": ["chat"],
+        "summary": "Get Messages",
+        "description": "Get message history for a match.",
+        "operationId": "get_messages_v1_chat_matches__match_id__messages_get",
+        "parameters": [
+          {
+            "name": "match_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Match Id" }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string", "format": "uuid" }, { "type": "null" }],
+              "title": "Before"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/MessagesResponse" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["chat"],
+        "summary": "Send Message",
+        "description": "Send a message (REST fallback, prefer WebSocket).",
+        "operationId": "send_message_v1_chat_matches__match_id__messages_post",
+        "parameters": [
+          {
+            "name": "match_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Match Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/MessageCreate" } }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/MessageResponse" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/chat/matches/{match_id}/read": {
+      "post": {
+        "tags": ["chat"],
+        "summary": "Mark Read",
+        "description": "Mark all messages in a match as read.",
+        "operationId": "mark_read_v1_chat_matches__match_id__read_post",
+        "parameters": [
+          {
+            "name": "match_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Match Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Mark Read V1 Chat Matches  Match Id  Read Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/chat/matches/{match_id}/unread": {
+      "get": {
+        "tags": ["chat"],
+        "summary": "Get Unread Count",
+        "description": "Get unread message count for a match.",
+        "operationId": "get_unread_count_v1_chat_matches__match_id__unread_get",
+        "parameters": [
+          {
+            "name": "match_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Match Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/UnreadCountResponse" }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/chat/messages/{message_id}": {
+      "delete": {
+        "tags": ["chat"],
+        "summary": "Delete Message",
+        "description": "Delete a message (soft delete, sender only).",
+        "operationId": "delete_message_v1_chat_messages__message_id__delete",
+        "parameters": [
+          {
+            "name": "message_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid", "title": "Message Id" }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Delete Message V1 Chat Messages  Message Id  Delete"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1984,6 +2273,42 @@
         ],
         "title": "MatchOut"
       },
+      "MessageCreate": {
+        "properties": { "content": { "type": "string", "title": "Content" } },
+        "type": "object",
+        "required": ["content"],
+        "title": "MessageCreate"
+      },
+      "MessageResponse": {
+        "properties": {
+          "id": { "type": "string", "format": "uuid", "title": "Id" },
+          "match_id": { "type": "string", "format": "uuid", "title": "Match Id" },
+          "sender_id": { "type": "string", "format": "uuid", "title": "Sender Id" },
+          "content": { "type": "string", "title": "Content" },
+          "created_at": { "type": "string", "format": "date-time", "title": "Created At" },
+          "read_at": {
+            "anyOf": [{ "type": "string", "format": "date-time" }, { "type": "null" }],
+            "title": "Read At"
+          },
+          "is_own": { "type": "boolean", "title": "Is Own" }
+        },
+        "type": "object",
+        "required": ["id", "match_id", "sender_id", "content", "created_at", "read_at", "is_own"],
+        "title": "MessageResponse"
+      },
+      "MessagesResponse": {
+        "properties": {
+          "messages": {
+            "items": { "$ref": "#/components/schemas/MessageResponse" },
+            "type": "array",
+            "title": "Messages"
+          },
+          "has_more": { "type": "boolean", "title": "Has More" }
+        },
+        "type": "object",
+        "required": ["messages", "has_more"],
+        "title": "MessagesResponse"
+      },
       "PassCreate": {
         "properties": {
           "to_user_id": { "type": "string", "format": "uuid", "title": "To User Id" }
@@ -2318,6 +2643,12 @@
         "type": "object",
         "required": ["reason"],
         "title": "UnmatchRequest"
+      },
+      "UnreadCountResponse": {
+        "properties": { "unread_count": { "type": "integer", "title": "Unread Count" } },
+        "type": "object",
+        "required": ["unread_count"],
+        "title": "UnreadCountResponse"
       },
       "UserCreate": {
         "properties": {

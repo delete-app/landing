@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { $api } from '../lib/api/client'
 
 export default function Matches() {
@@ -42,9 +43,10 @@ export default function Matches() {
 
       <div className="grid gap-4">
         {matches.map((match) => (
-          <div
+          <Link
             key={match.id}
-            className="flex items-center gap-4 p-4 rounded-xl bg-surface border border-border-light"
+            to={`/chat/${match.id}`}
+            className="flex items-center gap-4 p-4 rounded-xl bg-surface border border-border-light hover:border-text/30 transition-colors no-underline"
           >
             {match.other_user_photo ? (
               <img
@@ -58,19 +60,15 @@ export default function Matches() {
               </div>
             )}
             <div className="flex-1">
-              <h3 className="font-medium">{match.other_user_name || 'Someone'}</h3>
+              <h3 className="font-medium text-text">{match.other_user_name || 'Someone'}</h3>
               <p className="text-sm text-text-dim">
                 Matched {new Date(match.matched_at).toLocaleDateString()}
               </p>
             </div>
             <div className="text-2xl">💬</div>
-          </div>
+          </Link>
         ))}
       </div>
-
-      <p className="text-center text-text-dim text-sm">
-        Chat coming soon! For now, look at their profile to connect.
-      </p>
     </div>
   )
 }

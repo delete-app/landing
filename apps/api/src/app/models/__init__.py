@@ -19,6 +19,7 @@ from app.models.discovery import (
     InterestType,
     ViewAction,
 )
+from app.models.chat import Message
 
 __all__ = [
     "User",
@@ -41,4 +42,5 @@ __all__ = [
     "Interest",
     "InterestType",
     "ViewAction",
+    "Message",
 ]

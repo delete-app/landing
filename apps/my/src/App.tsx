@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
 import Matches from './pages/Matches'
+import Chat from './pages/Chat'
 import Settings from './pages/Settings'
 import Onboarding from './pages/Onboarding'
 
@@ -32,6 +33,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Matches />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/chat/:matchId"
+            element={
+              <ProtectedRoute>
+                <Chat />
               </ProtectedRoute>
             }
           />
