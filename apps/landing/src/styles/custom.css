@@ -149,6 +149,18 @@ header.header {
     padding-bottom: calc(0.5rem + env(safe-area-inset-bottom)) !important;
   }
 
+  /* Hide "On this page" text, keep only icon */
+  mobile-starlight-toc .toggle {
+    font-size: 0;
+    gap: 0;
+    padding-inline: 0.5rem !important;
+  }
+
+  mobile-starlight-toc .toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+
   /* TOC dropdown opens upward */
   mobile-starlight-toc #starlight__mobile-toc .dropdown,
   mobile-starlight-toc details > div {
