@@ -1,5 +1,5 @@
 ---
-title: "6.4 Navigating Major Life Transitions"
+title: "Navigating Major Life Transitions"
 description: "Moving in together, marriage, children, career changes, health challenges, and empty nest — research on how couples navigate life's major turning points."
 sidebar:
   order: 4

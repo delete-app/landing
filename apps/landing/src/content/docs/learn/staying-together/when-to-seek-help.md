@@ -1,5 +1,5 @@
 ---
-title: "6.6 When to Seek Help"
+title: "When to Seek Help"
 description: "Signs you need couples therapy, what to expect, how to find the right therapist, and what research says about what actually works."
 sidebar:
   order: 6

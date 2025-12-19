@@ -1,5 +1,5 @@
 ---
-title: "6.4a Pregnancy: Navigating It as Partners"
+title: "Pregnancy: Navigating It as Partners"
 description: "The 9 months before parenthood are a relationship transition of their own. Research on emotional changes, physical needs, partner support, and preparing together."
 sidebar:
   order: 5

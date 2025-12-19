@@ -1,5 +1,5 @@
 ---
-title: "4.1 ADHD in Relationships"
+title: "ADHD in Relationships"
 description: "Hyperfocus, rejection sensitivity, time blindness — dating with ADHD is different. Finally, content that gets it."
 sidebar:
   order: 1

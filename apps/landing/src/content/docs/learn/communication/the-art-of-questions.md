@@ -1,5 +1,5 @@
 ---
-title: "7.1 The Art of Questions"
+title: "The Art of Questions"
 description: "Why the questions you ask matter more than the answers you give—and how asking better questions makes people like you more"
 sidebar:
   order: 1

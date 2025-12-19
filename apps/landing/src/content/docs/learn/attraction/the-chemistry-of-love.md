@@ -1,5 +1,5 @@
 ---
-title: "2.2 The Chemistry of Love"
+title: "The Chemistry of Love"
 description: "Dopamine, oxytocin, serotonin — what's actually happening in your brain when you fall in love, and why it feels like addiction."
 sidebar:
   order: 2

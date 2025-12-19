@@ -1,5 +1,5 @@
 ---
-title: "6.5 Relationship Maintenance Rituals"
+title: "Relationship Maintenance Rituals"
 description: "Daily check-ins, date nights, appreciation practices, and the rituals that keep long-term relationships thriving — what research says actually works."
 sidebar:
   order: 5

@@ -1,5 +1,5 @@
 ---
-title: "2.1 Limerence vs Love"
+title: "Limerence vs Love"
 description: "That obsessive 'can't stop thinking about them' feeling isn't love — it's limerence. Understanding the difference changes everything."
 sidebar:
   order: 1

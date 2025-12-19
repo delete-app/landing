@@ -1,5 +1,5 @@
 ---
-title: "3.4 Conflict Styles"
+title: "Conflict Styles"
 description: "How you fight matters more than what you fight about. Understanding your conflict patterns—and theirs—before they become problems."
 sidebar:
   order: 4

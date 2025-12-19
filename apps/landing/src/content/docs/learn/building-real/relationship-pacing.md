@@ -1,5 +1,5 @@
 ---
-title: "5.6 The Art of Relationship Pacing"
+title: "The Art of Relationship Pacing"
 description: "Moving too fast clouds judgment. Moving too slow kills momentum. The research on finding the right speed."
 sidebar:
   order: 6

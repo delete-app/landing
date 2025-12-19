@@ -1,5 +1,5 @@
 ---
-title: "1.1 Why Self-Awareness Matters"
+title: "Why Self-Awareness Matters"
 description: "Most relationships fail because people don't know themselves. Here's why that matters — and what to do about it."
 sidebar:
   order: 1

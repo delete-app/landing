@@ -1,5 +1,5 @@
 ---
-title: "3.5 Growth Trajectories"
+title: "Growth Trajectories"
 description: "Will you grow together or grow apart? How to assess whether your paths are converging—and how to support each other's evolution."
 sidebar:
   order: 5

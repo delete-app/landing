@@ -1,5 +1,5 @@
 ---
-title: "3.3 Life Rhythm Compatibility"
+title: "Life Rhythm Compatibility"
 description: "Morning person meets night owl. Workaholic meets homebody. Here's what research says about daily rhythms and relationship success."
 sidebar:
   order: 3

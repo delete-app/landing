@@ -1,5 +1,5 @@
 ---
-title: "4.3 Anxiety & Dating"
+title: "Anxiety & Dating"
 description: "When your brain catastrophizes everything—how to date without spiraling and recognize when anxiety is driving your decisions"
 ---
 

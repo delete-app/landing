@@ -1,5 +1,5 @@
 ---
-title: "4.2 Autism & Intimacy"
+title: "Autism & Intimacy"
 description: "Dating when your brain processes social cues differently. Sensory needs, direct communication, and the double empathy problem."
 sidebar:
   order: 2

@@ -1,5 +1,5 @@
 ---
-title: "1.3 How You Handle Conflict"
+title: "How You Handle Conflict"
 description: "Fight, flight, freeze, or fawn — your conflict response pattern shapes every relationship you'll ever have."
 sidebar:
   order: 3

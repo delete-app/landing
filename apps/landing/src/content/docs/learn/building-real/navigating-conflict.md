@@ -1,5 +1,5 @@
 ---
-title: "5.3 Navigating Conflict"
+title: "Navigating Conflict"
 description: "Conflict isn't the problem — it's how you handle it. Research-backed strategies for fighting without destroying your relationship."
 sidebar:
   order: 3

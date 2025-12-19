@@ -1,5 +1,5 @@
 ---
-title: "6.3 Growing Together, Not Apart"
+title: "Growing Together, Not Apart"
 description: "Individual growth within a relationship — how to support your partner's evolution while staying connected, and what predicts growing apart."
 sidebar:
   order: 3

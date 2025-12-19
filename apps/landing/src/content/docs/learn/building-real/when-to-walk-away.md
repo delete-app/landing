@@ -1,5 +1,5 @@
 ---
-title: "5.5 When to Walk Away"
+title: "When to Walk Away"
 description: "Red flags vs rough patches, the sunk cost trap, and how to know when a relationship is over"
 ---
 

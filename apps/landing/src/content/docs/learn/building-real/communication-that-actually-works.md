@@ -1,5 +1,5 @@
 ---
-title: "5.2 Communication That Actually Works"
+title: "Communication That Actually Works"
 description: "Beyond 'just communicate better' — research-backed techniques for how to actually talk to your partner."
 sidebar:
   order: 2

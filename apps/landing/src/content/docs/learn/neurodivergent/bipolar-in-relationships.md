@@ -1,5 +1,5 @@
 ---
-title: "4.5 Bipolar Disorder in Relationships"
+title: "Bipolar Disorder in Relationships"
 description: "Understanding the unique challenges of dating with or loving someone with bipolar disorder—and what actually helps"
 ---
 

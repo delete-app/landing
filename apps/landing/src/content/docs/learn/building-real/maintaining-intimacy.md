@@ -1,5 +1,5 @@
 ---
-title: "5.4 Maintaining Intimacy"
+title: "Maintaining Intimacy"
 description: "How couples sustain emotional and physical connection over time—and why passion doesn't have to fade"
 ---
 

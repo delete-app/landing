@@ -1,5 +1,5 @@
 ---
-title: "7.5 First Date Conversations"
+title: "First Date Conversations"
 description: "Creating connection in initial encounters—what research says about disclosure, attraction signals, and making a genuine impression"
 sidebar:
   order: 5

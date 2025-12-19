@@ -1,5 +1,5 @@
 ---
-title: "1.2 Your Attachment Style"
+title: "Your Attachment Style"
 description: "Anxious, avoidant, secure, or disorganized — understanding your attachment style is the single most useful framework for dating."
 sidebar:
   order: 2

@@ -1,5 +1,5 @@
 ---
-title: "4.6 BPD in Relationships"
+title: "BPD in Relationships"
 description: "Understanding borderline personality disorder in romantic relationships—the real challenges, what helps, and why love alone isn't enough"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "2.5 From Attraction to Relationship"
+title: "From Attraction to Relationship"
 description: "How does initial attraction become a lasting relationship? The science of relationship formation, from first meeting to commitment."
 sidebar:
   order: 5

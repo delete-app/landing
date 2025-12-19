@@ -1,5 +1,5 @@
 ---
-title: "6.0 The Three Phases of Love"
+title: "The Three Phases of Love"
 description: "Dr. Gottman's research on how healthy relationships progress — and why most couples get stuck in Phase 2."
 sidebar:
   order: 0

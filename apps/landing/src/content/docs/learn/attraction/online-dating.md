@@ -1,5 +1,5 @@
 ---
-title: "2.4 Online Dating"
+title: "Online Dating"
 description: "Swipe culture, paradox of choice, and what research reveals about how dating apps actually affect our romantic lives."
 sidebar:
   order: 4

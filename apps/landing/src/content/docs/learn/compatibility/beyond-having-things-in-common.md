@@ -1,5 +1,5 @@
 ---
-title: "3.1 Beyond Having Things in Common"
+title: "Beyond Having Things in Common"
 description: "Shared interests don't predict relationship success. Here's what actually does — and it's not what you think."
 sidebar:
   order: 1

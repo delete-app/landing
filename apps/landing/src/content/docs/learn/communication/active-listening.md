@@ -1,5 +1,5 @@
 ---
-title: "7.3 Active Listening"
+title: "Active Listening"
 description: "The science of truly hearing someone—reflective techniques, empathic accuracy, and why most people are just waiting to talk"
 sidebar:
   order: 3

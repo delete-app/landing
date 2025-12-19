@@ -1,5 +1,5 @@
 ---
-title: "2.3 Physical Attraction"
+title: "Physical Attraction"
 description: "What actually drives physical attraction? The science of beauty, the matching hypothesis, and why we're drawn to who we're drawn to."
 sidebar:
   order: 3

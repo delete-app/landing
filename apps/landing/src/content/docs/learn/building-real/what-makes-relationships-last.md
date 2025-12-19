@@ -1,5 +1,5 @@
 ---
-title: "5.1 What Makes Relationships Last"
+title: "What Makes Relationships Last"
 description: "The 5:1 ratio, repair attempts, and turning toward — research-backed insights on building relationships that actually endure."
 sidebar:
   order: 1

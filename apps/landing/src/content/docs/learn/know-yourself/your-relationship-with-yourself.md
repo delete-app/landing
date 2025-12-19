@@ -1,5 +1,5 @@
 ---
-title: "1.5 Your Relationship With Yourself"
+title: "Your Relationship With Yourself"
 description: "You attract what you are. How you treat yourself sets the baseline for how you let others treat you."
 sidebar:
   order: 5

@@ -1,5 +1,5 @@
 ---
-title: "3.2 Values Alignment"
+title: "Values Alignment"
 description: "Shared hobbies fade. Shared values last. Here's what research says about which values actually matter — and which don't."
 sidebar:
   order: 2

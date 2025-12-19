@@ -1,5 +1,5 @@
 ---
-title: "7.4 Text & Digital Communication"
+title: "Text & Digital Communication"
 description: "Building connection through screens—when texting helps, when it hurts, and how to navigate the transition to in-person"
 sidebar:
   order: 4

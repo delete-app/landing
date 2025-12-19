@@ -1,5 +1,5 @@
 ---
-title: "6.1 Maintaining Intimacy Over Time"
+title: "Maintaining Intimacy Over Time"
 description: "Sexual desire changes, emotional vs physical intimacy, and keeping connection alive in long-term relationships — what research actually shows."
 sidebar:
   order: 1

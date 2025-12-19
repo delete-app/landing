@@ -1,5 +1,5 @@
 ---
-title: "6.2 The Gottman Principles in Practice"
+title: "The Gottman Principles in Practice"
 description: "Four decades of research on what makes marriages succeed or fail — the Four Horsemen, love maps, bids for connection, and the 5:1 ratio."
 sidebar:
   order: 2

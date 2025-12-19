@@ -1,5 +1,5 @@
 ---
-title: "1.4 Your Emotional Needs"
+title: "Your Emotional Needs"
 description: "Beyond love languages — what you actually need to feel secure, seen, and loved in a relationship."
 sidebar:
   order: 4

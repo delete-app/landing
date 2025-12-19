@@ -1,5 +1,5 @@
 ---
-title: "4.4 Dating Someone Neurodivergent"
+title: "Dating Someone Neurodivergent"
 description: "What to understand about ADHD, autism, and anxiety in a partner—and how to support without 'fixing'"
 ---
 

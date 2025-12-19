@@ -1,5 +1,5 @@
 ---
-title: "7.2 Perceived Partner Responsiveness"
+title: "Perceived Partner Responsiveness"
 description: "The research-backed framework for making your partner feel truly seen—understanding, validation, and care"
 sidebar:
   order: 2

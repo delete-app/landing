@@ -1,5 +1,5 @@
 ---
-title: "5.7 Why People Lose Interest"
+title: "Why People Lose Interest"
 description: "Understanding why attraction fades can help you recognize real incompatibility vs. normal relationship evolution."
 sidebar:
   order: 7
