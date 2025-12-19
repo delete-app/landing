@@ -61,6 +61,7 @@ export default defineConfig({
 		react(),
 		AstroPWA({
 			mode: 'production',
+			scope: '/learn/',
 			includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'favicon-32x32.png', 'favicon-16x16.png'],
 			registerType: 'autoUpdate',
 			injectRegister: 'auto',
@@ -94,7 +95,31 @@ export default defineConfig({
 			},
 			workbox: {
 				globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff,woff2}'],
-				navigateFallbackDenylist: [/^\/(?!learn)/], // Only allow /learn/* for offline
+				navigateFallback: null,
+				runtimeCaching: [
+					{
+						urlPattern: /^http:\/\/localhost.*\/learn\/.*/,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'learn-pages',
+							expiration: {
+								maxEntries: 100,
+								maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+							},
+						},
+					},
+					{
+						urlPattern: /^https:\/\/trydelete\.app\/learn\/.*/,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'learn-pages',
+							expiration: {
+								maxEntries: 100,
+								maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+							},
+						},
+					},
+				],
 			},
 			devOptions: {
 				enabled: false,
