@@ -25,6 +25,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@vite-pwa/astro": "^1.2.0",
     "wink-eng-lite-web-model": "^1.8.1",
     "wink-nlp": "^2.4.0"
   }

@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
+import AstroPWA from '@vite-pwa/astro';
 
 // https://astro.build/config
 export default defineConfig({
@@ -58,6 +59,47 @@ export default defineConfig({
 	},
 	integrations: [
 		react(),
+		AstroPWA({
+			mode: 'production',
+			includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'favicon-32x32.png', 'favicon-16x16.png'],
+			registerType: 'autoUpdate',
+			injectRegister: 'auto',
+			manifest: {
+				name: 'Delete Learn',
+				short_name: 'Delete Learn',
+				description: 'Research-backed relationship education. Understand yourself, attraction, compatibility, and how to build lasting connections.',
+				theme_color: '#0a0a0a',
+				background_color: '#0a0a0a',
+				display: 'standalone',
+				start_url: '/learn/',
+				scope: '/learn/',
+				icons: [
+					{
+						src: '/android-chrome-192x192.png',
+						sizes: '192x192',
+						type: 'image/png',
+					},
+					{
+						src: '/android-chrome-512x512.png',
+						sizes: '512x512',
+						type: 'image/png',
+					},
+					{
+						src: '/android-chrome-512x512.png',
+						sizes: '512x512',
+						type: 'image/png',
+						purpose: 'maskable',
+					},
+				],
+			},
+			workbox: {
+				globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff,woff2}'],
+				navigateFallbackDenylist: [/^\/(?!learn)/], // Only allow /learn/* for offline
+			},
+			devOptions: {
+				enabled: false,
+			},
+		}),
 		starlight({
 			title: 'Delete Learn',
 			description: 'Research-backed relationship education. Understand yourself, attraction, compatibility, and how to build lasting connections — with peer-reviewed sources.',
@@ -148,11 +190,20 @@ export default defineConfig({
 						href: '/apple-touch-icon.png',
 					},
 				},
+				// PWA manifest
 				{
 					tag: 'link',
 					attrs: {
 						rel: 'manifest',
-						href: '/site.webmanifest',
+						href: '/manifest.webmanifest',
+					},
+				},
+				// PWA service worker registration
+				{
+					tag: 'script',
+					attrs: {
+						src: '/registerSW.js',
+						defer: true,
 					},
 				},
 				// Open Graph
