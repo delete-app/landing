@@ -281,6 +281,6 @@ The couples who stay together aren't luckier. They're more skilled. And skills c
 
 ---
 
-*Next: [Growing Together, Not Apart](/learn/module-6-staying-together/3-growing-together/) — how to support individual growth while staying connected.*
+*Next: [Growing Together, Not Apart](/learn/staying-together/growing-together/) — how to support individual growth while staying connected.*
 
-*Or go back to: [Maintaining Intimacy Over Time](/learn/module-6-staying-together/1-maintaining-intimacy/)*
+*Or go back to: [Maintaining Intimacy Over Time](/learn/staying-together/maintaining-intimacy/)*

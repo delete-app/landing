@@ -239,4 +239,4 @@ The people who sustain long-term love aren't the ones who maintain limerence for
 
 ---
 
-*Next: [Module 3: Compatibility Decoded](/learn/module-3-compatibility/1-beyond-having-things-in-common/) — what actually predicts whether two people will work.*
+*Next: [Module 3: Compatibility Decoded](/learn/compatibility/beyond-having-things-in-common/) — what actually predicts whether two people will work.*

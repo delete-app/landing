@@ -245,6 +245,6 @@ If you're dating someone with ADHD: It's not personal. But it is real. And love 
 
 ---
 
-*Next: [Autism & Intimacy](/learn/module-4-neurodivergent/2-autism-and-intimacy/) — dating when your brain processes social cues differently.*
+*Next: [Autism & Intimacy](/learn/neurodivergent/autism-and-intimacy/) — dating when your brain processes social cues differently.*
 
-*Or go back to: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*
+*Or go back to: [Module 1: Know Yourself First](/learn/know-yourself/why-self-awareness-matters/)*

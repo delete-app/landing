@@ -207,4 +207,4 @@ Over time, that pause between trigger and reaction gets longer. That's where cho
 
 ---
 
-*Next up: [Your Emotional Needs](/learn/module-1-know-yourself/4-your-emotional-needs/) — what actually makes you feel loved.*
+*Next up: [Your Emotional Needs](/learn/know-yourself/your-emotional-needs/) — what actually makes you feel loved.*

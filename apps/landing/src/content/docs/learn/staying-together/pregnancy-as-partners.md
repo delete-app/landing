@@ -279,6 +279,6 @@ This simple practice builds the communication habits you'll desperately need aft
 
 ---
 
-*Next: [Relationship Maintenance Rituals](/learn/module-6-staying-together/5-maintenance-rituals/) — daily, weekly, and yearly practices that keep relationships healthy.*
+*Next: [Relationship Maintenance Rituals](/learn/staying-together/maintenance-rituals/) — daily, weekly, and yearly practices that keep relationships healthy.*
 
-*Related: [Navigating Major Life Transitions](/learn/module-6-staying-together/4-life-transitions/) — including the transition to parenthood after pregnancy.*
+*Related: [Navigating Major Life Transitions](/learn/staying-together/life-transitions/) — including the transition to parenthood after pregnancy.*

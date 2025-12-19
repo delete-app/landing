@@ -282,6 +282,6 @@ Conflict is inevitable. Destruction is optional. The skills can be learned.
 
 *This completes Module 5: Building Something Real.*
 
-*Go back to: [Communication That Actually Works](/learn/module-5-building-real/2-communication-that-actually-works/)*
+*Go back to: [Communication That Actually Works](/learn/building-real/communication-that-actually-works/)*
 
-*Or start from: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*
+*Or start from: [Module 1: Know Yourself First](/learn/know-yourself/why-self-awareness-matters/)*

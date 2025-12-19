@@ -324,6 +324,6 @@ Growing together isn't about becoming the same person. It's about remaining curi
 
 ---
 
-*Next: [Navigating Major Life Transitions](/learn/module-6-staying-together/4-life-transitions/) — moving in, marriage, children, career changes, and more.*
+*Next: [Navigating Major Life Transitions](/learn/staying-together/life-transitions/) — moving in, marriage, children, career changes, and more.*
 
-*Or go back to: [The Gottman Principles in Practice](/learn/module-6-staying-together/2-gottman-principles/)*
+*Or go back to: [The Gottman Principles in Practice](/learn/staying-together/gottman-principles/)*

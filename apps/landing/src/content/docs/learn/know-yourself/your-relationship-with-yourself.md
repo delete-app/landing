@@ -245,4 +245,4 @@ You didn't choose your early experiences. You can choose what you do with them n
 
 ---
 
-*Next: [Limerence vs Love](/learn/module-2-attraction/limerence-vs-love/) — that obsessive feeling isn't what you think it is.*
+*Next: [Limerence vs Love](/learn/attraction/limerence-vs-love/) — that obsessive feeling isn't what you think it is.*

@@ -291,6 +291,6 @@ Focus less on the checklist. Focus more on whether they make you feel appreciate
 
 ---
 
-*Next: [Module 4: Neurodivergent Dating](/learn/module-4-neurodivergent/1-adhd-in-relationships/) — dating when your brain works differently.*
+*Next: [Module 4: Neurodivergent Dating](/learn/neurodivergent/adhd-in-relationships/) — dating when your brain works differently.*
 
-*Or go back to: [Beyond Having Things in Common](/learn/module-3-compatibility/1-beyond-having-things-in-common/)*
+*Or go back to: [Beyond Having Things in Common](/learn/compatibility/beyond-having-things-in-common/)*

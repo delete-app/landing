@@ -237,6 +237,6 @@ Long-term intimacy isn't about maintaining the intensity of early love. It's abo
 
 ---
 
-*Next: [The Gottman Principles in Practice](/learn/module-6-staying-together/2-gottman-principles/) — the research-backed framework for relationship maintenance.*
+*Next: [The Gottman Principles in Practice](/learn/staying-together/gottman-principles/) — the research-backed framework for relationship maintenance.*
 
-*Or go back to: [Module 5: Building Something Real](/learn/module-5-building-real/1-what-makes-relationships-last/)*
+*Or go back to: [Module 5: Building Something Real](/learn/building-real/what-makes-relationships-last/)*

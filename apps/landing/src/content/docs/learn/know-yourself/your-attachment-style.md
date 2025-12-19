@@ -217,4 +217,4 @@ You didn't choose your attachment style. You can choose what you do with it.
 
 ---
 
-*Next up: [How You Handle Conflict](/learn/module-1-know-yourself/3-how-you-handle-conflict/) — fight, flight, freeze, or fawn?*
+*Next up: [How You Handle Conflict](/learn/know-yourself/how-you-handle-conflict/) — fight, flight, freeze, or fawn?*

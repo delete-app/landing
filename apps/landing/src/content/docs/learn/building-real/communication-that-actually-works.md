@@ -268,6 +268,6 @@ The research is clear: how you respond to good news matters as much or more than
 
 ---
 
-*Next: [Navigating Conflict](/learn/module-5-building-real/3-navigating-conflict/) — because conflict isn't the problem; it's how you handle it.*
+*Next: [Navigating Conflict](/learn/building-real/navigating-conflict/) — because conflict isn't the problem; it's how you handle it.*
 
-*Or go back to: [What Makes Relationships Last](/learn/module-5-building-real/1-what-makes-relationships-last/)*
+*Or go back to: [What Makes Relationships Last](/learn/building-real/what-makes-relationships-last/)*

@@ -279,6 +279,6 @@ That's not an autism problem. That's just what good relationships require.
 
 ---
 
-*Back to: [ADHD in Relationships](/learn/module-4-neurodivergent/adhd-in-relationships/) — a different neurodivergent dating experience.*
+*Back to: [ADHD in Relationships](/learn/neurodivergent/adhd-in-relationships/) — a different neurodivergent dating experience.*
 
-*Or start from: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*
+*Or start from: [Module 1: Know Yourself First](/learn/know-yourself/why-self-awareness-matters/)*

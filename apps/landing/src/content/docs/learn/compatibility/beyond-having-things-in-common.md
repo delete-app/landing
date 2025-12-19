@@ -256,4 +256,4 @@ This is actually good news. You don't need to find your clone. You don't need to
 
 ---
 
-*Next: [Autism & Intimacy](/learn/module-4-neurodivergent/autism-and-intimacy/) — dating when your brain processes social cues differently.*
+*Next: [Autism & Intimacy](/learn/neurodivergent/autism-and-intimacy/) — dating when your brain processes social cues differently.*

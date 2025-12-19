@@ -250,4 +250,4 @@ Know these *before* your next relationship. Communicate them *early*. If they ca
 
 ---
 
-*Next up: [Your Relationship With Yourself](/learn/module-1-know-yourself/5-your-relationship-with-yourself/) — you attract what you are.*
+*Next up: [Your Relationship With Yourself](/learn/know-yourself/your-relationship-with-yourself/) — you attract what you are.*

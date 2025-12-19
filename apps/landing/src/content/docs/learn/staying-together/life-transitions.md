@@ -302,6 +302,6 @@ Transitions are inevitable. Being blindsided by them isn't.
 
 ---
 
-*Next: [Relationship Maintenance Rituals](/learn/module-6-staying-together/5-maintenance-rituals/) — daily, weekly, and yearly practices that keep relationships healthy.*
+*Next: [Relationship Maintenance Rituals](/learn/staying-together/maintenance-rituals/) — daily, weekly, and yearly practices that keep relationships healthy.*
 
-*Or go back to: [Growing Together, Not Apart](/learn/module-6-staying-together/3-growing-together/)*
+*Or go back to: [Growing Together, Not Apart](/learn/staying-together/growing-together/)*

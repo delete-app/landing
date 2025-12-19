@@ -272,4 +272,4 @@ That's learnable. Start today.
 
 *This is Module 5: Building Something Real. More chapters coming soon.*
 
-*Go back to: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*
+*Go back to: [Module 1: Know Yourself First](/learn/know-yourself/why-self-awareness-matters/)*

@@ -173,4 +173,4 @@ The goal isn't perfect self-knowledge. It's *enough* self-knowledge to make bett
 
 ---
 
-*Next up: [Your Attachment Style](/learn/module-1-know-yourself/2-your-attachment-style/) — the most validated framework for understanding why you do what you do in relationships.*
+*Next up: [Your Attachment Style](/learn/know-yourself/your-attachment-style/) — the most validated framework for understanding why you do what you do in relationships.*

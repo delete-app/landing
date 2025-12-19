@@ -406,6 +406,6 @@ The couples who thrive aren't the ones who never need help. They're the ones who
 
 *This completes Module 6: Staying Together.*
 
-*Go back to: [Relationship Maintenance Rituals](/learn/module-6-staying-together/5-maintenance-rituals/)*
+*Go back to: [Relationship Maintenance Rituals](/learn/staying-together/maintenance-rituals/)*
 
-*Or start from: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*
+*Or start from: [Module 1: Know Yourself First](/learn/know-yourself/why-self-awareness-matters/)*

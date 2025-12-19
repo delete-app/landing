@@ -310,6 +310,6 @@ The couples who thrive long-term aren't luckier. They've built systems that main
 
 ---
 
-*Next: [When to Seek Help](/learn/module-6-staying-together/6-when-to-seek-help/) — signs you need couples therapy and how to find the right therapist.*
+*Next: [When to Seek Help](/learn/staying-together/when-to-seek-help/) — signs you need couples therapy and how to find the right therapist.*
 
-*Or go back to: [Navigating Major Life Transitions](/learn/module-6-staying-together/4-life-transitions/)*
+*Or go back to: [Navigating Major Life Transitions](/learn/staying-together/life-transitions/)*
