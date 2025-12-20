@@ -29,6 +29,12 @@
     "check:contradictions": "cd apps/landing && npx tsx scripts/check-contradictions.ts",
     "lint:content": "pnpm --filter @delete/landing validate:refs && pnpm check:contradictions",
     "capture:design": "npx playwright test --project=design-capture",
+    "test": "npx playwright test",
+    "test:my": "PLAYWRIGHT_PROJECT=my-app npx playwright test --project=my-app",
+    "test:learn": "PLAYWRIGHT_PROJECT=learn npx playwright test --project=learn-desktop",
+    "test:learn:mobile": "PLAYWRIGHT_PROJECT=learn npx playwright test --project=learn-mobile",
+    "test:learn:all": "PLAYWRIGHT_PROJECT=learn npx playwright test --project=learn-desktop --project=learn-mobile",
+    "test:ui": "npx playwright test --ui",
     "prepare": "husky"
   },
   "lint-staged": {
