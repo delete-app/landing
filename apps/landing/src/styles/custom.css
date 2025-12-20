@@ -210,10 +210,17 @@ header.header {
     margin: 0.75rem auto 0.5rem;
   }
 
-  /* Sidebar content scrollable */
+  /* Sidebar content scrollable - hide scrollbar but keep scroll functionality */
   nav.sidebar .sidebar-content {
     max-height: calc(70vh - 3rem) !important;
     overflow-y: auto !important;
     padding-bottom: calc(1rem + env(safe-area-inset-bottom)) !important;
+    /* Hide scrollbar for all browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  nav.sidebar .sidebar-content::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
   }
 }
