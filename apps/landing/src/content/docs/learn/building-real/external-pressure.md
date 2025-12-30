@@ -186,30 +186,30 @@ External pressure will always exist. The question is whether you let it drive yo
 
 ## References
 
-1. Allendorf, K., & Pandian, R. K. (2016). The Decline of Arranged Marriage? Marital Change and Continuity in India. *Population and Development Review*, 42(3), 435-464. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5362258/" target="_blank" rel="noopener noreferrer">PMC5362258</a>
+1. Allendorf, K., & Pandian, R. K. (2016). The Decline of Arranged Marriage? Marital Change and Continuity in India. *Population and Development Review*, 42(3), 435-464. <a href="https://doi.org/10.1111/j.1728-4457.2016.00149.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1728-4457.2016.00149.x</a>
 
-2. Singh, A., & Shanbhag, T. (2025). Parental Interference and Marital Stability: A Scoping Review of Sociocultural Influences on Indian Families. *Indian Journal of Community Medicine*, 50(Suppl 2), S155-S160. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12588131/" target="_blank" rel="noopener noreferrer">PMC12588131</a>
+2. Singh, A., & Shanbhag, T. (2025). Parental Interference and Marital Stability: A Scoping Review of Sociocultural Influences on Indian Families. *Indian Journal of Community Medicine*, 50(Suppl 2), S155-S160. <a href="https://doi.org/10.4103/ijcm.ijcm_470_24" target="_blank" rel="noopener noreferrer">doi:10.4103/ijcm.ijcm_470_24</a>
 
-3. Bejanyan, K., Marshall, T. C., & Ferenczi, N. (2014). Romantic ideals, mate preferences, and anticipation of future difficulties in marital life: A comparative study of young adults in India and America. *Frontiers in Psychology*, 5, Article 1355. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4251314/" target="_blank" rel="noopener noreferrer">PMC4251314</a>
+3. Bejanyan, K., Marshall, T. C., & Ferenczi, N. (2014). Romantic ideals, mate preferences, and anticipation of future difficulties in marital life: A comparative study of young adults in India and America. *Frontiers in Psychology*, 5, Article 1355. <a href="https://doi.org/10.3389/fpsyg.2014.01355" target="_blank" rel="noopener noreferrer">doi:10.3389/fpsyg.2014.01355</a>
 
-4. Reed, M. N. (2025). Roka Engagements and the Hybridization of Arranged and "Love" Marriage in Urban India. *Journal of Marriage and Family*, 87(5), 2042-2055. <a href="https://onlinelibrary.wiley.com/doi/10.1111/jomf.13115" target="_blank" rel="noopener noreferrer">Wiley</a>
+4. Reed, M. N. (2025). Roka Engagements and the Hybridization of Arranged and "Love" Marriage in Urban India. *Journal of Marriage and Family*, 87(5), 2042-2055. <a href="https://doi.org/10.1111/jomf.13115" target="_blank" rel="noopener noreferrer">doi:10.1111/jomf.13115</a>
 
-5. Mishra, M., & Allen, M. S. (2023). Rejection sensitivity and romantic relationships: A systematic review and meta-analysis. *Personality and Individual Differences*, 208, 112186. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0191886923001046" target="_blank" rel="noopener noreferrer">ScienceDirect</a>
+5. Mishra, M., & Allen, M. S. (2023). Rejection sensitivity and romantic relationships: A systematic review and meta-analysis. *Personality and Individual Differences*, 208, 112186. <a href="https://doi.org/10.1016/j.paid.2023.112186" target="_blank" rel="noopener noreferrer">doi:10.1016/j.paid.2023.112186</a>
 
-6. Mishra, M., Reis, S., & Allen, M. S. (2024). Predicting relationship outcomes from rejection sensitivity in romantic couples: Testing actor and partner effects. *Current Psychology*, 43(36), 29095-29107. <a href="https://link.springer.com/article/10.1007/s12144-024-06431-5" target="_blank" rel="noopener noreferrer">Springer</a>
+6. Mishra, M., Reis, S., & Allen, M. S. (2024). Predicting relationship outcomes from rejection sensitivity in romantic couples: Testing actor and partner effects. *Current Psychology*, 43(36), 29095-29107. <a href="https://doi.org/10.1007/s12144-024-06431-5" target="_blank" rel="noopener noreferrer">doi:10.1007/s12144-024-06431-5</a>
 
 7. Bowen, M. (1978). *Family Therapy in Clinical Practice*. New York: Jason Aronson. <a href="https://www.thebowencenter.org/differentiation-of-self" target="_blank" rel="noopener noreferrer">The Bowen Center</a>
 
-8. Calatrava, M., Martins, M. V., Schweer-Collins, M., Duch-Ceballos, C., & Rodríguez-González, M. (2022). Differentiation of self: A scoping review of Bowen Family Systems Theory's core construct. *Clinical Psychology Review*, 91, 102101. <a href="https://pubmed.ncbi.nlm.nih.gov/34823190/" target="_blank" rel="noopener noreferrer">PubMed</a>
+8. Calatrava, M., Martins, M. V., Schweer-Collins, M., Duch-Ceballos, C., & Rodríguez-González, M. (2022). Differentiation of self: A scoping review of Bowen Family Systems Theory's core construct. *Clinical Psychology Review*, 91, 102101. <a href="https://doi.org/10.1016/j.cpr.2021.102101" target="_blank" rel="noopener noreferrer">doi:10.1016/j.cpr.2021.102101</a>
 
-9. Skowron, E. A. (2000). The role of differentiation of self in marital adjustment. *Journal of Counseling Psychology*, 47(2), 229-237. <a href="https://pubmed.ncbi.nlm.nih.gov/10870908/" target="_blank" rel="noopener noreferrer">PubMed</a>
+9. Skowron, E. A. (2000). The role of differentiation of self in marital adjustment. *Journal of Counseling Psychology*, 47(2), 229-237. <a href="https://doi.org/10.1037/0022-0167.47.2.229" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-0167.47.2.229</a>
 
-10. Arriaga, X. B., Kumashiro, M., Simpson, J. A., & Overall, N. C. (2018). Revising working models across time: Relationship situations that enhance attachment security. *Personality and Social Psychology Review*, 22(1), 71-96. <a href="https://pubmed.ncbi.nlm.nih.gov/28934900/" target="_blank" rel="noopener noreferrer">PubMed</a>
+10. Arriaga, X. B., Kumashiro, M., Simpson, J. A., & Overall, N. C. (2018). Revising working models across time: Relationship situations that enhance attachment security. *Personality and Social Psychology Review*, 22(1), 71-96. <a href="https://doi.org/10.1177/1088868317705257" target="_blank" rel="noopener noreferrer">doi:10.1177/1088868317705257</a>
 
-11. Knee, C. R., Hadden, B. W., Porter, B., & Rodriguez, L. M. (2013). Self-determination theory and romantic relationship processes. *Personality and Social Psychology Review*, 17(4), 307-324. <a href="https://journals.sagepub.com/doi/abs/10.1177/1088868313498000" target="_blank" rel="noopener noreferrer">SAGE</a>
+11. Knee, C. R., Hadden, B. W., Porter, B., & Rodriguez, L. M. (2013). Self-determination theory and romantic relationship processes. *Personality and Social Psychology Review*, 17(4), 307-324. <a href="https://doi.org/10.1177/1088868313498000" target="_blank" rel="noopener noreferrer">doi:10.1177/1088868313498000</a>
 
 12. Gottman, J. M., & DeClaire, J. (2001). *The Relationship Cure: A 5 Step Guide to Strengthening Your Marriage, Family, and Friendships*. New York: Three Rivers Press. <a href="https://www.gottman.com/blog/an-introduction-to-emotional-bids-and-trust/" target="_blank" rel="noopener noreferrer">Gottman Institute</a>
 
-13. Collins, N. L., & Feeney, B. C. (2000). A safe haven: An attachment theory perspective on support seeking and caregiving in intimate relationships. *Journal of Personality and Social Psychology*, 78(6), 1053-1073. <a href="https://pubmed.ncbi.nlm.nih.gov/10870908/" target="_blank" rel="noopener noreferrer">PubMed</a>
+13. Collins, N. L., & Feeney, B. C. (2000). A safe haven: An attachment theory perspective on support seeking and caregiving in intimate relationships. *Journal of Personality and Social Psychology*, 78(6), 1053-1073. <a href="https://doi.org/10.1037/0022-3514.78.6.1053" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.78.6.1053</a>
 
-14. Geller, S. M., & Greenberg, L. S. (2012). *Therapeutic Presence: A Mindful Approach to Effective Therapy*. Washington, DC: American Psychological Association. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8913713/" target="_blank" rel="noopener noreferrer">PMC8913713</a>
+14. Geller, S. M., & Greenberg, L. S. (2012). *Therapeutic Presence: A Mindful Approach to Effective Therapy*. Washington, DC: American Psychological Association. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8913713/" target="_blank" rel="noopener noreferrer">Related research</a>
